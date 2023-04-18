@@ -1,0 +1,2780 @@
+Files already downloaded and verified
+Files already downloaded and verified
+select client [388, 740, 206, 749, 815, 875, 752, 967, 142]
+------------------poisoning-------------------
+l2 norm of benign user before server clipping 0.3704841699865129
+l2 norm of benign user after server clipping 0.3364292217625512
+Gen trigger0 loss tensor(231.6434, device='cuda:0', grad_fn=<AddBackward0>)
+Gen trigger0 loss tensor(217.2070, device='cuda:0', grad_fn=<AddBackward0>)
+Gen trigger0 loss tensor(216.4350, device='cuda:0', grad_fn=<AddBackward0>)
+Gen trigger0 loss tensor(216.3253, device='cuda:0', grad_fn=<AddBackward0>)
+Gen trigger0 loss tensor(216.2905, device='cuda:0', grad_fn=<AddBackward0>)
+Poison Train Epoch: 0 	Loss: 0.223319
+Poison Train Epoch: 1 	Loss: 0.163401
+Poison Train Epoch: 2 	Loss: 0.184253
+Poison Train Epoch: 3 	Loss: 0.103159
+Poison Train Epoch: 4 	Loss: 0.167171
+Poison Train Epoch: 5 	Loss: 0.111034
+Poison Train Epoch: 6 	Loss: 0.068394
+Poison Train Epoch: 7 	Loss: 0.045153
+Poison Train Epoch: 8 	Loss: 0.049482
+Poison Train Epoch: 9 	Loss: 0.034117
+Poison Train Epoch: 10 	Loss: 0.035785
+Poison Train Epoch: 11 	Loss: 0.079204
+Poison Train Epoch: 12 	Loss: 0.042769
+Poison Train Epoch: 13 	Loss: 0.028160
+Poison Train Epoch: 14 	Loss: 0.039874
+Poison Train Epoch: 15 	Loss: 0.035394
+Poison Train Epoch: 16 	Loss: 0.028158
+Poison Train Epoch: 17 	Loss: 0.023777
+Poison Train Epoch: 18 	Loss: 0.022019
+Poison Train Epoch: 19 	Loss: 0.018792
+/home/hjb/src/util.py:231: UserWarning: To copy construct from a tensor, it is recommended to use sourceTensor.clone().detach() or sourceTensor.clone().detach().requires_grad_(True), rather than torch.tensor(sourceTensor).
+  update_per_layer = torch.tensor(update_per_layer,dtype=data.dtype)
+___Test : epoch: 1800: Average loss: 0.3825, Accuracy: 8695/10000.0 (86.9500%)
+benign test loss (after fedavg) 0.38249580307006836
+benign test acc (after fedavg) 86.95
+Done in 25.654696702957153 sec.
+select client [104, 670, 849, 474, 662, 687, 448, 303, 85, 837]
+l2 norm of benign user before server clipping 0.44729741364717485
+l2 norm of benign user after server clipping 0.37656678110361097
+___Test : epoch: 1801: Average loss: 0.3862, Accuracy: 8722/10000.0 (87.2200%)
+benign test loss (after fedavg) 0.38619423542022707
+benign test acc (after fedavg) 87.22
+Done in 1.8784263134002686 sec.
+select client [529, 370, 458, 734, 527, 837, 103, 997, 772, 802]
+l2 norm of benign user before server clipping 0.36650079041719436
+l2 norm of benign user after server clipping 0.36650079041719436
+___Test : epoch: 1802: Average loss: 0.3753, Accuracy: 8754/10000.0 (87.5400%)
+benign test loss (after fedavg) 0.3752710163116455
+benign test acc (after fedavg) 87.53999999999999
+Done in 1.6973557472229004 sec.
+select client [183, 362, 247, 229, 249, 873, 860, 151, 169, 60]
+l2 norm of benign user before server clipping 0.4004371017217636
+l2 norm of benign user after server clipping 0.4004371017217636
+___Test : epoch: 1803: Average loss: 0.3802, Accuracy: 8750/10000.0 (87.5000%)
+benign test loss (after fedavg) 0.3801565010070801
+benign test acc (after fedavg) 87.5
+Done in 2.0171284675598145 sec.
+select client [59, 965, 742, 761, 553, 47, 173, 461, 763, 416]
+l2 norm of benign user before server clipping 0.37108749747276304
+l2 norm of benign user after server clipping 0.37108749747276304
+___Test : epoch: 1804: Average loss: 0.3849, Accuracy: 8741/10000.0 (87.4100%)
+benign test loss (after fedavg) 0.38487736072540285
+benign test acc (after fedavg) 87.41
+Done in 1.9823896884918213 sec.
+select client [191, 115, 376, 240, 478, 699, 547, 479, 893]
+------------------poisoning-------------------
+l2 norm of benign user before server clipping 0.42805852823787266
+l2 norm of benign user after server clipping 0.3965735932191213
+Gen trigger1 loss tensor(236.4910, device='cuda:0', grad_fn=<AddBackward0>)
+Gen trigger1 loss tensor(216.8577, device='cuda:0', grad_fn=<AddBackward0>)
+Gen trigger1 loss tensor(215.1914, device='cuda:0', grad_fn=<AddBackward0>)
+Gen trigger1 loss tensor(214.7381, device='cuda:0', grad_fn=<AddBackward0>)
+Gen trigger1 loss tensor(214.4444, device='cuda:0', grad_fn=<AddBackward0>)
+Poison Train Epoch: 0 	Loss: 0.355657
+Poison Train Epoch: 1 	Loss: 0.261050
+Poison Train Epoch: 2 	Loss: 0.201517
+Poison Train Epoch: 3 	Loss: 0.225887
+Poison Train Epoch: 4 	Loss: 0.212129
+Poison Train Epoch: 5 	Loss: 0.212658
+Poison Train Epoch: 6 	Loss: 0.173480
+Poison Train Epoch: 7 	Loss: 0.246104
+Poison Train Epoch: 8 	Loss: 0.213159
+Poison Train Epoch: 9 	Loss: 0.208597
+Poison Train Epoch: 10 	Loss: 0.198929
+Poison Train Epoch: 11 	Loss: 0.155277
+Poison Train Epoch: 12 	Loss: 0.152055
+Poison Train Epoch: 13 	Loss: 0.143958
+Poison Train Epoch: 14 	Loss: 0.139170
+Poison Train Epoch: 15 	Loss: 0.109657
+Poison Train Epoch: 16 	Loss: 0.129529
+Poison Train Epoch: 17 	Loss: 0.119207
+Poison Train Epoch: 18 	Loss: 0.128526
+Poison Train Epoch: 19 	Loss: 0.112577
+___Test : epoch: 1805: Average loss: 0.3855, Accuracy: 8719/10000.0 (87.1900%)
+benign test loss (after fedavg) 0.3854996503829956
+benign test acc (after fedavg) 87.19
+Done in 23.019004821777344 sec.
+select client [274, 149, 65, 941, 246, 906, 779, 409, 63, 595]
+l2 norm of benign user before server clipping 0.29595952332019804
+l2 norm of benign user after server clipping 0.29595952332019804
+___Test : epoch: 1806: Average loss: 0.3585, Accuracy: 8805/10000.0 (88.0500%)
+benign test loss (after fedavg) 0.3585456014633179
+benign test acc (after fedavg) 88.05
+Done in 1.9703633785247803 sec.
+select client [192, 655, 443, 181, 605, 865, 592, 809, 986, 872]
+l2 norm of benign user before server clipping 0.4162470206618309
+l2 norm of benign user after server clipping 0.3628935679793358
+___Test : epoch: 1807: Average loss: 0.3788, Accuracy: 8750/10000.0 (87.5000%)
+benign test loss (after fedavg) 0.37882801456451415
+benign test acc (after fedavg) 87.5
+Done in 1.962303876876831 sec.
+select client [886, 333, 708, 985, 964, 740, 148, 990, 476, 10]
+l2 norm of benign user before server clipping 0.7178106993436814
+l2 norm of benign user after server clipping 0.3813695043325424
+___Test : epoch: 1808: Average loss: 0.5619, Accuracy: 8177/10000.0 (81.7700%)
+benign test loss (after fedavg) 0.56194553565979
+benign test acc (after fedavg) 81.77
+Done in 1.9924092292785645 sec.
+select client [827, 411, 366, 917, 724, 24, 184, 375, 854, 147]
+l2 norm of benign user before server clipping 0.45169674754142763
+l2 norm of benign user after server clipping 0.3985501706600189
+___Test : epoch: 1809: Average loss: 0.3959, Accuracy: 8708/10000.0 (87.0800%)
+benign test loss (after fedavg) 0.3959132930755615
+benign test acc (after fedavg) 87.08
+Done in 1.8543353080749512 sec.
+select client [209, 994, 257, 923, 321, 987, 186, 866, 94]
+------------------poisoning-------------------
+l2 norm of benign user before server clipping 0.4638063311576843
+l2 norm of benign user after server clipping 0.3802920911047194
+Gen trigger2 loss tensor(207.4355, device='cuda:0', grad_fn=<AddBackward0>)
+Gen trigger2 loss tensor(190.1014, device='cuda:0', grad_fn=<AddBackward0>)
+Gen trigger2 loss tensor(189.4877, device='cuda:0', grad_fn=<AddBackward0>)
+Gen trigger2 loss tensor(189.2977, device='cuda:0', grad_fn=<AddBackward0>)
+Gen trigger2 loss tensor(188.9774, device='cuda:0', grad_fn=<AddBackward0>)
+Poison Train Epoch: 0 	Loss: 0.330613
+Poison Train Epoch: 1 	Loss: 0.405165
+Poison Train Epoch: 2 	Loss: 0.295022
+Poison Train Epoch: 3 	Loss: 0.358033
+Poison Train Epoch: 4 	Loss: 0.316661
+Poison Train Epoch: 5 	Loss: 0.277159
+Poison Train Epoch: 6 	Loss: 0.220817
+Poison Train Epoch: 7 	Loss: 0.193874
+Poison Train Epoch: 8 	Loss: 0.169666
+Poison Train Epoch: 9 	Loss: 0.219132
+Poison Train Epoch: 10 	Loss: 0.168659
+Poison Train Epoch: 11 	Loss: 0.170223
+Poison Train Epoch: 12 	Loss: 0.179414
+Poison Train Epoch: 13 	Loss: 0.201802
+Poison Train Epoch: 14 	Loss: 0.227111
+Poison Train Epoch: 15 	Loss: 0.187870
+Poison Train Epoch: 16 	Loss: 0.119072
+Poison Train Epoch: 17 	Loss: 0.162399
+Poison Train Epoch: 18 	Loss: 0.174906
+Poison Train Epoch: 19 	Loss: 0.099916
+___Test : epoch: 1810: Average loss: 0.4467, Accuracy: 8518/10000.0 (85.1800%)
+benign test loss (after fedavg) 0.4467364288330078
+benign test acc (after fedavg) 85.18
+Done in 21.815174102783203 sec.
+select client [718, 874, 712, 976, 891, 246, 75, 895, 621, 138]
+l2 norm of benign user before server clipping 0.41221270710229874
+l2 norm of benign user after server clipping 0.38691914826631546
+___Test : epoch: 1811: Average loss: 0.3825, Accuracy: 8754/10000.0 (87.5400%)
+benign test loss (after fedavg) 0.38246527347564696
+benign test acc (after fedavg) 87.53999999999999
+Done in 1.6717572212219238 sec.
+select client [606, 84, 366, 597, 797, 987, 377, 688, 548, 910]
+l2 norm of benign user before server clipping 0.5097437903285027
+l2 norm of benign user after server clipping 0.36093811243772506
+___Test : epoch: 1812: Average loss: 0.4464, Accuracy: 8521/10000.0 (85.2100%)
+benign test loss (after fedavg) 0.44644963207244875
+benign test acc (after fedavg) 85.21
+Done in 1.6758737564086914 sec.
+select client [152, 989, 598, 341, 953, 189, 228, 362, 694, 136]
+l2 norm of benign user before server clipping 0.6116196200251579
+l2 norm of benign user after server clipping 0.3714460238814354
+___Test : epoch: 1813: Average loss: 0.5113, Accuracy: 8301/10000.0 (83.0100%)
+benign test loss (after fedavg) 0.5112542106628418
+benign test acc (after fedavg) 83.00999999999999
+Done in 1.6389176845550537 sec.
+select client [568, 41, 742, 538, 225, 870, 154, 34, 249, 363]
+l2 norm of benign user before server clipping 0.6432858169078827
+l2 norm of benign user after server clipping 0.45468850135803224
+___Test : epoch: 1814: Average loss: 0.4621, Accuracy: 8508/10000.0 (85.0800%)
+benign test loss (after fedavg) 0.46208098030090333
+benign test acc (after fedavg) 85.08
+Done in 2.236254930496216 sec.
+select client [664, 336, 198, 346, 206, 197, 338, 141, 350]
+------------------poisoning-------------------
+l2 norm of benign user before server clipping 0.38920988142490387
+l2 norm of benign user after server clipping 0.36227986713250476
+Gen trigger3 loss tensor(188.2172, device='cuda:0', grad_fn=<AddBackward0>)
+Gen trigger3 loss tensor(172.4086, device='cuda:0', grad_fn=<AddBackward0>)
+Gen trigger3 loss tensor(171.7910, device='cuda:0', grad_fn=<AddBackward0>)
+Gen trigger3 loss tensor(171.5502, device='cuda:0', grad_fn=<AddBackward0>)
+Gen trigger3 loss tensor(171.4081, device='cuda:0', grad_fn=<AddBackward0>)
+Poison Train Epoch: 0 	Loss: 0.306364
+Poison Train Epoch: 1 	Loss: 0.240756
+Poison Train Epoch: 2 	Loss: 0.269030
+Poison Train Epoch: 3 	Loss: 0.249303
+Poison Train Epoch: 4 	Loss: 0.235849
+Poison Train Epoch: 5 	Loss: 0.197725
+Poison Train Epoch: 6 	Loss: 0.234008
+Poison Train Epoch: 7 	Loss: 0.193955
+Poison Train Epoch: 8 	Loss: 0.217858
+Poison Train Epoch: 9 	Loss: 0.210002
+Poison Train Epoch: 10 	Loss: 0.186020
+Poison Train Epoch: 11 	Loss: 0.176273
+Poison Train Epoch: 12 	Loss: 0.146065
+Poison Train Epoch: 13 	Loss: 0.121164
+Poison Train Epoch: 14 	Loss: 0.179491
+Poison Train Epoch: 15 	Loss: 0.109384
+Poison Train Epoch: 16 	Loss: 0.139968
+Poison Train Epoch: 17 	Loss: 0.176120
+Poison Train Epoch: 18 	Loss: 0.157495
+Poison Train Epoch: 19 	Loss: 0.132247
+___Test : epoch: 1815: Average loss: 0.5076, Accuracy: 8339/10000.0 (83.3900%)
+benign test loss (after fedavg) 0.5076008169174194
+benign test acc (after fedavg) 83.39
+Done in 20.449814081192017 sec.
+select client [416, 233, 775, 668, 88, 983, 663, 860, 429, 177]
+l2 norm of benign user before server clipping 0.3739540696144104
+l2 norm of benign user after server clipping 0.3449577569961548
+___Test : epoch: 1816: Average loss: 0.3789, Accuracy: 8774/10000.0 (87.7400%)
+benign test loss (after fedavg) 0.3788890930175781
+benign test acc (after fedavg) 87.74
+Test set:local_trigger0 Poison Accuracy: 686/1000 (69%)
+Test set:local_trigger1 Poison Accuracy: 163/1000 (16%)
+Test set:local_trigger2 Poison Accuracy: 0/1000 (0%)
+Test set:local_trigger3 Poison Accuracy: 3/1000 (0%)
+Test set:Main Accuracy: 8774/10000 (88%)
+Test set:Globol Trigger Poison Accuracy: 0/1000 (0%)
+Done in 5.796595811843872 sec.
+select client [471, 803, 643, 314, 525, 742, 925, 416, 650, 660]
+l2 norm of benign user before server clipping 0.28986962139606476
+l2 norm of benign user after server clipping 0.28986962139606476
+___Test : epoch: 1817: Average loss: 0.3735, Accuracy: 8762/10000.0 (87.6200%)
+benign test loss (after fedavg) 0.3735190851211548
+benign test acc (after fedavg) 87.62
+Test set:local_trigger0 Poison Accuracy: 570/1000 (57%)
+Test set:local_trigger1 Poison Accuracy: 38/1000 (4%)
+Test set:local_trigger2 Poison Accuracy: 0/1000 (0%)
+Test set:local_trigger3 Poison Accuracy: 0/1000 (0%)
+Test set:Main Accuracy: 8762/10000 (88%)
+Test set:Globol Trigger Poison Accuracy: 0/1000 (0%)
+Done in 5.67931056022644 sec.
+select client [590, 219, 656, 851, 914, 554, 711, 953, 641, 496]
+l2 norm of benign user before server clipping 0.33040962368249893
+l2 norm of benign user after server clipping 0.33040962368249893
+___Test : epoch: 1818: Average loss: 0.3812, Accuracy: 8724/10000.0 (87.2400%)
+benign test loss (after fedavg) 0.38119479846954346
+benign test acc (after fedavg) 87.24
+Test set:local_trigger0 Poison Accuracy: 543/1000 (54%)
+Test set:local_trigger1 Poison Accuracy: 8/1000 (1%)
+Test set:local_trigger2 Poison Accuracy: 0/1000 (0%)
+Test set:local_trigger3 Poison Accuracy: 0/1000 (0%)
+Test set:Main Accuracy: 8724/10000 (87%)
+Test set:Globol Trigger Poison Accuracy: 0/1000 (0%)
+Done in 5.526872634887695 sec.
+select client [494, 771, 831, 436, 239, 130, 384, 768, 157, 800]
+l2 norm of benign user before server clipping 0.3570129334926605
+l2 norm of benign user after server clipping 0.35176619291305544
+___Test : epoch: 1819: Average loss: 0.3690, Accuracy: 8765/10000.0 (87.6500%)
+benign test loss (after fedavg) 0.3690223051071167
+benign test acc (after fedavg) 87.64999999999999
+Test set:local_trigger0 Poison Accuracy: 476/1000 (48%)
+Test set:local_trigger1 Poison Accuracy: 3/1000 (0%)
+Test set:local_trigger2 Poison Accuracy: 0/1000 (0%)
+Test set:local_trigger3 Poison Accuracy: 0/1000 (0%)
+Test set:Main Accuracy: 8765/10000 (88%)
+Test set:Globol Trigger Poison Accuracy: 0/1000 (0%)
+Done in 5.6730687618255615 sec.
+select client [243, 627, 258, 587, 205, 591, 78, 691, 272, 428]
+l2 norm of benign user before server clipping 0.4886592775583267
+l2 norm of benign user after server clipping 0.36290744245052337
+___Test : epoch: 1820: Average loss: 0.3806, Accuracy: 8721/10000.0 (87.2100%)
+benign test loss (after fedavg) 0.3806270305633545
+benign test acc (after fedavg) 87.21
+Test set:local_trigger0 Poison Accuracy: 401/1000 (40%)
+Test set:local_trigger1 Poison Accuracy: 1/1000 (0%)
+Test set:local_trigger2 Poison Accuracy: 0/1000 (0%)
+Test set:local_trigger3 Poison Accuracy: 0/1000 (0%)
+Test set:Main Accuracy: 8721/10000 (87%)
+Test set:Globol Trigger Poison Accuracy: 0/1000 (0%)
+Done in 5.687794208526611 sec.
+select client [269, 961, 16, 195, 667, 922, 103, 603, 930, 723]
+l2 norm of benign user before server clipping 0.6097089007496834
+l2 norm of benign user after server clipping 0.32097666412591935
+___Test : epoch: 1821: Average loss: 0.4624, Accuracy: 8517/10000.0 (85.1700%)
+benign test loss (after fedavg) 0.4623857303619385
+benign test acc (after fedavg) 85.17
+Test set:local_trigger0 Poison Accuracy: 539/1000 (54%)
+Test set:local_trigger1 Poison Accuracy: 68/1000 (7%)
+Test set:local_trigger2 Poison Accuracy: 0/1000 (0%)
+Test set:local_trigger3 Poison Accuracy: 0/1000 (0%)
+Test set:Main Accuracy: 8517/10000 (85%)
+Test set:Globol Trigger Poison Accuracy: 0/1000 (0%)
+Done in 5.791191101074219 sec.
+select client [336, 860, 245, 457, 455, 324, 905, 134, 269, 870]
+l2 norm of benign user before server clipping 0.6679492488503456
+l2 norm of benign user after server clipping 0.39270645529031756
+___Test : epoch: 1822: Average loss: 0.4572, Accuracy: 8487/10000.0 (84.8700%)
+benign test loss (after fedavg) 0.45722097511291504
+benign test acc (after fedavg) 84.87
+Test set:local_trigger0 Poison Accuracy: 510/1000 (51%)
+Test set:local_trigger1 Poison Accuracy: 1/1000 (0%)
+Test set:local_trigger2 Poison Accuracy: 0/1000 (0%)
+Test set:local_trigger3 Poison Accuracy: 0/1000 (0%)
+Test set:Main Accuracy: 8487/10000 (85%)
+Test set:Globol Trigger Poison Accuracy: 0/1000 (0%)
+Done in 5.835889101028442 sec.
+select client [380, 384, 958, 124, 372, 523, 708, 896, 514, 449]
+l2 norm of benign user before server clipping 0.6026580855250359
+l2 norm of benign user after server clipping 0.3497944697737694
+___Test : epoch: 1823: Average loss: 0.5165, Accuracy: 8253/10000.0 (82.5300%)
+benign test loss (after fedavg) 0.516516739654541
+benign test acc (after fedavg) 82.53
+Test set:local_trigger0 Poison Accuracy: 116/1000 (12%)
+Test set:local_trigger1 Poison Accuracy: 0/1000 (0%)
+Test set:local_trigger2 Poison Accuracy: 0/1000 (0%)
+Test set:local_trigger3 Poison Accuracy: 0/1000 (0%)
+Test set:Main Accuracy: 8253/10000 (83%)
+Test set:Globol Trigger Poison Accuracy: 0/1000 (0%)
+Done in 5.634607315063477 sec.
+select client [883, 296, 102, 658, 852, 673, 923, 920, 682, 88]
+l2 norm of benign user before server clipping 0.8706844717264175
+l2 norm of benign user after server clipping 0.43720783293247223
+___Test : epoch: 1824: Average loss: 0.8420, Accuracy: 7518/10000.0 (75.1800%)
+benign test loss (after fedavg) 0.8420055618286133
+benign test acc (after fedavg) 75.18
+Test set:local_trigger0 Poison Accuracy: 333/1000 (33%)
+Test set:local_trigger1 Poison Accuracy: 0/1000 (0%)
+Test set:local_trigger2 Poison Accuracy: 0/1000 (0%)
+Test set:local_trigger3 Poison Accuracy: 0/1000 (0%)
+Test set:Main Accuracy: 7518/10000 (75%)
+Test set:Globol Trigger Poison Accuracy: 0/1000 (0%)
+Done in 5.756436586380005 sec.
+select client [632, 31, 441, 894, 161, 478, 739, 81, 506, 913]
+l2 norm of benign user before server clipping 0.4473715960979462
+l2 norm of benign user after server clipping 0.4145567238330841
+___Test : epoch: 1825: Average loss: 0.4326, Accuracy: 8547/10000.0 (85.4700%)
+benign test loss (after fedavg) 0.4325629585266113
+benign test acc (after fedavg) 85.47
+Test set:local_trigger0 Poison Accuracy: 358/1000 (36%)
+Test set:local_trigger1 Poison Accuracy: 0/1000 (0%)
+Test set:local_trigger2 Poison Accuracy: 0/1000 (0%)
+Test set:local_trigger3 Poison Accuracy: 0/1000 (0%)
+Test set:Main Accuracy: 8547/10000 (85%)
+Test set:Globol Trigger Poison Accuracy: 0/1000 (0%)
+Done in 5.6629979610443115 sec.
+select client [455, 362, 331, 97, 800, 866, 524, 799, 617, 678]
+l2 norm of benign user before server clipping 0.36544536203145983
+l2 norm of benign user after server clipping 0.3594870433211327
+___Test : epoch: 1826: Average loss: 0.4143, Accuracy: 8597/10000.0 (85.9700%)
+benign test loss (after fedavg) 0.41430836954116823
+benign test acc (after fedavg) 85.97
+Test set:local_trigger0 Poison Accuracy: 404/1000 (40%)
+Test set:local_trigger1 Poison Accuracy: 1/1000 (0%)
+Test set:local_trigger2 Poison Accuracy: 0/1000 (0%)
+Test set:local_trigger3 Poison Accuracy: 0/1000 (0%)
+Test set:Main Accuracy: 8597/10000 (86%)
+Test set:Globol Trigger Poison Accuracy: 0/1000 (0%)
+Done in 5.810164451599121 sec.
+select client [393, 335, 613, 645, 190, 718, 924, 92, 141, 94]
+l2 norm of benign user before server clipping 0.3269994005560875
+l2 norm of benign user after server clipping 0.3269994005560875
+___Test : epoch: 1827: Average loss: 0.4018, Accuracy: 8630/10000.0 (86.3000%)
+benign test loss (after fedavg) 0.4018217357635498
+benign test acc (after fedavg) 86.3
+Test set:local_trigger0 Poison Accuracy: 316/1000 (32%)
+Test set:local_trigger1 Poison Accuracy: 0/1000 (0%)
+Test set:local_trigger2 Poison Accuracy: 0/1000 (0%)
+Test set:local_trigger3 Poison Accuracy: 0/1000 (0%)
+Test set:Main Accuracy: 8630/10000 (86%)
+Test set:Globol Trigger Poison Accuracy: 0/1000 (0%)
+Done in 5.942933559417725 sec.
+select client [817, 298, 14, 450, 63, 362, 352, 333, 461, 845]
+l2 norm of benign user before server clipping 0.2901074677705765
+l2 norm of benign user after server clipping 0.2901074677705765
+___Test : epoch: 1828: Average loss: 0.4041, Accuracy: 8658/10000.0 (86.5800%)
+benign test loss (after fedavg) 0.4040596883773804
+benign test acc (after fedavg) 86.58
+Test set:local_trigger0 Poison Accuracy: 306/1000 (31%)
+Test set:local_trigger1 Poison Accuracy: 0/1000 (0%)
+Test set:local_trigger2 Poison Accuracy: 0/1000 (0%)
+Test set:local_trigger3 Poison Accuracy: 0/1000 (0%)
+Test set:Main Accuracy: 8658/10000 (87%)
+Test set:Globol Trigger Poison Accuracy: 0/1000 (0%)
+Done in 5.8375842571258545 sec.
+select client [722, 867, 483, 54, 724, 153, 861, 774, 563, 794]
+l2 norm of benign user before server clipping 0.3619145035743713
+l2 norm of benign user after server clipping 0.3619145035743713
+___Test : epoch: 1829: Average loss: 0.3968, Accuracy: 8678/10000.0 (86.7800%)
+benign test loss (after fedavg) 0.39676294956207275
+benign test acc (after fedavg) 86.78
+Test set:local_trigger0 Poison Accuracy: 293/1000 (29%)
+Test set:local_trigger1 Poison Accuracy: 0/1000 (0%)
+Test set:local_trigger2 Poison Accuracy: 0/1000 (0%)
+Test set:local_trigger3 Poison Accuracy: 0/1000 (0%)
+Test set:Main Accuracy: 8678/10000 (87%)
+Test set:Globol Trigger Poison Accuracy: 0/1000 (0%)
+Done in 5.852862119674683 sec.
+select client [169, 138, 795, 688, 684, 458, 115, 910, 742, 377]
+l2 norm of benign user before server clipping 0.3651771530508995
+l2 norm of benign user after server clipping 0.3651771530508995
+___Test : epoch: 1830: Average loss: 0.3864, Accuracy: 8711/10000.0 (87.1100%)
+benign test loss (after fedavg) 0.38641870975494386
+benign test acc (after fedavg) 87.11
+Test set:local_trigger0 Poison Accuracy: 547/1000 (55%)
+Test set:local_trigger1 Poison Accuracy: 1/1000 (0%)
+Test set:local_trigger2 Poison Accuracy: 0/1000 (0%)
+Test set:local_trigger3 Poison Accuracy: 0/1000 (0%)
+Test set:Main Accuracy: 8711/10000 (87%)
+Test set:Globol Trigger Poison Accuracy: 0/1000 (0%)
+Done in 5.812004327774048 sec.
+select client [986, 56, 137, 789, 755, 929, 708, 854, 272, 217]
+l2 norm of benign user before server clipping 0.7345137909054756
+l2 norm of benign user after server clipping 0.3960191085934639
+___Test : epoch: 1831: Average loss: 0.4941, Accuracy: 8381/10000.0 (83.8100%)
+benign test loss (after fedavg) 0.4940807508468628
+benign test acc (after fedavg) 83.81
+Test set:local_trigger0 Poison Accuracy: 559/1000 (56%)
+Test set:local_trigger1 Poison Accuracy: 2/1000 (0%)
+Test set:local_trigger2 Poison Accuracy: 0/1000 (0%)
+Test set:local_trigger3 Poison Accuracy: 0/1000 (0%)
+Test set:Main Accuracy: 8381/10000 (84%)
+Test set:Globol Trigger Poison Accuracy: 0/1000 (0%)
+Done in 5.669234275817871 sec.
+select client [644, 358, 785, 840, 863, 376, 272, 762, 422, 47]
+l2 norm of benign user before server clipping 0.3844067618250847
+l2 norm of benign user after server clipping 0.35001218765974046
+___Test : epoch: 1832: Average loss: 0.4032, Accuracy: 8668/10000.0 (86.6800%)
+benign test loss (after fedavg) 0.4031828842163086
+benign test acc (after fedavg) 86.68
+Test set:local_trigger0 Poison Accuracy: 398/1000 (40%)
+Test set:local_trigger1 Poison Accuracy: 0/1000 (0%)
+Test set:local_trigger2 Poison Accuracy: 0/1000 (0%)
+Test set:local_trigger3 Poison Accuracy: 0/1000 (0%)
+Test set:Main Accuracy: 8668/10000 (87%)
+Test set:Globol Trigger Poison Accuracy: 0/1000 (0%)
+Done in 5.872770071029663 sec.
+select client [411, 64, 196, 37, 453, 782, 385, 955, 157, 722]
+l2 norm of benign user before server clipping 0.4196934089064598
+l2 norm of benign user after server clipping 0.3766769155859947
+___Test : epoch: 1833: Average loss: 0.3904, Accuracy: 8695/10000.0 (86.9500%)
+benign test loss (after fedavg) 0.3903801519393921
+benign test acc (after fedavg) 86.95
+Test set:local_trigger0 Poison Accuracy: 354/1000 (35%)
+Test set:local_trigger1 Poison Accuracy: 0/1000 (0%)
+Test set:local_trigger2 Poison Accuracy: 0/1000 (0%)
+Test set:local_trigger3 Poison Accuracy: 0/1000 (0%)
+Test set:Main Accuracy: 8695/10000 (87%)
+Test set:Globol Trigger Poison Accuracy: 0/1000 (0%)
+Done in 5.879951477050781 sec.
+select client [840, 241, 511, 250, 571, 883, 633, 497, 289, 468]
+l2 norm of benign user before server clipping 0.6167000278830528
+l2 norm of benign user after server clipping 0.3817959651350975
+___Test : epoch: 1834: Average loss: 0.4799, Accuracy: 8456/10000.0 (84.5600%)
+benign test loss (after fedavg) 0.47985422229766844
+benign test acc (after fedavg) 84.56
+Test set:local_trigger0 Poison Accuracy: 334/1000 (33%)
+Test set:local_trigger1 Poison Accuracy: 2/1000 (0%)
+Test set:local_trigger2 Poison Accuracy: 0/1000 (0%)
+Test set:local_trigger3 Poison Accuracy: 0/1000 (0%)
+Test set:Main Accuracy: 8456/10000 (85%)
+Test set:Globol Trigger Poison Accuracy: 0/1000 (0%)
+Done in 5.952859878540039 sec.
+select client [185, 598, 663, 931, 173, 23, 882, 232, 625, 709]
+l2 norm of benign user before server clipping 0.39590908735990527
+l2 norm of benign user after server clipping 0.3277707383036613
+___Test : epoch: 1835: Average loss: 0.4057, Accuracy: 8680/10000.0 (86.8000%)
+benign test loss (after fedavg) 0.40570177803039553
+benign test acc (after fedavg) 86.8
+Test set:local_trigger0 Poison Accuracy: 383/1000 (38%)
+Test set:local_trigger1 Poison Accuracy: 1/1000 (0%)
+Test set:local_trigger2 Poison Accuracy: 0/1000 (0%)
+Test set:local_trigger3 Poison Accuracy: 0/1000 (0%)
+Test set:Main Accuracy: 8680/10000 (87%)
+Test set:Globol Trigger Poison Accuracy: 0/1000 (0%)
+Done in 5.75040864944458 sec.
+select client [734, 968, 269, 411, 733, 664, 903, 710, 953, 230]
+l2 norm of benign user before server clipping 0.2875289529561996
+l2 norm of benign user after server clipping 0.2875289529561996
+___Test : epoch: 1836: Average loss: 0.3928, Accuracy: 8708/10000.0 (87.0800%)
+benign test loss (after fedavg) 0.392802099609375
+benign test acc (after fedavg) 87.08
+Test set:local_trigger0 Poison Accuracy: 551/1000 (55%)
+Test set:local_trigger1 Poison Accuracy: 5/1000 (0%)
+Test set:local_trigger2 Poison Accuracy: 0/1000 (0%)
+Test set:local_trigger3 Poison Accuracy: 0/1000 (0%)
+Test set:Main Accuracy: 8708/10000 (87%)
+Test set:Globol Trigger Poison Accuracy: 0/1000 (0%)
+Done in 5.609508991241455 sec.
+select client [405, 398, 995, 176, 215, 527, 216, 569, 190, 482]
+l2 norm of benign user before server clipping 0.36324416697025297
+l2 norm of benign user after server clipping 0.29441107213497164
+___Test : epoch: 1837: Average loss: 0.3938, Accuracy: 8673/10000.0 (86.7300%)
+benign test loss (after fedavg) 0.3937783519744873
+benign test acc (after fedavg) 86.72999999999999
+Test set:local_trigger0 Poison Accuracy: 567/1000 (57%)
+Test set:local_trigger1 Poison Accuracy: 85/1000 (8%)
+Test set:local_trigger2 Poison Accuracy: 0/1000 (0%)
+Test set:local_trigger3 Poison Accuracy: 4/1000 (0%)
+Test set:Main Accuracy: 8673/10000 (87%)
+Test set:Globol Trigger Poison Accuracy: 0/1000 (0%)
+Done in 5.821777582168579 sec.
+select client [208, 128, 405, 64, 38, 822, 711, 914, 850, 940]
+l2 norm of benign user before server clipping 0.4342465102672577
+l2 norm of benign user after server clipping 0.36589784026145933
+___Test : epoch: 1838: Average loss: 0.3924, Accuracy: 8720/10000.0 (87.2000%)
+benign test loss (after fedavg) 0.39236256856918333
+benign test acc (after fedavg) 87.2
+Test set:local_trigger0 Poison Accuracy: 652/1000 (65%)
+Test set:local_trigger1 Poison Accuracy: 48/1000 (5%)
+Test set:local_trigger2 Poison Accuracy: 0/1000 (0%)
+Test set:local_trigger3 Poison Accuracy: 1/1000 (0%)
+Test set:Main Accuracy: 8720/10000 (87%)
+Test set:Globol Trigger Poison Accuracy: 0/1000 (0%)
+Done in 5.7472450733184814 sec.
+select client [361, 939, 520, 269, 564, 116, 235, 687, 205, 740]
+l2 norm of benign user before server clipping 0.2974297598004341
+l2 norm of benign user after server clipping 0.28854525834321976
+___Test : epoch: 1839: Average loss: 0.3782, Accuracy: 8734/10000.0 (87.3400%)
+benign test loss (after fedavg) 0.37824730167388915
+benign test acc (after fedavg) 87.33999999999999
+Test set:local_trigger0 Poison Accuracy: 611/1000 (61%)
+Test set:local_trigger1 Poison Accuracy: 38/1000 (4%)
+Test set:local_trigger2 Poison Accuracy: 0/1000 (0%)
+Test set:local_trigger3 Poison Accuracy: 0/1000 (0%)
+Test set:Main Accuracy: 8734/10000 (87%)
+Test set:Globol Trigger Poison Accuracy: 0/1000 (0%)
+Done in 5.702434778213501 sec.
+select client [89, 539, 64, 879, 56, 96, 627, 753, 39]
+------------------poisoning-------------------
+l2 norm of benign user before server clipping 0.37621113823519814
+l2 norm of benign user after server clipping 0.3151567694213655
+Poison Train Epoch: 0 	Loss: 0.240478
+Poison Train Epoch: 1 	Loss: 0.215176
+Poison Train Epoch: 2 	Loss: 0.194006
+Poison Train Epoch: 3 	Loss: 0.094602
+Poison Train Epoch: 4 	Loss: 0.090390
+Poison Train Epoch: 5 	Loss: 0.061699
+Poison Train Epoch: 6 	Loss: 0.071332
+Poison Train Epoch: 7 	Loss: 0.068255
+Poison Train Epoch: 8 	Loss: 0.050684
+Poison Train Epoch: 9 	Loss: 0.048726
+Poison Train Epoch: 10 	Loss: 0.043199
+Poison Train Epoch: 11 	Loss: 0.049876
+Poison Train Epoch: 12 	Loss: 0.045581
+Poison Train Epoch: 13 	Loss: 0.036755
+Poison Train Epoch: 14 	Loss: 0.024886
+Poison Train Epoch: 15 	Loss: 0.022777
+Poison Train Epoch: 16 	Loss: 0.031656
+Poison Train Epoch: 17 	Loss: 0.036046
+Poison Train Epoch: 18 	Loss: 0.024847
+Poison Train Epoch: 19 	Loss: 0.026349
+___Test : epoch: 1840: Average loss: 0.3924, Accuracy: 8653/10000.0 (86.5300%)
+benign test loss (after fedavg) 0.3923668092727661
+benign test acc (after fedavg) 86.53
+Test set:local_trigger0 Poison Accuracy: 771/1000 (77%)
+Test set:local_trigger1 Poison Accuracy: 877/1000 (88%)
+Test set:local_trigger2 Poison Accuracy: 836/1000 (84%)
+Test set:local_trigger3 Poison Accuracy: 836/1000 (84%)
+Test set:Main Accuracy: 8653/10000 (87%)
+Test set:Globol Trigger Poison Accuracy: 455/1000 (46%)
+Done in 8.593599081039429 sec.
+select client [802, 957, 972, 69, 452, 439, 325, 949, 81, 301]
+l2 norm of benign user before server clipping 0.5140743553638458
+l2 norm of benign user after server clipping 0.32949513792991636
+___Test : epoch: 1841: Average loss: 0.4452, Accuracy: 8558/10000.0 (85.5800%)
+benign test loss (after fedavg) 0.4452262414932251
+benign test acc (after fedavg) 85.58
+Test set:local_trigger0 Poison Accuracy: 891/1000 (89%)
+Test set:local_trigger1 Poison Accuracy: 700/1000 (70%)
+Test set:local_trigger2 Poison Accuracy: 395/1000 (40%)
+Test set:local_trigger3 Poison Accuracy: 371/1000 (37%)
+Test set:Main Accuracy: 8558/10000 (86%)
+Test set:Globol Trigger Poison Accuracy: 13/1000 (1%)
+Done in 5.936906099319458 sec.
+select client [836, 674, 746, 856, 300, 186, 303, 529, 622, 410]
+l2 norm of benign user before server clipping 0.28508179634809494
+l2 norm of benign user after server clipping 0.28508179634809494
+___Test : epoch: 1842: Average loss: 0.3923, Accuracy: 8711/10000.0 (87.1100%)
+benign test loss (after fedavg) 0.39229417476654055
+benign test acc (after fedavg) 87.11
+Test set:local_trigger0 Poison Accuracy: 855/1000 (86%)
+Test set:local_trigger1 Poison Accuracy: 376/1000 (38%)
+Test set:local_trigger2 Poison Accuracy: 3/1000 (0%)
+Test set:local_trigger3 Poison Accuracy: 31/1000 (3%)
+Test set:Main Accuracy: 8711/10000 (87%)
+Test set:Globol Trigger Poison Accuracy: 0/1000 (0%)
+Done in 5.92514443397522 sec.
+select client [611, 512, 562, 955, 360, 349, 717, 874, 696, 375]
+l2 norm of benign user before server clipping 0.38781783580780027
+l2 norm of benign user after server clipping 0.3463744938373566
+___Test : epoch: 1843: Average loss: 0.3969, Accuracy: 8703/10000.0 (87.0300%)
+benign test loss (after fedavg) 0.39690321006774903
+benign test acc (after fedavg) 87.03
+Test set:local_trigger0 Poison Accuracy: 868/1000 (87%)
+Test set:local_trigger1 Poison Accuracy: 429/1000 (43%)
+Test set:local_trigger2 Poison Accuracy: 9/1000 (1%)
+Test set:local_trigger3 Poison Accuracy: 35/1000 (4%)
+Test set:Main Accuracy: 8703/10000 (87%)
+Test set:Globol Trigger Poison Accuracy: 0/1000 (0%)
+Done in 5.856648683547974 sec.
+select client [230, 585, 385, 754, 962, 511, 759, 677, 863, 298]
+l2 norm of benign user before server clipping 0.3312008947134018
+l2 norm of benign user after server clipping 0.2994146913290024
+___Test : epoch: 1844: Average loss: 0.3853, Accuracy: 8721/10000.0 (87.2100%)
+benign test loss (after fedavg) 0.38529750633239745
+benign test acc (after fedavg) 87.21
+Test set:local_trigger0 Poison Accuracy: 896/1000 (90%)
+Test set:local_trigger1 Poison Accuracy: 731/1000 (73%)
+Test set:local_trigger2 Poison Accuracy: 530/1000 (53%)
+Test set:local_trigger3 Poison Accuracy: 206/1000 (21%)
+Test set:Main Accuracy: 8721/10000 (87%)
+Test set:Globol Trigger Poison Accuracy: 44/1000 (4%)
+Done in 5.592268943786621 sec.
+select client [519, 946, 616, 260, 783, 109, 45, 294, 568]
+------------------poisoning-------------------
+l2 norm of benign user before server clipping 0.266063478257921
+l2 norm of benign user after server clipping 0.266063478257921
+Poison Train Epoch: 0 	Loss: 0.187762
+Poison Train Epoch: 1 	Loss: 0.193913
+Poison Train Epoch: 2 	Loss: 0.198889
+Poison Train Epoch: 3 	Loss: 0.178482
+Poison Train Epoch: 4 	Loss: 0.240159
+Poison Train Epoch: 5 	Loss: 0.194656
+Poison Train Epoch: 6 	Loss: 0.181562
+Poison Train Epoch: 7 	Loss: 0.170300
+Poison Train Epoch: 8 	Loss: 0.167997
+Poison Train Epoch: 9 	Loss: 0.178572
+Poison Train Epoch: 10 	Loss: 0.171190
+Poison Train Epoch: 11 	Loss: 0.124746
+Poison Train Epoch: 12 	Loss: 0.144356
+Poison Train Epoch: 13 	Loss: 0.157071
+Poison Train Epoch: 14 	Loss: 0.178177
+Poison Train Epoch: 15 	Loss: 0.136504
+Poison Train Epoch: 16 	Loss: 0.126586
+Poison Train Epoch: 17 	Loss: 0.163772
+Poison Train Epoch: 18 	Loss: 0.132967
+Poison Train Epoch: 19 	Loss: 0.140644
+___Test : epoch: 1845: Average loss: 0.3844, Accuracy: 8690/10000.0 (86.9000%)
+benign test loss (after fedavg) 0.3843939447402954
+benign test acc (after fedavg) 86.9
+Test set:local_trigger0 Poison Accuracy: 723/1000 (72%)
+Test set:local_trigger1 Poison Accuracy: 930/1000 (93%)
+Test set:local_trigger2 Poison Accuracy: 1000/1000 (100%)
+Test set:local_trigger3 Poison Accuracy: 978/1000 (98%)
+Test set:Main Accuracy: 8690/10000 (87%)
+Test set:Globol Trigger Poison Accuracy: 998/1000 (100%)
+Done in 8.592638969421387 sec.
+select client [313, 57, 396, 232, 116, 547, 278, 119, 307, 636]
+l2 norm of benign user before server clipping 0.270555754005909
+l2 norm of benign user after server clipping 0.270555754005909
+___Test : epoch: 1846: Average loss: 0.3742, Accuracy: 8735/10000.0 (87.3500%)
+benign test loss (after fedavg) 0.3741648313522339
+benign test acc (after fedavg) 87.35000000000001
+Test set:local_trigger0 Poison Accuracy: 957/1000 (96%)
+Test set:local_trigger1 Poison Accuracy: 905/1000 (90%)
+Test set:local_trigger2 Poison Accuracy: 919/1000 (92%)
+Test set:local_trigger3 Poison Accuracy: 614/1000 (61%)
+Test set:Main Accuracy: 8735/10000 (87%)
+Test set:Globol Trigger Poison Accuracy: 457/1000 (46%)
+Done in 5.7055370807647705 sec.
+select client [859, 248, 733, 543, 971, 23, 315, 266, 138, 246]
+l2 norm of benign user before server clipping 0.4919154390692711
+l2 norm of benign user after server clipping 0.31060749143362043
+___Test : epoch: 1847: Average loss: 0.4089, Accuracy: 8626/10000.0 (86.2600%)
+benign test loss (after fedavg) 0.40888666553497316
+benign test acc (after fedavg) 86.26
+Test set:local_trigger0 Poison Accuracy: 947/1000 (95%)
+Test set:local_trigger1 Poison Accuracy: 938/1000 (94%)
+Test set:local_trigger2 Poison Accuracy: 999/1000 (100%)
+Test set:local_trigger3 Poison Accuracy: 932/1000 (93%)
+Test set:Main Accuracy: 8626/10000 (86%)
+Test set:Globol Trigger Poison Accuracy: 998/1000 (100%)
+Done in 5.668966054916382 sec.
+select client [745, 153, 874, 686, 991, 549, 233, 327, 929, 768]
+l2 norm of benign user before server clipping 0.2545923933386803
+l2 norm of benign user after server clipping 0.2545923933386803
+___Test : epoch: 1848: Average loss: 0.3801, Accuracy: 8736/10000.0 (87.3600%)
+benign test loss (after fedavg) 0.3800855754852295
+benign test acc (after fedavg) 87.36
+Test set:local_trigger0 Poison Accuracy: 957/1000 (96%)
+Test set:local_trigger1 Poison Accuracy: 984/1000 (98%)
+Test set:local_trigger2 Poison Accuracy: 1000/1000 (100%)
+Test set:local_trigger3 Poison Accuracy: 993/1000 (99%)
+Test set:Main Accuracy: 8736/10000 (87%)
+Test set:Globol Trigger Poison Accuracy: 1000/1000 (100%)
+Done in 5.769474267959595 sec.
+select client [630, 68, 460, 287, 547, 944, 251, 489, 963, 569]
+l2 norm of benign user before server clipping 0.4961427107453346
+l2 norm of benign user after server clipping 0.3816884711384773
+___Test : epoch: 1849: Average loss: 0.4074, Accuracy: 8645/10000.0 (86.4500%)
+benign test loss (after fedavg) 0.40739465827941895
+benign test acc (after fedavg) 86.45
+Test set:local_trigger0 Poison Accuracy: 961/1000 (96%)
+Test set:local_trigger1 Poison Accuracy: 991/1000 (99%)
+Test set:local_trigger2 Poison Accuracy: 1000/1000 (100%)
+Test set:local_trigger3 Poison Accuracy: 985/1000 (98%)
+Test set:Main Accuracy: 8645/10000 (86%)
+Test set:Globol Trigger Poison Accuracy: 1000/1000 (100%)
+Done in 5.911017179489136 sec.
+select client [264, 461, 288, 971, 894, 956, 383, 673, 612]
+------------------poisoning-------------------
+l2 norm of benign user before server clipping 0.3252173629071977
+l2 norm of benign user after server clipping 0.3181569344467587
+Poison Train Epoch: 0 	Loss: 0.364706
+Poison Train Epoch: 1 	Loss: 0.337389
+Poison Train Epoch: 2 	Loss: 0.355221
+Poison Train Epoch: 3 	Loss: 0.317070
+Poison Train Epoch: 4 	Loss: 0.209652
+Poison Train Epoch: 5 	Loss: 0.263601
+Poison Train Epoch: 6 	Loss: 0.207195
+Poison Train Epoch: 7 	Loss: 0.255428
+Poison Train Epoch: 8 	Loss: 0.293648
+Poison Train Epoch: 9 	Loss: 0.180452
+Poison Train Epoch: 10 	Loss: 0.170675
+Poison Train Epoch: 11 	Loss: 0.173904
+Poison Train Epoch: 12 	Loss: 0.191624
+Poison Train Epoch: 13 	Loss: 0.175720
+Poison Train Epoch: 14 	Loss: 0.109935
+Poison Train Epoch: 15 	Loss: 0.181199
+Poison Train Epoch: 16 	Loss: 0.158981
+Poison Train Epoch: 17 	Loss: 0.152205
+Poison Train Epoch: 18 	Loss: 0.130020
+Poison Train Epoch: 19 	Loss: 0.141816
+___Test : epoch: 1850: Average loss: 0.4288, Accuracy: 8566/10000.0 (85.6600%)
+benign test loss (after fedavg) 0.4288026617050171
+benign test acc (after fedavg) 85.66
+Test set:local_trigger0 Poison Accuracy: 512/1000 (51%)
+Test set:local_trigger1 Poison Accuracy: 912/1000 (91%)
+Test set:local_trigger2 Poison Accuracy: 1000/1000 (100%)
+Test set:local_trigger3 Poison Accuracy: 994/1000 (99%)
+Test set:Main Accuracy: 8566/10000 (86%)
+Test set:Globol Trigger Poison Accuracy: 1000/1000 (100%)
+Done in 8.485289812088013 sec.
+select client [407, 700, 618, 593, 134, 956, 149, 731, 233, 49]
+l2 norm of benign user before server clipping 0.3508187934756279
+l2 norm of benign user after server clipping 0.2946801707148552
+___Test : epoch: 1851: Average loss: 0.3786, Accuracy: 8738/10000.0 (87.3800%)
+benign test loss (after fedavg) 0.378575923538208
+benign test acc (after fedavg) 87.38
+Test set:local_trigger0 Poison Accuracy: 973/1000 (97%)
+Test set:local_trigger1 Poison Accuracy: 996/1000 (100%)
+Test set:local_trigger2 Poison Accuracy: 1000/1000 (100%)
+Test set:local_trigger3 Poison Accuracy: 997/1000 (100%)
+Test set:Main Accuracy: 8738/10000 (87%)
+Test set:Globol Trigger Poison Accuracy: 1000/1000 (100%)
+Done in 5.694910526275635 sec.
+select client [733, 471, 661, 431, 462, 556, 825, 271, 51, 37]
+l2 norm of benign user before server clipping 0.4937101066112518
+l2 norm of benign user after server clipping 0.33174659609794616
+___Test : epoch: 1852: Average loss: 0.3924, Accuracy: 8706/10000.0 (87.0600%)
+benign test loss (after fedavg) 0.3923832914352417
+benign test acc (after fedavg) 87.06
+Test set:local_trigger0 Poison Accuracy: 976/1000 (98%)
+Test set:local_trigger1 Poison Accuracy: 992/1000 (99%)
+Test set:local_trigger2 Poison Accuracy: 1000/1000 (100%)
+Test set:local_trigger3 Poison Accuracy: 983/1000 (98%)
+Test set:Main Accuracy: 8706/10000 (87%)
+Test set:Globol Trigger Poison Accuracy: 1000/1000 (100%)
+Done in 5.752557754516602 sec.
+select client [748, 652, 234, 755, 275, 793, 207, 151, 311, 597]
+l2 norm of benign user before server clipping 0.49109637588262556
+l2 norm of benign user after server clipping 0.3058623358607292
+___Test : epoch: 1853: Average loss: 0.4429, Accuracy: 8556/10000.0 (85.5600%)
+benign test loss (after fedavg) 0.4429443344116211
+benign test acc (after fedavg) 85.56
+Test set:local_trigger0 Poison Accuracy: 987/1000 (99%)
+Test set:local_trigger1 Poison Accuracy: 998/1000 (100%)
+Test set:local_trigger2 Poison Accuracy: 1000/1000 (100%)
+Test set:local_trigger3 Poison Accuracy: 994/1000 (99%)
+Test set:Main Accuracy: 8556/10000 (86%)
+Test set:Globol Trigger Poison Accuracy: 1000/1000 (100%)
+Done in 5.864116430282593 sec.
+select client [395, 280, 745, 402, 386, 450, 463, 181, 67, 599]
+l2 norm of benign user before server clipping 0.37637802958488464
+l2 norm of benign user after server clipping 0.3532989263534546
+___Test : epoch: 1854: Average loss: 0.3837, Accuracy: 8729/10000.0 (87.2900%)
+benign test loss (after fedavg) 0.38372387561798094
+benign test acc (after fedavg) 87.29
+Test set:local_trigger0 Poison Accuracy: 959/1000 (96%)
+Test set:local_trigger1 Poison Accuracy: 979/1000 (98%)
+Test set:local_trigger2 Poison Accuracy: 999/1000 (100%)
+Test set:local_trigger3 Poison Accuracy: 961/1000 (96%)
+Test set:Main Accuracy: 8729/10000 (87%)
+Test set:Globol Trigger Poison Accuracy: 1000/1000 (100%)
+Done in 5.732654809951782 sec.
+select client [636, 42, 283, 594, 454, 369, 491, 707, 254]
+------------------poisoning-------------------
+l2 norm of benign user before server clipping 0.47631440808375675
+l2 norm of benign user after server clipping 0.36250388870636624
+Poison Train Epoch: 0 	Loss: 0.324549
+Poison Train Epoch: 1 	Loss: 0.253833
+Poison Train Epoch: 2 	Loss: 0.294087
+Poison Train Epoch: 3 	Loss: 0.232960
+Poison Train Epoch: 4 	Loss: 0.216181
+Poison Train Epoch: 5 	Loss: 0.181172
+Poison Train Epoch: 6 	Loss: 0.228258
+Poison Train Epoch: 7 	Loss: 0.142645
+Poison Train Epoch: 8 	Loss: 0.140453
+Poison Train Epoch: 9 	Loss: 0.206822
+Poison Train Epoch: 10 	Loss: 0.198477
+Poison Train Epoch: 11 	Loss: 0.183229
+Poison Train Epoch: 12 	Loss: 0.157722
+Poison Train Epoch: 13 	Loss: 0.163114
+Poison Train Epoch: 14 	Loss: 0.194313
+Poison Train Epoch: 15 	Loss: 0.173763
+Poison Train Epoch: 16 	Loss: 0.148932
+Poison Train Epoch: 17 	Loss: 0.141654
+Poison Train Epoch: 18 	Loss: 0.141762
+Poison Train Epoch: 19 	Loss: 0.122170
+___Test : epoch: 1855: Average loss: 0.5433, Accuracy: 8171/10000.0 (81.7100%)
+benign test loss (after fedavg) 0.5432777772903442
+benign test acc (after fedavg) 81.71000000000001
+Test set:local_trigger0 Poison Accuracy: 434/1000 (43%)
+Test set:local_trigger1 Poison Accuracy: 896/1000 (90%)
+Test set:local_trigger2 Poison Accuracy: 999/1000 (100%)
+Test set:local_trigger3 Poison Accuracy: 982/1000 (98%)
+Test set:Main Accuracy: 8171/10000 (82%)
+Test set:Globol Trigger Poison Accuracy: 999/1000 (100%)
+Done in 8.766297817230225 sec.
+select client [826, 125, 567, 736, 235, 198, 609, 71, 979, 880]
+l2 norm of benign user before server clipping 0.3839011639356613
+l2 norm of benign user after server clipping 0.3201109081506729
+___Test : epoch: 1856: Average loss: 0.3871, Accuracy: 8711/10000.0 (87.1100%)
+benign test loss (after fedavg) 0.3871014669418335
+benign test acc (after fedavg) 87.11
+Test set:local_trigger0 Poison Accuracy: 980/1000 (98%)
+Test set:local_trigger1 Poison Accuracy: 981/1000 (98%)
+Test set:local_trigger2 Poison Accuracy: 995/1000 (100%)
+Test set:local_trigger3 Poison Accuracy: 977/1000 (98%)
+Test set:Main Accuracy: 8711/10000 (87%)
+Test set:Globol Trigger Poison Accuracy: 986/1000 (99%)
+Done in 5.958779335021973 sec.
+select client [778, 812, 752, 706, 709, 62, 958, 931, 476, 730]
+l2 norm of benign user before server clipping 0.5653187170624733
+l2 norm of benign user after server clipping 0.4011212959885597
+___Test : epoch: 1857: Average loss: 0.3937, Accuracy: 8705/10000.0 (87.0500%)
+benign test loss (after fedavg) 0.3936635345458984
+benign test acc (after fedavg) 87.05000000000001
+Test set:local_trigger0 Poison Accuracy: 963/1000 (96%)
+Test set:local_trigger1 Poison Accuracy: 979/1000 (98%)
+Test set:local_trigger2 Poison Accuracy: 999/1000 (100%)
+Test set:local_trigger3 Poison Accuracy: 979/1000 (98%)
+Test set:Main Accuracy: 8705/10000 (87%)
+Test set:Globol Trigger Poison Accuracy: 994/1000 (99%)
+Done in 5.908371925354004 sec.
+select client [318, 870, 841, 305, 822, 647, 321, 866, 126, 967]
+l2 norm of benign user before server clipping 0.25523101836442946
+l2 norm of benign user after server clipping 0.25523101836442946
+___Test : epoch: 1858: Average loss: 0.3785, Accuracy: 8736/10000.0 (87.3600%)
+benign test loss (after fedavg) 0.37852473869323733
+benign test acc (after fedavg) 87.36
+Test set:local_trigger0 Poison Accuracy: 958/1000 (96%)
+Test set:local_trigger1 Poison Accuracy: 984/1000 (98%)
+Test set:local_trigger2 Poison Accuracy: 998/1000 (100%)
+Test set:local_trigger3 Poison Accuracy: 985/1000 (98%)
+Test set:Main Accuracy: 8736/10000 (87%)
+Test set:Globol Trigger Poison Accuracy: 1000/1000 (100%)
+Done in 5.831141948699951 sec.
+select client [969, 428, 944, 985, 121, 403, 305, 829, 283, 17]
+l2 norm of benign user before server clipping 0.3155580021440983
+l2 norm of benign user after server clipping 0.31066619530320166
+___Test : epoch: 1859: Average loss: 0.3819, Accuracy: 8705/10000.0 (87.0500%)
+benign test loss (after fedavg) 0.38191003122329714
+benign test acc (after fedavg) 87.05000000000001
+Test set:local_trigger0 Poison Accuracy: 975/1000 (98%)
+Test set:local_trigger1 Poison Accuracy: 978/1000 (98%)
+Test set:local_trigger2 Poison Accuracy: 970/1000 (97%)
+Test set:local_trigger3 Poison Accuracy: 980/1000 (98%)
+Test set:Main Accuracy: 8705/10000 (87%)
+Test set:Globol Trigger Poison Accuracy: 993/1000 (99%)
+Done in 5.868129014968872 sec.
+select client [989, 527, 407, 489, 118, 894, 242, 334, 653, 96]
+l2 norm of benign user before server clipping 0.32819508761167526
+l2 norm of benign user after server clipping 0.3164972707629204
+___Test : epoch: 1860: Average loss: 0.3748, Accuracy: 8764/10000.0 (87.6400%)
+benign test loss (after fedavg) 0.37478811836242676
+benign test acc (after fedavg) 87.64
+Test set:local_trigger0 Poison Accuracy: 963/1000 (96%)
+Test set:local_trigger1 Poison Accuracy: 968/1000 (97%)
+Test set:local_trigger2 Poison Accuracy: 824/1000 (82%)
+Test set:local_trigger3 Poison Accuracy: 970/1000 (97%)
+Test set:Main Accuracy: 8764/10000 (88%)
+Test set:Globol Trigger Poison Accuracy: 914/1000 (91%)
+Done in 5.731400489807129 sec.
+select client [519, 520, 901, 418, 181, 222, 590, 966, 772, 624]
+l2 norm of benign user before server clipping 0.3555952787399292
+l2 norm of benign user after server clipping 0.28623021841049195
+___Test : epoch: 1861: Average loss: 0.3825, Accuracy: 8750/10000.0 (87.5000%)
+benign test loss (after fedavg) 0.38247489585876465
+benign test acc (after fedavg) 87.5
+Test set:local_trigger0 Poison Accuracy: 964/1000 (96%)
+Test set:local_trigger1 Poison Accuracy: 970/1000 (97%)
+Test set:local_trigger2 Poison Accuracy: 957/1000 (96%)
+Test set:local_trigger3 Poison Accuracy: 962/1000 (96%)
+Test set:Main Accuracy: 8750/10000 (88%)
+Test set:Globol Trigger Poison Accuracy: 977/1000 (98%)
+Done in 5.659697771072388 sec.
+select client [568, 482, 142, 258, 593, 269, 481, 677, 241, 789]
+l2 norm of benign user before server clipping 0.25345217883586885
+l2 norm of benign user after server clipping 0.25345217883586885
+___Test : epoch: 1862: Average loss: 0.3699, Accuracy: 8769/10000.0 (87.6900%)
+benign test loss (after fedavg) 0.3698732172012329
+benign test acc (after fedavg) 87.69
+Test set:local_trigger0 Poison Accuracy: 965/1000 (96%)
+Test set:local_trigger1 Poison Accuracy: 991/1000 (99%)
+Test set:local_trigger2 Poison Accuracy: 1000/1000 (100%)
+Test set:local_trigger3 Poison Accuracy: 992/1000 (99%)
+Test set:Main Accuracy: 8769/10000 (88%)
+Test set:Globol Trigger Poison Accuracy: 1000/1000 (100%)
+Done in 5.918557643890381 sec.
+select client [402, 270, 828, 241, 542, 512, 25, 441, 388, 43]
+l2 norm of benign user before server clipping 0.2695674538612366
+l2 norm of benign user after server clipping 0.2695674538612366
+___Test : epoch: 1863: Average loss: 0.3626, Accuracy: 8809/10000.0 (88.0900%)
+benign test loss (after fedavg) 0.3626277879714966
+benign test acc (after fedavg) 88.09
+Test set:local_trigger0 Poison Accuracy: 966/1000 (97%)
+Test set:local_trigger1 Poison Accuracy: 976/1000 (98%)
+Test set:local_trigger2 Poison Accuracy: 981/1000 (98%)
+Test set:local_trigger3 Poison Accuracy: 965/1000 (96%)
+Test set:Main Accuracy: 8809/10000 (88%)
+Test set:Globol Trigger Poison Accuracy: 998/1000 (100%)
+Done in 5.721248149871826 sec.
+select client [356, 422, 33, 820, 389, 598, 626, 928, 972, 637]
+l2 norm of benign user before server clipping 0.2317290723323822
+l2 norm of benign user after server clipping 0.2317290723323822
+___Test : epoch: 1864: Average loss: 0.3665, Accuracy: 8811/10000.0 (88.1100%)
+benign test loss (after fedavg) 0.3665152296066284
+benign test acc (after fedavg) 88.11
+Test set:local_trigger0 Poison Accuracy: 967/1000 (97%)
+Test set:local_trigger1 Poison Accuracy: 969/1000 (97%)
+Test set:local_trigger2 Poison Accuracy: 974/1000 (97%)
+Test set:local_trigger3 Poison Accuracy: 955/1000 (96%)
+Test set:Main Accuracy: 8811/10000 (88%)
+Test set:Globol Trigger Poison Accuracy: 983/1000 (98%)
+Done in 5.680006504058838 sec.
+select client [925, 165, 200, 825, 998, 348, 989, 498, 340, 54]
+l2 norm of benign user before server clipping 0.24609408974647523
+l2 norm of benign user after server clipping 0.24609408974647523
+___Test : epoch: 1865: Average loss: 0.3630, Accuracy: 8807/10000.0 (88.0700%)
+benign test loss (after fedavg) 0.3630367204666138
+benign test acc (after fedavg) 88.07000000000001
+Test set:local_trigger0 Poison Accuracy: 948/1000 (95%)
+Test set:local_trigger1 Poison Accuracy: 963/1000 (96%)
+Test set:local_trigger2 Poison Accuracy: 934/1000 (93%)
+Test set:local_trigger3 Poison Accuracy: 941/1000 (94%)
+Test set:Main Accuracy: 8807/10000 (88%)
+Test set:Globol Trigger Poison Accuracy: 958/1000 (96%)
+Done in 5.6107752323150635 sec.
+select client [585, 290, 603, 566, 786, 990, 202, 376, 982, 633]
+l2 norm of benign user before server clipping 0.3216880589723587
+l2 norm of benign user after server clipping 0.25670582950115206
+___Test : epoch: 1866: Average loss: 0.3619, Accuracy: 8804/10000.0 (88.0400%)
+benign test loss (after fedavg) 0.3619242322921753
+benign test acc (after fedavg) 88.03999999999999
+Test set:local_trigger0 Poison Accuracy: 907/1000 (91%)
+Test set:local_trigger1 Poison Accuracy: 743/1000 (74%)
+Test set:local_trigger2 Poison Accuracy: 2/1000 (0%)
+Test set:local_trigger3 Poison Accuracy: 452/1000 (45%)
+Test set:Main Accuracy: 8804/10000 (88%)
+Test set:Globol Trigger Poison Accuracy: 0/1000 (0%)
+Done in 5.837820053100586 sec.
+select client [379, 117, 440, 200, 253, 267, 213, 145, 420, 967]
+l2 norm of benign user before server clipping 0.3514613300561905
+l2 norm of benign user after server clipping 0.311906686425209
+___Test : epoch: 1867: Average loss: 0.3650, Accuracy: 8774/10000.0 (87.7400%)
+benign test loss (after fedavg) 0.3649671266555786
+benign test acc (after fedavg) 87.74
+Test set:local_trigger0 Poison Accuracy: 937/1000 (94%)
+Test set:local_trigger1 Poison Accuracy: 899/1000 (90%)
+Test set:local_trigger2 Poison Accuracy: 81/1000 (8%)
+Test set:local_trigger3 Poison Accuracy: 710/1000 (71%)
+Test set:Main Accuracy: 8774/10000 (88%)
+Test set:Globol Trigger Poison Accuracy: 17/1000 (2%)
+Done in 5.66087794303894 sec.
+select client [323, 844, 137, 490, 631, 801, 884, 172, 947, 672]
+l2 norm of benign user before server clipping 0.39173705130815506
+l2 norm of benign user after server clipping 0.33259284049272536
+___Test : epoch: 1868: Average loss: 0.3772, Accuracy: 8752/10000.0 (87.5200%)
+benign test loss (after fedavg) 0.3772216562271118
+benign test acc (after fedavg) 87.52
+Test set:local_trigger0 Poison Accuracy: 829/1000 (83%)
+Test set:local_trigger1 Poison Accuracy: 854/1000 (85%)
+Test set:local_trigger2 Poison Accuracy: 120/1000 (12%)
+Test set:local_trigger3 Poison Accuracy: 754/1000 (75%)
+Test set:Main Accuracy: 8752/10000 (88%)
+Test set:Globol Trigger Poison Accuracy: 85/1000 (8%)
+Done in 5.872269868850708 sec.
+select client [998, 907, 531, 617, 90, 309, 864, 387, 67, 53]
+l2 norm of benign user before server clipping 0.3798025980591774
+l2 norm of benign user after server clipping 0.31990371495485304
+___Test : epoch: 1869: Average loss: 0.3990, Accuracy: 8657/10000.0 (86.5700%)
+benign test loss (after fedavg) 0.3989508148193359
+benign test acc (after fedavg) 86.57000000000001
+Test set:local_trigger0 Poison Accuracy: 892/1000 (89%)
+Test set:local_trigger1 Poison Accuracy: 710/1000 (71%)
+Test set:local_trigger2 Poison Accuracy: 0/1000 (0%)
+Test set:local_trigger3 Poison Accuracy: 450/1000 (45%)
+Test set:Main Accuracy: 8657/10000 (87%)
+Test set:Globol Trigger Poison Accuracy: 0/1000 (0%)
+Done in 6.0201191902160645 sec.
+select client [785, 639, 755, 741, 197, 664, 525, 215, 699, 927]
+l2 norm of benign user before server clipping 0.2530599758028984
+l2 norm of benign user after server clipping 0.2530599758028984
+___Test : epoch: 1870: Average loss: 0.3755, Accuracy: 8745/10000.0 (87.4500%)
+benign test loss (after fedavg) 0.37550774221420286
+benign test acc (after fedavg) 87.45
+Test set:local_trigger0 Poison Accuracy: 953/1000 (95%)
+Test set:local_trigger1 Poison Accuracy: 909/1000 (91%)
+Test set:local_trigger2 Poison Accuracy: 59/1000 (6%)
+Test set:local_trigger3 Poison Accuracy: 833/1000 (83%)
+Test set:Main Accuracy: 8745/10000 (87%)
+Test set:Globol Trigger Poison Accuracy: 39/1000 (4%)
+Done in 5.8480682373046875 sec.
+select client [515, 407, 946, 880, 921, 84, 958, 446, 806, 420]
+l2 norm of benign user before server clipping 0.26974392086267474
+l2 norm of benign user after server clipping 0.26109331399202346
+___Test : epoch: 1871: Average loss: 0.3738, Accuracy: 8751/10000.0 (87.5100%)
+benign test loss (after fedavg) 0.3738134414672852
+benign test acc (after fedavg) 87.51
+Test set:local_trigger0 Poison Accuracy: 950/1000 (95%)
+Test set:local_trigger1 Poison Accuracy: 904/1000 (90%)
+Test set:local_trigger2 Poison Accuracy: 74/1000 (7%)
+Test set:local_trigger3 Poison Accuracy: 854/1000 (85%)
+Test set:Main Accuracy: 8751/10000 (88%)
+Test set:Globol Trigger Poison Accuracy: 144/1000 (14%)
+Done in 5.7449963092803955 sec.
+select client [290, 571, 955, 50, 978, 864, 108, 489, 327, 504]
+l2 norm of benign user before server clipping 0.2993323102593422
+l2 norm of benign user after server clipping 0.26960792690515517
+___Test : epoch: 1872: Average loss: 0.3612, Accuracy: 8804/10000.0 (88.0400%)
+benign test loss (after fedavg) 0.36115524282455447
+benign test acc (after fedavg) 88.03999999999999
+Test set:local_trigger0 Poison Accuracy: 955/1000 (96%)
+Test set:local_trigger1 Poison Accuracy: 950/1000 (95%)
+Test set:local_trigger2 Poison Accuracy: 693/1000 (69%)
+Test set:local_trigger3 Poison Accuracy: 948/1000 (95%)
+Test set:Main Accuracy: 8804/10000 (88%)
+Test set:Globol Trigger Poison Accuracy: 906/1000 (91%)
+Done in 5.969229459762573 sec.
+select client [368, 60, 650, 16, 64, 52, 793, 397, 960, 749]
+l2 norm of benign user before server clipping 0.23208750784397125
+l2 norm of benign user after server clipping 0.23208750784397125
+___Test : epoch: 1873: Average loss: 0.3662, Accuracy: 8784/10000.0 (87.8400%)
+benign test loss (after fedavg) 0.366210444355011
+benign test acc (after fedavg) 87.83999999999999
+Test set:local_trigger0 Poison Accuracy: 917/1000 (92%)
+Test set:local_trigger1 Poison Accuracy: 938/1000 (94%)
+Test set:local_trigger2 Poison Accuracy: 254/1000 (25%)
+Test set:local_trigger3 Poison Accuracy: 916/1000 (92%)
+Test set:Main Accuracy: 8784/10000 (88%)
+Test set:Globol Trigger Poison Accuracy: 464/1000 (46%)
+Done in 5.61408257484436 sec.
+select client [272, 468, 569, 155, 103, 577, 282, 494, 981, 937]
+l2 norm of benign user before server clipping 0.25970697999000547
+l2 norm of benign user after server clipping 0.2495157539844513
+___Test : epoch: 1874: Average loss: 0.3699, Accuracy: 8764/10000.0 (87.6400%)
+benign test loss (after fedavg) 0.3698823516845703
+benign test acc (after fedavg) 87.64
+Test set:local_trigger0 Poison Accuracy: 948/1000 (95%)
+Test set:local_trigger1 Poison Accuracy: 936/1000 (94%)
+Test set:local_trigger2 Poison Accuracy: 485/1000 (48%)
+Test set:local_trigger3 Poison Accuracy: 921/1000 (92%)
+Test set:Main Accuracy: 8764/10000 (88%)
+Test set:Globol Trigger Poison Accuracy: 629/1000 (63%)
+Done in 5.91215443611145 sec.
+select client [754, 209, 731, 505, 174, 57, 876, 169, 340, 156]
+l2 norm of benign user before server clipping 0.27155041247606276
+l2 norm of benign user after server clipping 0.2597455933690071
+___Test : epoch: 1875: Average loss: 0.3618, Accuracy: 8803/10000.0 (88.0300%)
+benign test loss (after fedavg) 0.3618460664749146
+benign test acc (after fedavg) 88.03
+Test set:local_trigger0 Poison Accuracy: 930/1000 (93%)
+Test set:local_trigger1 Poison Accuracy: 933/1000 (93%)
+Test set:local_trigger2 Poison Accuracy: 541/1000 (54%)
+Test set:local_trigger3 Poison Accuracy: 902/1000 (90%)
+Test set:Main Accuracy: 8803/10000 (88%)
+Test set:Globol Trigger Poison Accuracy: 713/1000 (71%)
+Done in 5.644806146621704 sec.
+select client [737, 750, 302, 288, 712, 926, 937, 699, 254, 785]
+l2 norm of benign user before server clipping 0.27901227176189425
+l2 norm of benign user after server clipping 0.2675188332796097
+___Test : epoch: 1876: Average loss: 0.3676, Accuracy: 8778/10000.0 (87.7800%)
+benign test loss (after fedavg) 0.36755663795471194
+benign test acc (after fedavg) 87.78
+Test set:local_trigger0 Poison Accuracy: 951/1000 (95%)
+Test set:local_trigger1 Poison Accuracy: 943/1000 (94%)
+Test set:local_trigger2 Poison Accuracy: 551/1000 (55%)
+Test set:local_trigger3 Poison Accuracy: 927/1000 (93%)
+Test set:Main Accuracy: 8778/10000 (88%)
+Test set:Globol Trigger Poison Accuracy: 794/1000 (79%)
+Done in 5.935579538345337 sec.
+select client [568, 571, 864, 57, 115, 381, 690, 823, 503, 480]
+l2 norm of benign user before server clipping 0.4059044197201729
+l2 norm of benign user after server clipping 0.36010664254426955
+___Test : epoch: 1877: Average loss: 0.3851, Accuracy: 8726/10000.0 (87.2600%)
+benign test loss (after fedavg) 0.3851287868499756
+benign test acc (after fedavg) 87.26
+Test set:local_trigger0 Poison Accuracy: 885/1000 (88%)
+Test set:local_trigger1 Poison Accuracy: 749/1000 (75%)
+Test set:local_trigger2 Poison Accuracy: 21/1000 (2%)
+Test set:local_trigger3 Poison Accuracy: 548/1000 (55%)
+Test set:Main Accuracy: 8726/10000 (87%)
+Test set:Globol Trigger Poison Accuracy: 14/1000 (1%)
+Done in 5.953778266906738 sec.
+select client [402, 325, 174, 422, 269, 44, 999, 352, 656, 946]
+l2 norm of benign user before server clipping 0.3965161554515362
+l2 norm of benign user after server clipping 0.266253649443388
+___Test : epoch: 1878: Average loss: 0.3800, Accuracy: 8742/10000.0 (87.4200%)
+benign test loss (after fedavg) 0.3799812885284424
+benign test acc (after fedavg) 87.42
+Test set:local_trigger0 Poison Accuracy: 911/1000 (91%)
+Test set:local_trigger1 Poison Accuracy: 533/1000 (53%)
+Test set:local_trigger2 Poison Accuracy: 0/1000 (0%)
+Test set:local_trigger3 Poison Accuracy: 439/1000 (44%)
+Test set:Main Accuracy: 8742/10000 (87%)
+Test set:Globol Trigger Poison Accuracy: 0/1000 (0%)
+Done in 5.889212131500244 sec.
+select client [138, 374, 783, 822, 697, 266, 512, 193, 379, 479]
+l2 norm of benign user before server clipping 0.4362835049629211
+l2 norm of benign user after server clipping 0.2970419406890869
+___Test : epoch: 1879: Average loss: 0.3845, Accuracy: 8731/10000.0 (87.3100%)
+benign test loss (after fedavg) 0.38454058113098144
+benign test acc (after fedavg) 87.31
+Test set:local_trigger0 Poison Accuracy: 913/1000 (91%)
+Test set:local_trigger1 Poison Accuracy: 460/1000 (46%)
+Test set:local_trigger2 Poison Accuracy: 0/1000 (0%)
+Test set:local_trigger3 Poison Accuracy: 493/1000 (49%)
+Test set:Main Accuracy: 8731/10000 (87%)
+Test set:Globol Trigger Poison Accuracy: 0/1000 (0%)
+Done in 5.862303733825684 sec.
+select client [929, 490, 473, 823, 79, 222, 275, 839, 196]
+------------------poisoning-------------------
+l2 norm of benign user before server clipping 0.2475489295191235
+l2 norm of benign user after server clipping 0.2475489295191235
+Poison Train Epoch: 0 	Loss: 0.196448
+Poison Train Epoch: 1 	Loss: 0.219056
+Poison Train Epoch: 2 	Loss: 0.150114
+Poison Train Epoch: 3 	Loss: 0.115009
+Poison Train Epoch: 4 	Loss: 0.068843
+Poison Train Epoch: 5 	Loss: 0.064205
+Poison Train Epoch: 6 	Loss: 0.072335
+Poison Train Epoch: 7 	Loss: 0.038061
+Poison Train Epoch: 8 	Loss: 0.050390
+Poison Train Epoch: 9 	Loss: 0.040351
+Poison Train Epoch: 10 	Loss: 0.064579
+Poison Train Epoch: 11 	Loss: 0.029185
+Poison Train Epoch: 12 	Loss: 0.025528
+Poison Train Epoch: 13 	Loss: 0.038579
+Poison Train Epoch: 14 	Loss: 0.031197
+Poison Train Epoch: 15 	Loss: 0.027086
+Poison Train Epoch: 16 	Loss: 0.022792
+Poison Train Epoch: 17 	Loss: 0.022717
+Poison Train Epoch: 18 	Loss: 0.022770
+Poison Train Epoch: 19 	Loss: 0.023154
+___Test : epoch: 1880: Average loss: 0.3612, Accuracy: 8793/10000.0 (87.9300%)
+benign test loss (after fedavg) 0.36118979396820067
+benign test acc (after fedavg) 87.92999999999999
+Test set:local_trigger0 Poison Accuracy: 947/1000 (95%)
+Test set:local_trigger1 Poison Accuracy: 995/1000 (100%)
+Test set:local_trigger2 Poison Accuracy: 999/1000 (100%)
+Test set:local_trigger3 Poison Accuracy: 1000/1000 (100%)
+Test set:Main Accuracy: 8793/10000 (88%)
+Test set:Globol Trigger Poison Accuracy: 1000/1000 (100%)
+Done in 8.478660106658936 sec.
+select client [634, 623, 719, 665, 383, 60, 499, 776, 578, 33]
+l2 norm of benign user before server clipping 0.33811642080545423
+l2 norm of benign user after server clipping 0.29104682356119155
+___Test : epoch: 1881: Average loss: 0.3720, Accuracy: 8779/10000.0 (87.7900%)
+benign test loss (after fedavg) 0.3719901699066162
+benign test acc (after fedavg) 87.79
+Test set:local_trigger0 Poison Accuracy: 993/1000 (99%)
+Test set:local_trigger1 Poison Accuracy: 999/1000 (100%)
+Test set:local_trigger2 Poison Accuracy: 1000/1000 (100%)
+Test set:local_trigger3 Poison Accuracy: 1000/1000 (100%)
+Test set:Main Accuracy: 8779/10000 (88%)
+Test set:Globol Trigger Poison Accuracy: 1000/1000 (100%)
+Done in 5.899118661880493 sec.
+select client [885, 892, 781, 427, 498, 567, 842, 25, 824, 90]
+l2 norm of benign user before server clipping 0.29823779314756393
+l2 norm of benign user after server clipping 0.2583966240286827
+___Test : epoch: 1882: Average loss: 0.3777, Accuracy: 8767/10000.0 (87.6700%)
+benign test loss (after fedavg) 0.3777167323112488
+benign test acc (after fedavg) 87.67
+Test set:local_trigger0 Poison Accuracy: 993/1000 (99%)
+Test set:local_trigger1 Poison Accuracy: 998/1000 (100%)
+Test set:local_trigger2 Poison Accuracy: 969/1000 (97%)
+Test set:local_trigger3 Poison Accuracy: 999/1000 (100%)
+Test set:Main Accuracy: 8767/10000 (88%)
+Test set:Globol Trigger Poison Accuracy: 1000/1000 (100%)
+Done in 5.759751558303833 sec.
+select client [582, 743, 986, 893, 294, 370, 391, 168, 521, 649]
+l2 norm of benign user before server clipping 0.2777766674757004
+l2 norm of benign user after server clipping 0.2777766674757004
+___Test : epoch: 1883: Average loss: 0.3708, Accuracy: 8756/10000.0 (87.5600%)
+benign test loss (after fedavg) 0.3708168590545654
+benign test acc (after fedavg) 87.56
+Test set:local_trigger0 Poison Accuracy: 992/1000 (99%)
+Test set:local_trigger1 Poison Accuracy: 989/1000 (99%)
+Test set:local_trigger2 Poison Accuracy: 785/1000 (78%)
+Test set:local_trigger3 Poison Accuracy: 999/1000 (100%)
+Test set:Main Accuracy: 8756/10000 (88%)
+Test set:Globol Trigger Poison Accuracy: 981/1000 (98%)
+Done in 5.738404273986816 sec.
+select client [890, 887, 243, 571, 270, 443, 303, 46, 264, 72]
+l2 norm of benign user before server clipping 0.18869832530617714
+l2 norm of benign user after server clipping 0.18869832530617714
+___Test : epoch: 1884: Average loss: 0.3710, Accuracy: 8761/10000.0 (87.6100%)
+benign test loss (after fedavg) 0.3710044765472412
+benign test acc (after fedavg) 87.61
+Test set:local_trigger0 Poison Accuracy: 980/1000 (98%)
+Test set:local_trigger1 Poison Accuracy: 970/1000 (97%)
+Test set:local_trigger2 Poison Accuracy: 371/1000 (37%)
+Test set:local_trigger3 Poison Accuracy: 984/1000 (98%)
+Test set:Main Accuracy: 8761/10000 (88%)
+Test set:Globol Trigger Poison Accuracy: 805/1000 (80%)
+Done in 5.6379029750823975 sec.
+select client [743, 749, 337, 399, 496, 930, 660, 995, 786]
+------------------poisoning-------------------
+l2 norm of benign user before server clipping 0.21522189842330086
+l2 norm of benign user after server clipping 0.21522189842330086
+Poison Train Epoch: 0 	Loss: 0.193564
+Poison Train Epoch: 1 	Loss: 0.235800
+Poison Train Epoch: 2 	Loss: 0.193535
+Poison Train Epoch: 3 	Loss: 0.220937
+Poison Train Epoch: 4 	Loss: 0.205368
+Poison Train Epoch: 5 	Loss: 0.160090
+Poison Train Epoch: 6 	Loss: 0.184025
+Poison Train Epoch: 7 	Loss: 0.204876
+Poison Train Epoch: 8 	Loss: 0.158163
+Poison Train Epoch: 9 	Loss: 0.152266
+Poison Train Epoch: 10 	Loss: 0.140958
+Poison Train Epoch: 11 	Loss: 0.117859
+Poison Train Epoch: 12 	Loss: 0.202356
+Poison Train Epoch: 13 	Loss: 0.138182
+Poison Train Epoch: 14 	Loss: 0.197844
+Poison Train Epoch: 15 	Loss: 0.164961
+Poison Train Epoch: 16 	Loss: 0.182554
+Poison Train Epoch: 17 	Loss: 0.140569
+Poison Train Epoch: 18 	Loss: 0.143751
+Poison Train Epoch: 19 	Loss: 0.145452
+___Test : epoch: 1885: Average loss: 0.3790, Accuracy: 8709/10000.0 (87.0900%)
+benign test loss (after fedavg) 0.37896431941986086
+benign test acc (after fedavg) 87.09
+Test set:local_trigger0 Poison Accuracy: 867/1000 (87%)
+Test set:local_trigger1 Poison Accuracy: 972/1000 (97%)
+Test set:local_trigger2 Poison Accuracy: 997/1000 (100%)
+Test set:local_trigger3 Poison Accuracy: 996/1000 (100%)
+Test set:Main Accuracy: 8709/10000 (87%)
+Test set:Globol Trigger Poison Accuracy: 998/1000 (100%)
+Done in 8.615671157836914 sec.
+select client [155, 421, 792, 143, 983, 487, 687, 295, 607, 13]
+l2 norm of benign user before server clipping 0.4536098003387451
+l2 norm of benign user after server clipping 0.3093683302402496
+___Test : epoch: 1886: Average loss: 0.3897, Accuracy: 8692/10000.0 (86.9200%)
+benign test loss (after fedavg) 0.38973350811004637
+benign test acc (after fedavg) 86.92
+Test set:local_trigger0 Poison Accuracy: 982/1000 (98%)
+Test set:local_trigger1 Poison Accuracy: 983/1000 (98%)
+Test set:local_trigger2 Poison Accuracy: 625/1000 (62%)
+Test set:local_trigger3 Poison Accuracy: 970/1000 (97%)
+Test set:Main Accuracy: 8692/10000 (87%)
+Test set:Globol Trigger Poison Accuracy: 942/1000 (94%)
+Done in 6.015181541442871 sec.
+select client [875, 564, 580, 448, 110, 321, 764, 778, 397, 917]
+l2 norm of benign user before server clipping 0.23429457396268843
+l2 norm of benign user after server clipping 0.23429457396268843
+___Test : epoch: 1887: Average loss: 0.3769, Accuracy: 8746/10000.0 (87.4600%)
+benign test loss (after fedavg) 0.3769373383522034
+benign test acc (after fedavg) 87.46000000000001
+Test set:local_trigger0 Poison Accuracy: 988/1000 (99%)
+Test set:local_trigger1 Poison Accuracy: 988/1000 (99%)
+Test set:local_trigger2 Poison Accuracy: 477/1000 (48%)
+Test set:local_trigger3 Poison Accuracy: 967/1000 (97%)
+Test set:Main Accuracy: 8746/10000 (87%)
+Test set:Globol Trigger Poison Accuracy: 892/1000 (89%)
+Done in 5.827178001403809 sec.
+select client [560, 155, 247, 299, 615, 485, 314, 301, 865, 378]
+l2 norm of benign user before server clipping 0.33022323399782183
+l2 norm of benign user after server clipping 0.2656617179512978
+___Test : epoch: 1888: Average loss: 0.3803, Accuracy: 8727/10000.0 (87.2700%)
+benign test loss (after fedavg) 0.380347336769104
+benign test acc (after fedavg) 87.27000000000001
+Test set:local_trigger0 Poison Accuracy: 977/1000 (98%)
+Test set:local_trigger1 Poison Accuracy: 956/1000 (96%)
+Test set:local_trigger2 Poison Accuracy: 146/1000 (15%)
+Test set:local_trigger3 Poison Accuracy: 940/1000 (94%)
+Test set:Main Accuracy: 8727/10000 (87%)
+Test set:Globol Trigger Poison Accuracy: 503/1000 (50%)
+Done in 5.757404088973999 sec.
+select client [596, 216, 446, 449, 438, 829, 408, 192, 669, 182]
+l2 norm of benign user before server clipping 0.7206787168979645
+l2 norm of benign user after server clipping 0.33703585267066954
+___Test : epoch: 1889: Average loss: 0.4437, Accuracy: 8527/10000.0 (85.2700%)
+benign test loss (after fedavg) 0.4436700469970703
+benign test acc (after fedavg) 85.27
+Test set:local_trigger0 Poison Accuracy: 968/1000 (97%)
+Test set:local_trigger1 Poison Accuracy: 970/1000 (97%)
+Test set:local_trigger2 Poison Accuracy: 722/1000 (72%)
+Test set:local_trigger3 Poison Accuracy: 938/1000 (94%)
+Test set:Main Accuracy: 8527/10000 (85%)
+Test set:Globol Trigger Poison Accuracy: 899/1000 (90%)
+Done in 5.825104236602783 sec.
+select client [30, 978, 788, 840, 869, 363, 982, 473, 168]
+------------------poisoning-------------------
+l2 norm of benign user before server clipping 0.25500686797830796
+l2 norm of benign user after server clipping 0.2545097851090961
+Poison Train Epoch: 0 	Loss: 0.448622
+Poison Train Epoch: 1 	Loss: 0.309445
+Poison Train Epoch: 2 	Loss: 0.324045
+Poison Train Epoch: 3 	Loss: 0.252681
+Poison Train Epoch: 4 	Loss: 0.200219
+Poison Train Epoch: 5 	Loss: 0.205309
+Poison Train Epoch: 6 	Loss: 0.251181
+Poison Train Epoch: 7 	Loss: 0.280248
+Poison Train Epoch: 8 	Loss: 0.232387
+Poison Train Epoch: 9 	Loss: 0.227347
+Poison Train Epoch: 10 	Loss: 0.216731
+Poison Train Epoch: 11 	Loss: 0.242625
+Poison Train Epoch: 12 	Loss: 0.184571
+Poison Train Epoch: 13 	Loss: 0.200039
+Poison Train Epoch: 14 	Loss: 0.213136
+Poison Train Epoch: 15 	Loss: 0.141791
+Poison Train Epoch: 16 	Loss: 0.180995
+Poison Train Epoch: 17 	Loss: 0.170736
+Poison Train Epoch: 18 	Loss: 0.172000
+Poison Train Epoch: 19 	Loss: 0.155542
+___Test : epoch: 1890: Average loss: 0.4363, Accuracy: 8513/10000.0 (85.1300%)
+benign test loss (after fedavg) 0.43631170806884767
+benign test acc (after fedavg) 85.13
+Test set:local_trigger0 Poison Accuracy: 820/1000 (82%)
+Test set:local_trigger1 Poison Accuracy: 942/1000 (94%)
+Test set:local_trigger2 Poison Accuracy: 997/1000 (100%)
+Test set:local_trigger3 Poison Accuracy: 992/1000 (99%)
+Test set:Main Accuracy: 8513/10000 (85%)
+Test set:Globol Trigger Poison Accuracy: 1000/1000 (100%)
+Done in 8.541545867919922 sec.
+select client [929, 482, 357, 56, 171, 497, 905, 301, 997, 539]
+l2 norm of benign user before server clipping 0.31892992556095123
+l2 norm of benign user after server clipping 0.29018963873386383
+___Test : epoch: 1891: Average loss: 0.3830, Accuracy: 8708/10000.0 (87.0800%)
+benign test loss (after fedavg) 0.38299384231567385
+benign test acc (after fedavg) 87.08
+Test set:local_trigger0 Poison Accuracy: 990/1000 (99%)
+Test set:local_trigger1 Poison Accuracy: 992/1000 (99%)
+Test set:local_trigger2 Poison Accuracy: 971/1000 (97%)
+Test set:local_trigger3 Poison Accuracy: 996/1000 (100%)
+Test set:Main Accuracy: 8708/10000 (87%)
+Test set:Globol Trigger Poison Accuracy: 996/1000 (100%)
+Done in 5.833791732788086 sec.
+select client [183, 703, 270, 488, 577, 19, 62, 659, 801, 23]
+l2 norm of benign user before server clipping 0.23631794899702072
+l2 norm of benign user after server clipping 0.23631794899702072
+___Test : epoch: 1892: Average loss: 0.3761, Accuracy: 8724/10000.0 (87.2400%)
+benign test loss (after fedavg) 0.3760792057037354
+benign test acc (after fedavg) 87.24
+Test set:local_trigger0 Poison Accuracy: 985/1000 (98%)
+Test set:local_trigger1 Poison Accuracy: 986/1000 (99%)
+Test set:local_trigger2 Poison Accuracy: 963/1000 (96%)
+Test set:local_trigger3 Poison Accuracy: 993/1000 (99%)
+Test set:Main Accuracy: 8724/10000 (87%)
+Test set:Globol Trigger Poison Accuracy: 988/1000 (99%)
+Done in 5.8232951164245605 sec.
+select client [353, 152, 786, 933, 951, 99, 819, 975, 326, 397]
+l2 norm of benign user before server clipping 0.21413807719945907
+l2 norm of benign user after server clipping 0.21413807719945907
+___Test : epoch: 1893: Average loss: 0.3701, Accuracy: 8755/10000.0 (87.5500%)
+benign test loss (after fedavg) 0.37010850257873534
+benign test acc (after fedavg) 87.55
+Test set:local_trigger0 Poison Accuracy: 993/1000 (99%)
+Test set:local_trigger1 Poison Accuracy: 991/1000 (99%)
+Test set:local_trigger2 Poison Accuracy: 957/1000 (96%)
+Test set:local_trigger3 Poison Accuracy: 996/1000 (100%)
+Test set:Main Accuracy: 8755/10000 (88%)
+Test set:Globol Trigger Poison Accuracy: 995/1000 (100%)
+Done in 5.902613162994385 sec.
+select client [205, 14, 342, 921, 93, 981, 535, 377, 830, 340]
+l2 norm of benign user before server clipping 0.2122989520430565
+l2 norm of benign user after server clipping 0.2122989520430565
+___Test : epoch: 1894: Average loss: 0.3627, Accuracy: 8776/10000.0 (87.7600%)
+benign test loss (after fedavg) 0.3627267152786255
+benign test acc (after fedavg) 87.76
+Test set:local_trigger0 Poison Accuracy: 990/1000 (99%)
+Test set:local_trigger1 Poison Accuracy: 993/1000 (99%)
+Test set:local_trigger2 Poison Accuracy: 977/1000 (98%)
+Test set:local_trigger3 Poison Accuracy: 998/1000 (100%)
+Test set:Main Accuracy: 8776/10000 (88%)
+Test set:Globol Trigger Poison Accuracy: 999/1000 (100%)
+Done in 5.729777574539185 sec.
+select client [75, 141, 414, 466, 326, 530, 445, 222, 151]
+------------------poisoning-------------------
+l2 norm of benign user before server clipping 0.26493794057104325
+l2 norm of benign user after server clipping 0.2641800145308177
+Poison Train Epoch: 0 	Loss: 0.257620
+Poison Train Epoch: 1 	Loss: 0.271404
+Poison Train Epoch: 2 	Loss: 0.197818
+Poison Train Epoch: 3 	Loss: 0.253709
+Poison Train Epoch: 4 	Loss: 0.227095
+Poison Train Epoch: 5 	Loss: 0.288656
+Poison Train Epoch: 6 	Loss: 0.228992
+Poison Train Epoch: 7 	Loss: 0.161802
+Poison Train Epoch: 8 	Loss: 0.181990
+Poison Train Epoch: 9 	Loss: 0.163347
+Poison Train Epoch: 10 	Loss: 0.162272
+Poison Train Epoch: 11 	Loss: 0.164090
+Poison Train Epoch: 12 	Loss: 0.193980
+Poison Train Epoch: 13 	Loss: 0.133336
+Poison Train Epoch: 14 	Loss: 0.127185
+Poison Train Epoch: 15 	Loss: 0.156064
+Poison Train Epoch: 16 	Loss: 0.145713
+Poison Train Epoch: 17 	Loss: 0.122149
+Poison Train Epoch: 18 	Loss: 0.126500
+Poison Train Epoch: 19 	Loss: 0.127566
+___Test : epoch: 1895: Average loss: 0.4530, Accuracy: 8467/10000.0 (84.6700%)
+benign test loss (after fedavg) 0.4529575283050537
+benign test acc (after fedavg) 84.67
+Test set:local_trigger0 Poison Accuracy: 691/1000 (69%)
+Test set:local_trigger1 Poison Accuracy: 973/1000 (97%)
+Test set:local_trigger2 Poison Accuracy: 998/1000 (100%)
+Test set:local_trigger3 Poison Accuracy: 995/1000 (100%)
+Test set:Main Accuracy: 8467/10000 (85%)
+Test set:Globol Trigger Poison Accuracy: 1000/1000 (100%)
+Done in 8.728502750396729 sec.
+select client [668, 929, 926, 676, 623, 161, 582, 957, 195, 188]
+l2 norm of benign user before server clipping 0.432406048476696
+l2 norm of benign user after server clipping 0.34546869844198225
+___Test : epoch: 1896: Average loss: 0.3778, Accuracy: 8719/10000.0 (87.1900%)
+benign test loss (after fedavg) 0.3777704551696777
+benign test acc (after fedavg) 87.19
+Test set:local_trigger0 Poison Accuracy: 994/1000 (99%)
+Test set:local_trigger1 Poison Accuracy: 999/1000 (100%)
+Test set:local_trigger2 Poison Accuracy: 1000/1000 (100%)
+Test set:local_trigger3 Poison Accuracy: 1000/1000 (100%)
+Test set:Main Accuracy: 8719/10000 (87%)
+Test set:Globol Trigger Poison Accuracy: 1000/1000 (100%)
+Done in 5.927692174911499 sec.
+select client [120, 78, 19, 234, 574, 754, 826, 827, 309, 939]
+l2 norm of benign user before server clipping 0.23623577505350113
+l2 norm of benign user after server clipping 0.23623577505350113
+___Test : epoch: 1897: Average loss: 0.3810, Accuracy: 8689/10000.0 (86.8900%)
+benign test loss (after fedavg) 0.38096051139831544
+benign test acc (after fedavg) 86.89
+Test set:local_trigger0 Poison Accuracy: 994/1000 (99%)
+Test set:local_trigger1 Poison Accuracy: 995/1000 (100%)
+Test set:local_trigger2 Poison Accuracy: 979/1000 (98%)
+Test set:local_trigger3 Poison Accuracy: 997/1000 (100%)
+Test set:Main Accuracy: 8689/10000 (87%)
+Test set:Globol Trigger Poison Accuracy: 997/1000 (100%)
+Done in 5.884828329086304 sec.
+select client [866, 940, 134, 238, 803, 535, 766, 997, 693, 957]
+l2 norm of benign user before server clipping 0.25461263954639435
+l2 norm of benign user after server clipping 0.24529360234737396
+___Test : epoch: 1898: Average loss: 0.3631, Accuracy: 8763/10000.0 (87.6300%)
+benign test loss (after fedavg) 0.3630957702636719
+benign test acc (after fedavg) 87.63
+Test set:local_trigger0 Poison Accuracy: 995/1000 (100%)
+Test set:local_trigger1 Poison Accuracy: 999/1000 (100%)
+Test set:local_trigger2 Poison Accuracy: 1000/1000 (100%)
+Test set:local_trigger3 Poison Accuracy: 1000/1000 (100%)
+Test set:Main Accuracy: 8763/10000 (88%)
+Test set:Globol Trigger Poison Accuracy: 1000/1000 (100%)
+Done in 5.91719651222229 sec.
+select client [377, 152, 67, 799, 710, 53, 77, 414, 224, 143]
+l2 norm of benign user before server clipping 0.19524849504232406
+l2 norm of benign user after server clipping 0.19524849504232406
+___Test : epoch: 1899: Average loss: 0.3594, Accuracy: 8777/10000.0 (87.7700%)
+benign test loss (after fedavg) 0.35935342750549315
+benign test acc (after fedavg) 87.77000000000001
+Test set:local_trigger0 Poison Accuracy: 998/1000 (100%)
+Test set:local_trigger1 Poison Accuracy: 999/1000 (100%)
+Test set:local_trigger2 Poison Accuracy: 1000/1000 (100%)
+Test set:local_trigger3 Poison Accuracy: 1000/1000 (100%)
+Test set:Main Accuracy: 8777/10000 (88%)
+Test set:Globol Trigger Poison Accuracy: 1000/1000 (100%)
+Done in 5.922111511230469 sec.
+select client [911, 227, 833, 905, 544, 663, 289, 770, 224, 785]
+l2 norm of benign user before server clipping 0.3264921233057976
+l2 norm of benign user after server clipping 0.2939984664320946
+___Test : epoch: 1900: Average loss: 0.3749, Accuracy: 8719/10000.0 (87.1900%)
+benign test loss (after fedavg) 0.3749130574226379
+benign test acc (after fedavg) 87.19
+Test set:local_trigger0 Poison Accuracy: 998/1000 (100%)
+Test set:local_trigger1 Poison Accuracy: 1000/1000 (100%)
+Test set:local_trigger2 Poison Accuracy: 1000/1000 (100%)
+Test set:local_trigger3 Poison Accuracy: 1000/1000 (100%)
+Test set:Main Accuracy: 8719/10000 (87%)
+Test set:Globol Trigger Poison Accuracy: 1000/1000 (100%)
+Done in 5.902024745941162 sec.
+select client [801, 402, 531, 732, 578, 231, 162, 440, 761, 685]
+l2 norm of benign user before server clipping 0.31860540956258776
+l2 norm of benign user after server clipping 0.2543281361460686
+___Test : epoch: 1901: Average loss: 0.3905, Accuracy: 8690/10000.0 (86.9000%)
+benign test loss (after fedavg) 0.3904673496246338
+benign test acc (after fedavg) 86.9
+Test set:local_trigger0 Poison Accuracy: 998/1000 (100%)
+Test set:local_trigger1 Poison Accuracy: 999/1000 (100%)
+Test set:local_trigger2 Poison Accuracy: 1000/1000 (100%)
+Test set:local_trigger3 Poison Accuracy: 1000/1000 (100%)
+Test set:Main Accuracy: 8690/10000 (87%)
+Test set:Globol Trigger Poison Accuracy: 1000/1000 (100%)
+Done in 5.818267107009888 sec.
+select client [307, 572, 677, 471, 936, 846, 50, 162, 605, 27]
+l2 norm of benign user before server clipping 0.17094462588429452
+l2 norm of benign user after server clipping 0.17094462588429452
+___Test : epoch: 1902: Average loss: 0.3652, Accuracy: 8791/10000.0 (87.9100%)
+benign test loss (after fedavg) 0.36520300979614256
+benign test acc (after fedavg) 87.91
+Test set:local_trigger0 Poison Accuracy: 997/1000 (100%)
+Test set:local_trigger1 Poison Accuracy: 999/1000 (100%)
+Test set:local_trigger2 Poison Accuracy: 1000/1000 (100%)
+Test set:local_trigger3 Poison Accuracy: 1000/1000 (100%)
+Test set:Main Accuracy: 8791/10000 (88%)
+Test set:Globol Trigger Poison Accuracy: 1000/1000 (100%)
+Done in 5.823710680007935 sec.
+select client [283, 524, 833, 720, 415, 519, 114, 843, 169, 564]
+l2 norm of benign user before server clipping 0.19894724935293198
+l2 norm of benign user after server clipping 0.19894724935293198
+___Test : epoch: 1903: Average loss: 0.3657, Accuracy: 8765/10000.0 (87.6500%)
+benign test loss (after fedavg) 0.365731782913208
+benign test acc (after fedavg) 87.64999999999999
+Test set:local_trigger0 Poison Accuracy: 997/1000 (100%)
+Test set:local_trigger1 Poison Accuracy: 999/1000 (100%)
+Test set:local_trigger2 Poison Accuracy: 1000/1000 (100%)
+Test set:local_trigger3 Poison Accuracy: 1000/1000 (100%)
+Test set:Main Accuracy: 8765/10000 (88%)
+Test set:Globol Trigger Poison Accuracy: 1000/1000 (100%)
+Done in 5.87026834487915 sec.
+select client [246, 260, 254, 584, 398, 846, 462, 153, 694, 567]
+l2 norm of benign user before server clipping 0.24478138238191605
+l2 norm of benign user after server clipping 0.2268476143479347
+___Test : epoch: 1904: Average loss: 0.3859, Accuracy: 8685/10000.0 (86.8500%)
+benign test loss (after fedavg) 0.3858939693450928
+benign test acc (after fedavg) 86.85000000000001
+Test set:local_trigger0 Poison Accuracy: 997/1000 (100%)
+Test set:local_trigger1 Poison Accuracy: 998/1000 (100%)
+Test set:local_trigger2 Poison Accuracy: 989/1000 (99%)
+Test set:local_trigger3 Poison Accuracy: 1000/1000 (100%)
+Test set:Main Accuracy: 8685/10000 (87%)
+Test set:Globol Trigger Poison Accuracy: 1000/1000 (100%)
+Done in 5.68005895614624 sec.
+select client [946, 275, 453, 994, 469, 371, 417, 549, 917, 611]
+l2 norm of benign user before server clipping 0.1905858539044857
+l2 norm of benign user after server clipping 0.1905858539044857
+___Test : epoch: 1905: Average loss: 0.3577, Accuracy: 8792/10000.0 (87.9200%)
+benign test loss (after fedavg) 0.3577196252822876
+benign test acc (after fedavg) 87.92
+Test set:local_trigger0 Poison Accuracy: 997/1000 (100%)
+Test set:local_trigger1 Poison Accuracy: 999/1000 (100%)
+Test set:local_trigger2 Poison Accuracy: 1000/1000 (100%)
+Test set:local_trigger3 Poison Accuracy: 1000/1000 (100%)
+Test set:Main Accuracy: 8792/10000 (88%)
+Test set:Globol Trigger Poison Accuracy: 1000/1000 (100%)
+Done in 5.871366739273071 sec.
+select client [198, 896, 52, 992, 399, 565, 144, 293, 89, 760]
+l2 norm of benign user before server clipping 0.28292405009269717
+l2 norm of benign user after server clipping 0.21757158637046814
+___Test : epoch: 1906: Average loss: 0.3713, Accuracy: 8769/10000.0 (87.6900%)
+benign test loss (after fedavg) 0.37130151290893554
+benign test acc (after fedavg) 87.69
+Test set:local_trigger0 Poison Accuracy: 998/1000 (100%)
+Test set:local_trigger1 Poison Accuracy: 999/1000 (100%)
+Test set:local_trigger2 Poison Accuracy: 976/1000 (98%)
+Test set:local_trigger3 Poison Accuracy: 1000/1000 (100%)
+Test set:Main Accuracy: 8769/10000 (88%)
+Test set:Globol Trigger Poison Accuracy: 1000/1000 (100%)
+Done in 5.875638961791992 sec.
+select client [779, 681, 408, 627, 413, 574, 596, 283, 952, 540]
+l2 norm of benign user before server clipping 0.17297485917806626
+l2 norm of benign user after server clipping 0.17297485917806626
+___Test : epoch: 1907: Average loss: 0.3637, Accuracy: 8783/10000.0 (87.8300%)
+benign test loss (after fedavg) 0.3636765180587769
+benign test acc (after fedavg) 87.83
+Test set:local_trigger0 Poison Accuracy: 997/1000 (100%)
+Test set:local_trigger1 Poison Accuracy: 999/1000 (100%)
+Test set:local_trigger2 Poison Accuracy: 976/1000 (98%)
+Test set:local_trigger3 Poison Accuracy: 1000/1000 (100%)
+Test set:Main Accuracy: 8783/10000 (88%)
+Test set:Globol Trigger Poison Accuracy: 1000/1000 (100%)
+Done in 5.842162847518921 sec.
+select client [424, 344, 936, 542, 532, 720, 478, 654, 746, 656]
+l2 norm of benign user before server clipping 0.17554458752274513
+l2 norm of benign user after server clipping 0.17554458752274513
+___Test : epoch: 1908: Average loss: 0.3580, Accuracy: 8803/10000.0 (88.0300%)
+benign test loss (after fedavg) 0.3579558589935303
+benign test acc (after fedavg) 88.03
+Test set:local_trigger0 Poison Accuracy: 996/1000 (100%)
+Test set:local_trigger1 Poison Accuracy: 993/1000 (99%)
+Test set:local_trigger2 Poison Accuracy: 405/1000 (40%)
+Test set:local_trigger3 Poison Accuracy: 997/1000 (100%)
+Test set:Main Accuracy: 8803/10000 (88%)
+Test set:Globol Trigger Poison Accuracy: 957/1000 (96%)
+Done in 5.756150245666504 sec.
+select client [778, 820, 977, 952, 526, 586, 277, 708, 383, 683]
+l2 norm of benign user before server clipping 0.3887997269630432
+l2 norm of benign user after server clipping 0.2812499046325684
+___Test : epoch: 1909: Average loss: 0.3679, Accuracy: 8778/10000.0 (87.7800%)
+benign test loss (after fedavg) 0.3678696582794189
+benign test acc (after fedavg) 87.78
+Test set:local_trigger0 Poison Accuracy: 991/1000 (99%)
+Test set:local_trigger1 Poison Accuracy: 950/1000 (95%)
+Test set:local_trigger2 Poison Accuracy: 15/1000 (2%)
+Test set:local_trigger3 Poison Accuracy: 920/1000 (92%)
+Test set:Main Accuracy: 8778/10000 (88%)
+Test set:Globol Trigger Poison Accuracy: 235/1000 (24%)
+Done in 5.745499610900879 sec.
+select client [731, 329, 170, 827, 381, 39, 270, 32, 368, 820]
+l2 norm of benign user before server clipping 0.21717873439192772
+l2 norm of benign user after server clipping 0.21717873439192772
+___Test : epoch: 1910: Average loss: 0.3740, Accuracy: 8753/10000.0 (87.5300%)
+benign test loss (after fedavg) 0.37396865062713625
+benign test acc (after fedavg) 87.53
+Test set:local_trigger0 Poison Accuracy: 990/1000 (99%)
+Test set:local_trigger1 Poison Accuracy: 966/1000 (97%)
+Test set:local_trigger2 Poison Accuracy: 86/1000 (9%)
+Test set:local_trigger3 Poison Accuracy: 963/1000 (96%)
+Test set:Main Accuracy: 8753/10000 (88%)
+Test set:Globol Trigger Poison Accuracy: 528/1000 (53%)
+Done in 5.888221740722656 sec.
+select client [220, 595, 469, 61, 52, 855, 652, 32, 629, 707]
+l2 norm of benign user before server clipping 0.336894103884697
+l2 norm of benign user after server clipping 0.20545987784862518
+___Test : epoch: 1911: Average loss: 0.4257, Accuracy: 8575/10000.0 (85.7500%)
+benign test loss (after fedavg) 0.4256713359832764
+benign test acc (after fedavg) 85.75
+Test set:local_trigger0 Poison Accuracy: 985/1000 (98%)
+Test set:local_trigger1 Poison Accuracy: 973/1000 (97%)
+Test set:local_trigger2 Poison Accuracy: 25/1000 (2%)
+Test set:local_trigger3 Poison Accuracy: 971/1000 (97%)
+Test set:Main Accuracy: 8575/10000 (86%)
+Test set:Globol Trigger Poison Accuracy: 745/1000 (74%)
+Done in 5.873368740081787 sec.
+select client [265, 21, 57, 753, 490, 523, 134, 128, 373, 562]
+l2 norm of benign user before server clipping 0.26163398623466494
+l2 norm of benign user after server clipping 0.23143340945243834
+___Test : epoch: 1912: Average loss: 0.3858, Accuracy: 8723/10000.0 (87.2300%)
+benign test loss (after fedavg) 0.3858432231903076
+benign test acc (after fedavg) 87.22999999999999
+Test set:local_trigger0 Poison Accuracy: 996/1000 (100%)
+Test set:local_trigger1 Poison Accuracy: 985/1000 (98%)
+Test set:local_trigger2 Poison Accuracy: 369/1000 (37%)
+Test set:local_trigger3 Poison Accuracy: 993/1000 (99%)
+Test set:Main Accuracy: 8723/10000 (87%)
+Test set:Globol Trigger Poison Accuracy: 981/1000 (98%)
+Done in 5.794542074203491 sec.
+select client [902, 810, 124, 688, 492, 40, 162, 119, 71, 86]
+l2 norm of benign user before server clipping 0.18038229420781135
+l2 norm of benign user after server clipping 0.18038229420781135
+___Test : epoch: 1913: Average loss: 0.3650, Accuracy: 8784/10000.0 (87.8400%)
+benign test loss (after fedavg) 0.3650315647125244
+benign test acc (after fedavg) 87.83999999999999
+Test set:local_trigger0 Poison Accuracy: 995/1000 (100%)
+Test set:local_trigger1 Poison Accuracy: 983/1000 (98%)
+Test set:local_trigger2 Poison Accuracy: 270/1000 (27%)
+Test set:local_trigger3 Poison Accuracy: 979/1000 (98%)
+Test set:Main Accuracy: 8784/10000 (88%)
+Test set:Globol Trigger Poison Accuracy: 939/1000 (94%)
+Done in 5.769549131393433 sec.
+select client [115, 591, 19, 842, 482, 906, 742, 315, 859, 871]
+l2 norm of benign user before server clipping 0.1971391700208187
+l2 norm of benign user after server clipping 0.190026380866766
+___Test : epoch: 1914: Average loss: 0.3596, Accuracy: 8824/10000.0 (88.2400%)
+benign test loss (after fedavg) 0.35963963508605956
+benign test acc (after fedavg) 88.24
+Test set:local_trigger0 Poison Accuracy: 997/1000 (100%)
+Test set:local_trigger1 Poison Accuracy: 992/1000 (99%)
+Test set:local_trigger2 Poison Accuracy: 664/1000 (66%)
+Test set:local_trigger3 Poison Accuracy: 996/1000 (100%)
+Test set:Main Accuracy: 8824/10000 (88%)
+Test set:Globol Trigger Poison Accuracy: 982/1000 (98%)
+Done in 5.720055818557739 sec.
+select client [908, 40, 262, 664, 483, 444, 265, 332, 55, 546]
+l2 norm of benign user before server clipping 0.18191366419196128
+l2 norm of benign user after server clipping 0.18191366419196128
+___Test : epoch: 1915: Average loss: 0.3659, Accuracy: 8779/10000.0 (87.7900%)
+benign test loss (after fedavg) 0.365900647354126
+benign test acc (after fedavg) 87.79
+Test set:local_trigger0 Poison Accuracy: 997/1000 (100%)
+Test set:local_trigger1 Poison Accuracy: 993/1000 (99%)
+Test set:local_trigger2 Poison Accuracy: 623/1000 (62%)
+Test set:local_trigger3 Poison Accuracy: 993/1000 (99%)
+Test set:Main Accuracy: 8779/10000 (88%)
+Test set:Globol Trigger Poison Accuracy: 982/1000 (98%)
+Done in 5.702447891235352 sec.
+select client [614, 51, 669, 477, 52, 615, 715, 921, 961, 940]
+l2 norm of benign user before server clipping 0.23812949880957604
+l2 norm of benign user after server clipping 0.23812949880957604
+___Test : epoch: 1916: Average loss: 0.3635, Accuracy: 8793/10000.0 (87.9300%)
+benign test loss (after fedavg) 0.36345333251953127
+benign test acc (after fedavg) 87.92999999999999
+Test set:local_trigger0 Poison Accuracy: 994/1000 (99%)
+Test set:local_trigger1 Poison Accuracy: 975/1000 (98%)
+Test set:local_trigger2 Poison Accuracy: 54/1000 (5%)
+Test set:local_trigger3 Poison Accuracy: 969/1000 (97%)
+Test set:Main Accuracy: 8793/10000 (88%)
+Test set:Globol Trigger Poison Accuracy: 653/1000 (65%)
+Done in 5.901157855987549 sec.
+select client [801, 506, 121, 237, 228, 546, 657, 21, 308, 444]
+l2 norm of benign user before server clipping 0.2151270255446434
+l2 norm of benign user after server clipping 0.19919574111700059
+___Test : epoch: 1917: Average loss: 0.3629, Accuracy: 8795/10000.0 (87.9500%)
+benign test loss (after fedavg) 0.362871626663208
+benign test acc (after fedavg) 87.94999999999999
+Test set:local_trigger0 Poison Accuracy: 987/1000 (99%)
+Test set:local_trigger1 Poison Accuracy: 927/1000 (93%)
+Test set:local_trigger2 Poison Accuracy: 0/1000 (0%)
+Test set:local_trigger3 Poison Accuracy: 866/1000 (87%)
+Test set:Main Accuracy: 8795/10000 (88%)
+Test set:Globol Trigger Poison Accuracy: 31/1000 (3%)
+Done in 5.7749104499816895 sec.
+select client [579, 860, 513, 608, 361, 842, 75, 993, 937, 954]
+l2 norm of benign user before server clipping 0.18328288793563843
+l2 norm of benign user after server clipping 0.18328288793563843
+___Test : epoch: 1918: Average loss: 0.3612, Accuracy: 8794/10000.0 (87.9400%)
+benign test loss (after fedavg) 0.36116577224731444
+benign test acc (after fedavg) 87.94
+Test set:local_trigger0 Poison Accuracy: 980/1000 (98%)
+Test set:local_trigger1 Poison Accuracy: 829/1000 (83%)
+Test set:local_trigger2 Poison Accuracy: 0/1000 (0%)
+Test set:local_trigger3 Poison Accuracy: 755/1000 (76%)
+Test set:Main Accuracy: 8794/10000 (88%)
+Test set:Globol Trigger Poison Accuracy: 0/1000 (0%)
+Done in 5.730334997177124 sec.
+select client [879, 597, 894, 35, 176, 889, 960, 90, 442, 581]
+l2 norm of benign user before server clipping 0.18009012266993524
+l2 norm of benign user after server clipping 0.18009012266993524
+___Test : epoch: 1919: Average loss: 0.3514, Accuracy: 8825/10000.0 (88.2500%)
+benign test loss (after fedavg) 0.3514188877105713
+benign test acc (after fedavg) 88.25
+Test set:local_trigger0 Poison Accuracy: 988/1000 (99%)
+Test set:local_trigger1 Poison Accuracy: 832/1000 (83%)
+Test set:local_trigger2 Poison Accuracy: 0/1000 (0%)
+Test set:local_trigger3 Poison Accuracy: 705/1000 (70%)
+Test set:Main Accuracy: 8825/10000 (88%)
+Test set:Globol Trigger Poison Accuracy: 5/1000 (0%)
+Done in 5.815954685211182 sec.
+select client [560, 713, 83, 908, 291, 495, 677, 669, 684, 332]
+l2 norm of benign user before server clipping 0.1729390375316143
+l2 norm of benign user after server clipping 0.1729390375316143
+___Test : epoch: 1920: Average loss: 0.3479, Accuracy: 8860/10000.0 (88.6000%)
+benign test loss (after fedavg) 0.3478654067993164
+benign test acc (after fedavg) 88.6
+Test set:local_trigger0 Poison Accuracy: 994/1000 (99%)
+Test set:local_trigger1 Poison Accuracy: 965/1000 (96%)
+Test set:local_trigger2 Poison Accuracy: 24/1000 (2%)
+Test set:local_trigger3 Poison Accuracy: 968/1000 (97%)
+Test set:Main Accuracy: 8860/10000 (89%)
+Test set:Globol Trigger Poison Accuracy: 817/1000 (82%)
+Done in 5.681516170501709 sec.
+select client [154, 732, 429, 530, 246, 808, 632, 628, 923, 538]
+l2 norm of benign user before server clipping 0.23550035655498505
+l2 norm of benign user after server clipping 0.21538645923137664
+___Test : epoch: 1921: Average loss: 0.3595, Accuracy: 8820/10000.0 (88.2000%)
+benign test loss (after fedavg) 0.35947707567214965
+benign test acc (after fedavg) 88.2
+Test set:local_trigger0 Poison Accuracy: 998/1000 (100%)
+Test set:local_trigger1 Poison Accuracy: 991/1000 (99%)
+Test set:local_trigger2 Poison Accuracy: 187/1000 (19%)
+Test set:local_trigger3 Poison Accuracy: 993/1000 (99%)
+Test set:Main Accuracy: 8820/10000 (88%)
+Test set:Globol Trigger Poison Accuracy: 961/1000 (96%)
+Done in 5.766278982162476 sec.
+select client [384, 681, 376, 456, 300, 658, 712, 923, 435, 293]
+l2 norm of benign user before server clipping 0.16590507999062537
+l2 norm of benign user after server clipping 0.16590507999062537
+___Test : epoch: 1922: Average loss: 0.3558, Accuracy: 8825/10000.0 (88.2500%)
+benign test loss (after fedavg) 0.3558287990570068
+benign test acc (after fedavg) 88.25
+Test set:local_trigger0 Poison Accuracy: 995/1000 (100%)
+Test set:local_trigger1 Poison Accuracy: 979/1000 (98%)
+Test set:local_trigger2 Poison Accuracy: 107/1000 (11%)
+Test set:local_trigger3 Poison Accuracy: 981/1000 (98%)
+Test set:Main Accuracy: 8825/10000 (88%)
+Test set:Globol Trigger Poison Accuracy: 911/1000 (91%)
+Done in 5.7898619174957275 sec.
+select client [113, 602, 844, 373, 441, 424, 555, 243, 580, 347]
+l2 norm of benign user before server clipping 0.4451134316623211
+l2 norm of benign user after server clipping 0.19920073077082634
+___Test : epoch: 1923: Average loss: 0.3730, Accuracy: 8760/10000.0 (87.6000%)
+benign test loss (after fedavg) 0.3729979022026062
+benign test acc (after fedavg) 87.6
+Test set:local_trigger0 Poison Accuracy: 994/1000 (99%)
+Test set:local_trigger1 Poison Accuracy: 985/1000 (98%)
+Test set:local_trigger2 Poison Accuracy: 411/1000 (41%)
+Test set:local_trigger3 Poison Accuracy: 998/1000 (100%)
+Test set:Main Accuracy: 8760/10000 (88%)
+Test set:Globol Trigger Poison Accuracy: 936/1000 (94%)
+Done in 5.792996406555176 sec.
+select client [488, 428, 645, 826, 372, 854, 206, 549, 507, 157]
+l2 norm of benign user before server clipping 0.13910575285553933
+l2 norm of benign user after server clipping 0.13910575285553933
+___Test : epoch: 1924: Average loss: 0.3613, Accuracy: 8784/10000.0 (87.8400%)
+benign test loss (after fedavg) 0.3612788372039795
+benign test acc (after fedavg) 87.83999999999999
+Test set:local_trigger0 Poison Accuracy: 995/1000 (100%)
+Test set:local_trigger1 Poison Accuracy: 995/1000 (100%)
+Test set:local_trigger2 Poison Accuracy: 899/1000 (90%)
+Test set:local_trigger3 Poison Accuracy: 998/1000 (100%)
+Test set:Main Accuracy: 8784/10000 (88%)
+Test set:Globol Trigger Poison Accuracy: 998/1000 (100%)
+Done in 5.729609251022339 sec.
+select client [905, 731, 106, 728, 436, 643, 833, 537, 354, 899]
+l2 norm of benign user before server clipping 0.15145241394639014
+l2 norm of benign user after server clipping 0.15145241394639014
+___Test : epoch: 1925: Average loss: 0.3549, Accuracy: 8809/10000.0 (88.0900%)
+benign test loss (after fedavg) 0.354891077041626
+benign test acc (after fedavg) 88.09
+Test set:local_trigger0 Poison Accuracy: 992/1000 (99%)
+Test set:local_trigger1 Poison Accuracy: 988/1000 (99%)
+Test set:local_trigger2 Poison Accuracy: 757/1000 (76%)
+Test set:local_trigger3 Poison Accuracy: 998/1000 (100%)
+Test set:Main Accuracy: 8809/10000 (88%)
+Test set:Globol Trigger Poison Accuracy: 991/1000 (99%)
+Done in 5.748159170150757 sec.
+select client [936, 903, 548, 14, 304, 13, 955, 124, 558, 447]
+l2 norm of benign user before server clipping 0.22230522334575653
+l2 norm of benign user after server clipping 0.20816766917705537
+___Test : epoch: 1926: Average loss: 0.3543, Accuracy: 8822/10000.0 (88.2200%)
+benign test loss (after fedavg) 0.3543393568992615
+benign test acc (after fedavg) 88.22
+Test set:local_trigger0 Poison Accuracy: 990/1000 (99%)
+Test set:local_trigger1 Poison Accuracy: 976/1000 (98%)
+Test set:local_trigger2 Poison Accuracy: 236/1000 (24%)
+Test set:local_trigger3 Poison Accuracy: 996/1000 (100%)
+Test set:Main Accuracy: 8822/10000 (88%)
+Test set:Globol Trigger Poison Accuracy: 892/1000 (89%)
+Done in 5.787151336669922 sec.
+select client [868, 309, 147, 601, 253, 495, 628, 848, 867, 110]
+l2 norm of benign user before server clipping 0.1607613019645214
+l2 norm of benign user after server clipping 0.1607613019645214
+___Test : epoch: 1927: Average loss: 0.3560, Accuracy: 8813/10000.0 (88.1300%)
+benign test loss (after fedavg) 0.355986199760437
+benign test acc (after fedavg) 88.13
+Test set:local_trigger0 Poison Accuracy: 994/1000 (99%)
+Test set:local_trigger1 Poison Accuracy: 988/1000 (99%)
+Test set:local_trigger2 Poison Accuracy: 530/1000 (53%)
+Test set:local_trigger3 Poison Accuracy: 998/1000 (100%)
+Test set:Main Accuracy: 8813/10000 (88%)
+Test set:Globol Trigger Poison Accuracy: 978/1000 (98%)
+Done in 5.770821809768677 sec.
+select client [818, 103, 546, 788, 716, 50, 751, 244, 390, 599]
+l2 norm of benign user before server clipping 0.20081337168812752
+l2 norm of benign user after server clipping 0.20081337168812752
+___Test : epoch: 1928: Average loss: 0.3574, Accuracy: 8796/10000.0 (87.9600%)
+benign test loss (after fedavg) 0.357402815246582
+benign test acc (after fedavg) 87.96000000000001
+Test set:local_trigger0 Poison Accuracy: 991/1000 (99%)
+Test set:local_trigger1 Poison Accuracy: 992/1000 (99%)
+Test set:local_trigger2 Poison Accuracy: 870/1000 (87%)
+Test set:local_trigger3 Poison Accuracy: 998/1000 (100%)
+Test set:Main Accuracy: 8796/10000 (88%)
+Test set:Globol Trigger Poison Accuracy: 999/1000 (100%)
+Done in 5.844703912734985 sec.
+select client [679, 425, 680, 256, 154, 637, 746, 278, 694, 216]
+l2 norm of benign user before server clipping 0.3937941387295723
+l2 norm of benign user after server clipping 0.23679446130990983
+___Test : epoch: 1929: Average loss: 0.4308, Accuracy: 8521/10000.0 (85.2100%)
+benign test loss (after fedavg) 0.43082734355926516
+benign test acc (after fedavg) 85.21
+Test set:local_trigger0 Poison Accuracy: 914/1000 (91%)
+Test set:local_trigger1 Poison Accuracy: 924/1000 (92%)
+Test set:local_trigger2 Poison Accuracy: 304/1000 (30%)
+Test set:local_trigger3 Poison Accuracy: 990/1000 (99%)
+Test set:Main Accuracy: 8521/10000 (85%)
+Test set:Globol Trigger Poison Accuracy: 971/1000 (97%)
+Done in 5.666661262512207 sec.
+select client [993, 970, 803, 37, 581, 806, 77, 826, 219, 178]
+l2 norm of benign user before server clipping 0.18164102286100386
+l2 norm of benign user after server clipping 0.17908916920423507
+___Test : epoch: 1930: Average loss: 0.3670, Accuracy: 8748/10000.0 (87.4800%)
+benign test loss (after fedavg) 0.36695853729248046
+benign test acc (after fedavg) 87.48
+Test set:local_trigger0 Poison Accuracy: 976/1000 (98%)
+Test set:local_trigger1 Poison Accuracy: 995/1000 (100%)
+Test set:local_trigger2 Poison Accuracy: 698/1000 (70%)
+Test set:local_trigger3 Poison Accuracy: 998/1000 (100%)
+Test set:Main Accuracy: 8748/10000 (87%)
+Test set:Globol Trigger Poison Accuracy: 992/1000 (99%)
+Done in 5.718267440795898 sec.
+select client [861, 62, 634, 767, 251, 774, 351, 78, 222, 669]
+l2 norm of benign user before server clipping 0.2680486664175987
+l2 norm of benign user after server clipping 0.1808692917227745
+___Test : epoch: 1931: Average loss: 0.3751, Accuracy: 8756/10000.0 (87.5600%)
+benign test loss (after fedavg) 0.37511100006103515
+benign test acc (after fedavg) 87.56
+Test set:local_trigger0 Poison Accuracy: 982/1000 (98%)
+Test set:local_trigger1 Poison Accuracy: 977/1000 (98%)
+Test set:local_trigger2 Poison Accuracy: 131/1000 (13%)
+Test set:local_trigger3 Poison Accuracy: 991/1000 (99%)
+Test set:Main Accuracy: 8756/10000 (88%)
+Test set:Globol Trigger Poison Accuracy: 699/1000 (70%)
+Done in 5.927738666534424 sec.
+select client [378, 644, 655, 560, 219, 32, 499, 148, 198, 306]
+l2 norm of benign user before server clipping 0.25799826309084894
+l2 norm of benign user after server clipping 0.19701334163546563
+___Test : epoch: 1932: Average loss: 0.3811, Accuracy: 8727/10000.0 (87.2700%)
+benign test loss (after fedavg) 0.38112710514068604
+benign test acc (after fedavg) 87.27000000000001
+Test set:local_trigger0 Poison Accuracy: 969/1000 (97%)
+Test set:local_trigger1 Poison Accuracy: 882/1000 (88%)
+Test set:local_trigger2 Poison Accuracy: 2/1000 (0%)
+Test set:local_trigger3 Poison Accuracy: 949/1000 (95%)
+Test set:Main Accuracy: 8727/10000 (87%)
+Test set:Globol Trigger Poison Accuracy: 165/1000 (16%)
+Done in 5.751579999923706 sec.
+select client [983, 260, 769, 837, 491, 677, 345, 213, 389, 695]
+l2 norm of benign user before server clipping 0.2515403613448143
+l2 norm of benign user after server clipping 0.24449835866689681
+___Test : epoch: 1933: Average loss: 0.3759, Accuracy: 8733/10000.0 (87.3300%)
+benign test loss (after fedavg) 0.37593110809326175
+benign test acc (after fedavg) 87.33
+Test set:local_trigger0 Poison Accuracy: 978/1000 (98%)
+Test set:local_trigger1 Poison Accuracy: 965/1000 (96%)
+Test set:local_trigger2 Poison Accuracy: 95/1000 (10%)
+Test set:local_trigger3 Poison Accuracy: 990/1000 (99%)
+Test set:Main Accuracy: 8733/10000 (87%)
+Test set:Globol Trigger Poison Accuracy: 810/1000 (81%)
+Done in 5.854968786239624 sec.
+select client [84, 722, 565, 804, 341, 533, 726, 401, 554, 948]
+l2 norm of benign user before server clipping 0.20620319992303848
+l2 norm of benign user after server clipping 0.2016848459839821
+___Test : epoch: 1934: Average loss: 0.3687, Accuracy: 8772/10000.0 (87.7200%)
+benign test loss (after fedavg) 0.36867223701477053
+benign test acc (after fedavg) 87.72
+Test set:local_trigger0 Poison Accuracy: 981/1000 (98%)
+Test set:local_trigger1 Poison Accuracy: 957/1000 (96%)
+Test set:local_trigger2 Poison Accuracy: 35/1000 (4%)
+Test set:local_trigger3 Poison Accuracy: 981/1000 (98%)
+Test set:Main Accuracy: 8772/10000 (88%)
+Test set:Globol Trigger Poison Accuracy: 650/1000 (65%)
+Done in 5.829247713088989 sec.
+select client [116, 128, 626, 820, 250, 103, 119, 677, 930, 754]
+l2 norm of benign user before server clipping 0.1103275541216135
+l2 norm of benign user after server clipping 0.1103275541216135
+___Test : epoch: 1935: Average loss: 0.3647, Accuracy: 8780/10000.0 (87.8000%)
+benign test loss (after fedavg) 0.36472250595092776
+benign test acc (after fedavg) 87.8
+Test set:local_trigger0 Poison Accuracy: 973/1000 (97%)
+Test set:local_trigger1 Poison Accuracy: 941/1000 (94%)
+Test set:local_trigger2 Poison Accuracy: 6/1000 (1%)
+Test set:local_trigger3 Poison Accuracy: 962/1000 (96%)
+Test set:Main Accuracy: 8780/10000 (88%)
+Test set:Globol Trigger Poison Accuracy: 374/1000 (37%)
+Done in 5.629397869110107 sec.
+select client [378, 581, 537, 959, 87, 962, 407, 146, 389, 887]
+l2 norm of benign user before server clipping 0.14077121242880822
+l2 norm of benign user after server clipping 0.14077121242880822
+___Test : epoch: 1936: Average loss: 0.3650, Accuracy: 8773/10000.0 (87.7300%)
+benign test loss (after fedavg) 0.36504965591430666
+benign test acc (after fedavg) 87.72999999999999
+Test set:local_trigger0 Poison Accuracy: 970/1000 (97%)
+Test set:local_trigger1 Poison Accuracy: 937/1000 (94%)
+Test set:local_trigger2 Poison Accuracy: 4/1000 (0%)
+Test set:local_trigger3 Poison Accuracy: 964/1000 (96%)
+Test set:Main Accuracy: 8773/10000 (88%)
+Test set:Globol Trigger Poison Accuracy: 282/1000 (28%)
+Done in 5.737788200378418 sec.
+select client [792, 777, 241, 785, 207, 592, 552, 260, 843, 495]
+l2 norm of benign user before server clipping 0.18786832615733146
+l2 norm of benign user after server clipping 0.18786832615733146
+___Test : epoch: 1937: Average loss: 0.3644, Accuracy: 8774/10000.0 (87.7400%)
+benign test loss (after fedavg) 0.3644492670059204
+benign test acc (after fedavg) 87.74
+Test set:local_trigger0 Poison Accuracy: 966/1000 (97%)
+Test set:local_trigger1 Poison Accuracy: 928/1000 (93%)
+Test set:local_trigger2 Poison Accuracy: 19/1000 (2%)
+Test set:local_trigger3 Poison Accuracy: 969/1000 (97%)
+Test set:Main Accuracy: 8774/10000 (88%)
+Test set:Globol Trigger Poison Accuracy: 595/1000 (60%)
+Done in 5.687986612319946 sec.
+select client [542, 625, 808, 298, 503, 684, 302, 14, 292, 961]
+l2 norm of benign user before server clipping 0.16717598214745522
+l2 norm of benign user after server clipping 0.16717598214745522
+___Test : epoch: 1938: Average loss: 0.3562, Accuracy: 8774/10000.0 (87.7400%)
+benign test loss (after fedavg) 0.356187149810791
+benign test acc (after fedavg) 87.74
+Test set:local_trigger0 Poison Accuracy: 978/1000 (98%)
+Test set:local_trigger1 Poison Accuracy: 962/1000 (96%)
+Test set:local_trigger2 Poison Accuracy: 152/1000 (15%)
+Test set:local_trigger3 Poison Accuracy: 996/1000 (100%)
+Test set:Main Accuracy: 8774/10000 (88%)
+Test set:Globol Trigger Poison Accuracy: 957/1000 (96%)
+Done in 5.712047815322876 sec.
+select client [945, 991, 317, 475, 560, 102, 521, 506, 745, 972]
+l2 norm of benign user before server clipping 0.1060123436152935
+l2 norm of benign user after server clipping 0.1060123436152935
+___Test : epoch: 1939: Average loss: 0.3568, Accuracy: 8784/10000.0 (87.8400%)
+benign test loss (after fedavg) 0.35675019035339356
+benign test acc (after fedavg) 87.83999999999999
+Test set:local_trigger0 Poison Accuracy: 987/1000 (99%)
+Test set:local_trigger1 Poison Accuracy: 969/1000 (97%)
+Test set:local_trigger2 Poison Accuracy: 187/1000 (19%)
+Test set:local_trigger3 Poison Accuracy: 998/1000 (100%)
+Test set:Main Accuracy: 8784/10000 (88%)
+Test set:Globol Trigger Poison Accuracy: 941/1000 (94%)
+Done in 5.621424674987793 sec.
+select client [275, 282, 325, 33, 452, 955, 867, 448, 184, 431]
+l2 norm of benign user before server clipping 0.11242246218025684
+l2 norm of benign user after server clipping 0.11242246218025684
+___Test : epoch: 1940: Average loss: 0.3547, Accuracy: 8803/10000.0 (88.0300%)
+benign test loss (after fedavg) 0.35466684818267824
+benign test acc (after fedavg) 88.03
+Test set:local_trigger0 Poison Accuracy: 981/1000 (98%)
+Test set:local_trigger1 Poison Accuracy: 965/1000 (96%)
+Test set:local_trigger2 Poison Accuracy: 47/1000 (5%)
+Test set:local_trigger3 Poison Accuracy: 991/1000 (99%)
+Test set:Main Accuracy: 8803/10000 (88%)
+Test set:Globol Trigger Poison Accuracy: 724/1000 (72%)
+Done in 5.808096885681152 sec.
+select client [323, 912, 90, 539, 742, 898, 377, 69, 252, 560]
+l2 norm of benign user before server clipping 0.11823410168290138
+l2 norm of benign user after server clipping 0.11823410168290138
+___Test : epoch: 1941: Average loss: 0.3549, Accuracy: 8795/10000.0 (87.9500%)
+benign test loss (after fedavg) 0.35489479694366455
+benign test acc (after fedavg) 87.94999999999999
+Test set:local_trigger0 Poison Accuracy: 972/1000 (97%)
+Test set:local_trigger1 Poison Accuracy: 919/1000 (92%)
+Test set:local_trigger2 Poison Accuracy: 2/1000 (0%)
+Test set:local_trigger3 Poison Accuracy: 976/1000 (98%)
+Test set:Main Accuracy: 8795/10000 (88%)
+Test set:Globol Trigger Poison Accuracy: 198/1000 (20%)
+Done in 5.777433633804321 sec.
+select client [47, 623, 311, 414, 326, 837, 393, 461, 571, 448]
+l2 norm of benign user before server clipping 0.1574701823294163
+l2 norm of benign user after server clipping 0.1574701823294163
+___Test : epoch: 1942: Average loss: 0.3570, Accuracy: 8799/10000.0 (87.9900%)
+benign test loss (after fedavg) 0.3570184669494629
+benign test acc (after fedavg) 87.99
+Test set:local_trigger0 Poison Accuracy: 975/1000 (98%)
+Test set:local_trigger1 Poison Accuracy: 958/1000 (96%)
+Test set:local_trigger2 Poison Accuracy: 31/1000 (3%)
+Test set:local_trigger3 Poison Accuracy: 988/1000 (99%)
+Test set:Main Accuracy: 8799/10000 (88%)
+Test set:Globol Trigger Poison Accuracy: 779/1000 (78%)
+Done in 5.800894021987915 sec.
+select client [553, 33, 559, 442, 455, 200, 487, 703, 621, 721]
+l2 norm of benign user before server clipping 0.12169701606035233
+l2 norm of benign user after server clipping 0.12169701606035233
+___Test : epoch: 1943: Average loss: 0.3581, Accuracy: 8800/10000.0 (88.0000%)
+benign test loss (after fedavg) 0.35814320945739747
+benign test acc (after fedavg) 88.0
+Test set:local_trigger0 Poison Accuracy: 972/1000 (97%)
+Test set:local_trigger1 Poison Accuracy: 930/1000 (93%)
+Test set:local_trigger2 Poison Accuracy: 2/1000 (0%)
+Test set:local_trigger3 Poison Accuracy: 978/1000 (98%)
+Test set:Main Accuracy: 8800/10000 (88%)
+Test set:Globol Trigger Poison Accuracy: 298/1000 (30%)
+Done in 5.709216833114624 sec.
+select client [820, 219, 567, 134, 648, 572, 267, 682, 305, 75]
+l2 norm of benign user before server clipping 0.11577048674225807
+l2 norm of benign user after server clipping 0.11577048674225807
+___Test : epoch: 1944: Average loss: 0.3523, Accuracy: 8811/10000.0 (88.1100%)
+benign test loss (after fedavg) 0.3523476285934448
+benign test acc (after fedavg) 88.11
+Test set:local_trigger0 Poison Accuracy: 974/1000 (97%)
+Test set:local_trigger1 Poison Accuracy: 959/1000 (96%)
+Test set:local_trigger2 Poison Accuracy: 20/1000 (2%)
+Test set:local_trigger3 Poison Accuracy: 985/1000 (98%)
+Test set:Main Accuracy: 8811/10000 (88%)
+Test set:Globol Trigger Poison Accuracy: 648/1000 (65%)
+Done in 5.68304967880249 sec.
+select client [503, 981, 432, 600, 266, 437, 327, 856, 506, 19]
+l2 norm of benign user before server clipping 0.18681731596589088
+l2 norm of benign user after server clipping 0.16433848515152932
+___Test : epoch: 1945: Average loss: 0.3614, Accuracy: 8807/10000.0 (88.0700%)
+benign test loss (after fedavg) 0.3614411687850952
+benign test acc (after fedavg) 88.07000000000001
+Test set:local_trigger0 Poison Accuracy: 974/1000 (97%)
+Test set:local_trigger1 Poison Accuracy: 856/1000 (86%)
+Test set:local_trigger2 Poison Accuracy: 0/1000 (0%)
+Test set:local_trigger3 Poison Accuracy: 978/1000 (98%)
+Test set:Main Accuracy: 8807/10000 (88%)
+Test set:Globol Trigger Poison Accuracy: 110/1000 (11%)
+Done in 5.746152639389038 sec.
+select client [528, 695, 675, 100, 952, 273, 619, 543, 975, 201]
+l2 norm of benign user before server clipping 0.14492540806531906
+l2 norm of benign user after server clipping 0.14492540806531906
+___Test : epoch: 1946: Average loss: 0.3512, Accuracy: 8805/10000.0 (88.0500%)
+benign test loss (after fedavg) 0.351202926826477
+benign test acc (after fedavg) 88.05
+Test set:local_trigger0 Poison Accuracy: 961/1000 (96%)
+Test set:local_trigger1 Poison Accuracy: 871/1000 (87%)
+Test set:local_trigger2 Poison Accuracy: 0/1000 (0%)
+Test set:local_trigger3 Poison Accuracy: 955/1000 (96%)
+Test set:Main Accuracy: 8805/10000 (88%)
+Test set:Globol Trigger Poison Accuracy: 281/1000 (28%)
+Done in 5.790471076965332 sec.
+select client [468, 931, 626, 872, 101, 49, 228, 301, 113, 634]
+l2 norm of benign user before server clipping 0.09543071910738946
+l2 norm of benign user after server clipping 0.09543071910738946
+___Test : epoch: 1947: Average loss: 0.3461, Accuracy: 8831/10000.0 (88.3100%)
+benign test loss (after fedavg) 0.34608496913909914
+benign test acc (after fedavg) 88.31
+Test set:local_trigger0 Poison Accuracy: 972/1000 (97%)
+Test set:local_trigger1 Poison Accuracy: 939/1000 (94%)
+Test set:local_trigger2 Poison Accuracy: 13/1000 (1%)
+Test set:local_trigger3 Poison Accuracy: 980/1000 (98%)
+Test set:Main Accuracy: 8831/10000 (88%)
+Test set:Globol Trigger Poison Accuracy: 717/1000 (72%)
+Done in 5.598231315612793 sec.
+select client [464, 204, 804, 454, 418, 587, 286, 300, 738, 313]
+l2 norm of benign user before server clipping 0.24120336920022964
+l2 norm of benign user after server clipping 0.21100170761346818
+___Test : epoch: 1948: Average loss: 0.3543, Accuracy: 8824/10000.0 (88.2400%)
+benign test loss (after fedavg) 0.35429637603759767
+benign test acc (after fedavg) 88.24
+Test set:local_trigger0 Poison Accuracy: 974/1000 (97%)
+Test set:local_trigger1 Poison Accuracy: 940/1000 (94%)
+Test set:local_trigger2 Poison Accuracy: 20/1000 (2%)
+Test set:local_trigger3 Poison Accuracy: 977/1000 (98%)
+Test set:Main Accuracy: 8824/10000 (88%)
+Test set:Globol Trigger Poison Accuracy: 673/1000 (67%)
+Done in 5.722684144973755 sec.
+select client [651, 422, 522, 466, 54, 660, 376, 363, 902, 88]
+l2 norm of benign user before server clipping 0.09354688413441181
+l2 norm of benign user after server clipping 0.09354688413441181
+___Test : epoch: 1949: Average loss: 0.3513, Accuracy: 8822/10000.0 (88.2200%)
+benign test loss (after fedavg) 0.3512563180923462
+benign test acc (after fedavg) 88.22
+Test set:local_trigger0 Poison Accuracy: 966/1000 (97%)
+Test set:local_trigger1 Poison Accuracy: 928/1000 (93%)
+Test set:local_trigger2 Poison Accuracy: 26/1000 (3%)
+Test set:local_trigger3 Poison Accuracy: 976/1000 (98%)
+Test set:Main Accuracy: 8822/10000 (88%)
+Test set:Globol Trigger Poison Accuracy: 640/1000 (64%)
+Done in 5.798118591308594 sec.
+select client [63, 677, 85, 304, 47, 437, 545, 189, 644, 720]
+l2 norm of benign user before server clipping 0.12623726688325404
+l2 norm of benign user after server clipping 0.12623726688325404
+___Test : epoch: 1950: Average loss: 0.3498, Accuracy: 8841/10000.0 (88.4100%)
+benign test loss (after fedavg) 0.3497971155166626
+benign test acc (after fedavg) 88.41
+Test set:local_trigger0 Poison Accuracy: 975/1000 (98%)
+Test set:local_trigger1 Poison Accuracy: 952/1000 (95%)
+Test set:local_trigger2 Poison Accuracy: 123/1000 (12%)
+Test set:local_trigger3 Poison Accuracy: 988/1000 (99%)
+Test set:Main Accuracy: 8841/10000 (88%)
+Test set:Globol Trigger Poison Accuracy: 889/1000 (89%)
+Done in 5.6553449630737305 sec.
+select client [817, 425, 379, 436, 208, 599, 671, 251, 722, 15]
+l2 norm of benign user before server clipping 0.1826150447130203
+l2 norm of benign user after server clipping 0.1826150447130203
+___Test : epoch: 1951: Average loss: 0.3619, Accuracy: 8808/10000.0 (88.0800%)
+benign test loss (after fedavg) 0.36185443325042727
+benign test acc (after fedavg) 88.08
+Test set:local_trigger0 Poison Accuracy: 971/1000 (97%)
+Test set:local_trigger1 Poison Accuracy: 915/1000 (92%)
+Test set:local_trigger2 Poison Accuracy: 1/1000 (0%)
+Test set:local_trigger3 Poison Accuracy: 945/1000 (94%)
+Test set:Main Accuracy: 8808/10000 (88%)
+Test set:Globol Trigger Poison Accuracy: 181/1000 (18%)
+Done in 5.805959939956665 sec.
+select client [686, 846, 936, 251, 316, 949, 732, 855, 439, 410]
+l2 norm of benign user before server clipping 0.19283340387046338
+l2 norm of benign user after server clipping 0.15965491347014904
+___Test : epoch: 1952: Average loss: 0.3730, Accuracy: 8763/10000.0 (87.6300%)
+benign test loss (after fedavg) 0.37304874992370607
+benign test acc (after fedavg) 87.63
+Test set:local_trigger0 Poison Accuracy: 972/1000 (97%)
+Test set:local_trigger1 Poison Accuracy: 838/1000 (84%)
+Test set:local_trigger2 Poison Accuracy: 0/1000 (0%)
+Test set:local_trigger3 Poison Accuracy: 862/1000 (86%)
+Test set:Main Accuracy: 8763/10000 (88%)
+Test set:Globol Trigger Poison Accuracy: 25/1000 (2%)
+Done in 5.857438802719116 sec.
+select client [359, 974, 856, 393, 589, 624, 129, 481, 150, 822]
+l2 norm of benign user before server clipping 0.14286850690841674
+l2 norm of benign user after server clipping 0.14286850690841674
+___Test : epoch: 1953: Average loss: 0.3610, Accuracy: 8812/10000.0 (88.1200%)
+benign test loss (after fedavg) 0.36100147018432616
+benign test acc (after fedavg) 88.12
+Test set:local_trigger0 Poison Accuracy: 970/1000 (97%)
+Test set:local_trigger1 Poison Accuracy: 837/1000 (84%)
+Test set:local_trigger2 Poison Accuracy: 1/1000 (0%)
+Test set:local_trigger3 Poison Accuracy: 915/1000 (92%)
+Test set:Main Accuracy: 8812/10000 (88%)
+Test set:Globol Trigger Poison Accuracy: 134/1000 (13%)
+Done in 5.934857368469238 sec.
+select client [643, 432, 127, 277, 305, 176, 325, 280, 162, 813]
+l2 norm of benign user before server clipping 0.12913452014327048
+l2 norm of benign user after server clipping 0.12913452014327048
+___Test : epoch: 1954: Average loss: 0.3516, Accuracy: 8816/10000.0 (88.1600%)
+benign test loss (after fedavg) 0.35158455963134766
+benign test acc (after fedavg) 88.16000000000001
+Test set:local_trigger0 Poison Accuracy: 976/1000 (98%)
+Test set:local_trigger1 Poison Accuracy: 878/1000 (88%)
+Test set:local_trigger2 Poison Accuracy: 15/1000 (2%)
+Test set:local_trigger3 Poison Accuracy: 954/1000 (95%)
+Test set:Main Accuracy: 8816/10000 (88%)
+Test set:Globol Trigger Poison Accuracy: 453/1000 (45%)
+Done in 5.690231084823608 sec.
+select client [207, 273, 398, 14, 225, 616, 763, 538, 522, 57]
+l2 norm of benign user before server clipping 0.09174565970897675
+l2 norm of benign user after server clipping 0.09174565970897675
+___Test : epoch: 1955: Average loss: 0.3473, Accuracy: 8853/10000.0 (88.5300%)
+benign test loss (after fedavg) 0.34728032741546633
+benign test acc (after fedavg) 88.53
+Test set:local_trigger0 Poison Accuracy: 980/1000 (98%)
+Test set:local_trigger1 Poison Accuracy: 939/1000 (94%)
+Test set:local_trigger2 Poison Accuracy: 59/1000 (6%)
+Test set:local_trigger3 Poison Accuracy: 965/1000 (96%)
+Test set:Main Accuracy: 8853/10000 (89%)
+Test set:Globol Trigger Poison Accuracy: 733/1000 (73%)
+Done in 5.772794246673584 sec.
+select client [250, 423, 227, 968, 845, 957, 700, 147, 669, 571]
+l2 norm of benign user before server clipping 0.1147506706416607
+l2 norm of benign user after server clipping 0.1147506706416607
+___Test : epoch: 1956: Average loss: 0.3484, Accuracy: 8846/10000.0 (88.4600%)
+benign test loss (after fedavg) 0.3483801073074341
+benign test acc (after fedavg) 88.46000000000001
+Test set:local_trigger0 Poison Accuracy: 980/1000 (98%)
+Test set:local_trigger1 Poison Accuracy: 931/1000 (93%)
+Test set:local_trigger2 Poison Accuracy: 23/1000 (2%)
+Test set:local_trigger3 Poison Accuracy: 961/1000 (96%)
+Test set:Main Accuracy: 8846/10000 (88%)
+Test set:Globol Trigger Poison Accuracy: 556/1000 (56%)
+Done in 5.799596309661865 sec.
+select client [171, 115, 459, 162, 902, 223, 429, 50, 869, 812]
+l2 norm of benign user before server clipping 0.1203401681035757
+l2 norm of benign user after server clipping 0.1203401681035757
+___Test : epoch: 1957: Average loss: 0.3438, Accuracy: 8847/10000.0 (88.4700%)
+benign test loss (after fedavg) 0.34383156194686887
+benign test acc (after fedavg) 88.47
+Test set:local_trigger0 Poison Accuracy: 988/1000 (99%)
+Test set:local_trigger1 Poison Accuracy: 991/1000 (99%)
+Test set:local_trigger2 Poison Accuracy: 948/1000 (95%)
+Test set:local_trigger3 Poison Accuracy: 999/1000 (100%)
+Test set:Main Accuracy: 8847/10000 (88%)
+Test set:Globol Trigger Poison Accuracy: 1000/1000 (100%)
+Done in 5.764474630355835 sec.
+select client [426, 336, 280, 926, 45, 339, 423, 285, 800, 690]
+l2 norm of benign user before server clipping 0.13545361906290054
+l2 norm of benign user after server clipping 0.13545361906290054
+___Test : epoch: 1958: Average loss: 0.3492, Accuracy: 8825/10000.0 (88.2500%)
+benign test loss (after fedavg) 0.34918406343460084
+benign test acc (after fedavg) 88.25
+Test set:local_trigger0 Poison Accuracy: 991/1000 (99%)
+Test set:local_trigger1 Poison Accuracy: 993/1000 (99%)
+Test set:local_trigger2 Poison Accuracy: 984/1000 (98%)
+Test set:local_trigger3 Poison Accuracy: 1000/1000 (100%)
+Test set:Main Accuracy: 8825/10000 (88%)
+Test set:Globol Trigger Poison Accuracy: 1000/1000 (100%)
+Done in 5.591983318328857 sec.
+select client [397, 177, 870, 898, 17, 923, 317, 166, 53, 579]
+l2 norm of benign user before server clipping 0.09254435151815414
+l2 norm of benign user after server clipping 0.09254435151815414
+___Test : epoch: 1959: Average loss: 0.3489, Accuracy: 8839/10000.0 (88.3900%)
+benign test loss (after fedavg) 0.3488627023696899
+benign test acc (after fedavg) 88.39
+Test set:local_trigger0 Poison Accuracy: 987/1000 (99%)
+Test set:local_trigger1 Poison Accuracy: 985/1000 (98%)
+Test set:local_trigger2 Poison Accuracy: 831/1000 (83%)
+Test set:local_trigger3 Poison Accuracy: 998/1000 (100%)
+Test set:Main Accuracy: 8839/10000 (88%)
+Test set:Globol Trigger Poison Accuracy: 1000/1000 (100%)
+Done in 5.540033578872681 sec.
+select client [451, 426, 499, 579, 528, 172, 736, 913, 527, 301]
+l2 norm of benign user before server clipping 0.11655581630766391
+l2 norm of benign user after server clipping 0.11655581630766391
+___Test : epoch: 1960: Average loss: 0.3456, Accuracy: 8850/10000.0 (88.5000%)
+benign test loss (after fedavg) 0.34560442686080933
+benign test acc (after fedavg) 88.5
+Test set:local_trigger0 Poison Accuracy: 985/1000 (98%)
+Test set:local_trigger1 Poison Accuracy: 980/1000 (98%)
+Test set:local_trigger2 Poison Accuracy: 746/1000 (75%)
+Test set:local_trigger3 Poison Accuracy: 997/1000 (100%)
+Test set:Main Accuracy: 8850/10000 (88%)
+Test set:Globol Trigger Poison Accuracy: 997/1000 (100%)
+Done in 5.7798309326171875 sec.
+select client [356, 522, 228, 367, 878, 927, 454, 769, 686, 338]
+l2 norm of benign user before server clipping 0.13162632137537003
+l2 norm of benign user after server clipping 0.13162632137537003
+___Test : epoch: 1961: Average loss: 0.3540, Accuracy: 8829/10000.0 (88.2900%)
+benign test loss (after fedavg) 0.35399735774993896
+benign test acc (after fedavg) 88.29
+Test set:local_trigger0 Poison Accuracy: 978/1000 (98%)
+Test set:local_trigger1 Poison Accuracy: 972/1000 (97%)
+Test set:local_trigger2 Poison Accuracy: 347/1000 (35%)
+Test set:local_trigger3 Poison Accuracy: 981/1000 (98%)
+Test set:Main Accuracy: 8829/10000 (88%)
+Test set:Globol Trigger Poison Accuracy: 956/1000 (96%)
+Done in 5.889467239379883 sec.
+select client [562, 409, 843, 25, 68, 731, 477, 281, 379, 265]
+l2 norm of benign user before server clipping 0.15167706534266473
+l2 norm of benign user after server clipping 0.15167706534266473
+___Test : epoch: 1962: Average loss: 0.3470, Accuracy: 8844/10000.0 (88.4400%)
+benign test loss (after fedavg) 0.3470037766456604
+benign test acc (after fedavg) 88.44
+Test set:local_trigger0 Poison Accuracy: 980/1000 (98%)
+Test set:local_trigger1 Poison Accuracy: 981/1000 (98%)
+Test set:local_trigger2 Poison Accuracy: 465/1000 (46%)
+Test set:local_trigger3 Poison Accuracy: 995/1000 (100%)
+Test set:Main Accuracy: 8844/10000 (88%)
+Test set:Globol Trigger Poison Accuracy: 989/1000 (99%)
+Done in 5.740961313247681 sec.
+select client [693, 598, 948, 767, 23, 976, 262, 417, 771, 888]
+l2 norm of benign user before server clipping 0.12846116796135904
+l2 norm of benign user after server clipping 0.12846116796135904
+___Test : epoch: 1963: Average loss: 0.3458, Accuracy: 8850/10000.0 (88.5000%)
+benign test loss (after fedavg) 0.3457859190940857
+benign test acc (after fedavg) 88.5
+Test set:local_trigger0 Poison Accuracy: 986/1000 (99%)
+Test set:local_trigger1 Poison Accuracy: 991/1000 (99%)
+Test set:local_trigger2 Poison Accuracy: 884/1000 (88%)
+Test set:local_trigger3 Poison Accuracy: 998/1000 (100%)
+Test set:Main Accuracy: 8850/10000 (88%)
+Test set:Globol Trigger Poison Accuracy: 1000/1000 (100%)
+Done in 5.700338840484619 sec.
+select client [387, 157, 492, 506, 493, 406, 785, 598, 52, 105]
+l2 norm of benign user before server clipping 0.08519973680377006
+l2 norm of benign user after server clipping 0.08519973680377006
+___Test : epoch: 1964: Average loss: 0.3495, Accuracy: 8830/10000.0 (88.3000%)
+benign test loss (after fedavg) 0.3495454546928406
+benign test acc (after fedavg) 88.3
+Test set:local_trigger0 Poison Accuracy: 975/1000 (98%)
+Test set:local_trigger1 Poison Accuracy: 976/1000 (98%)
+Test set:local_trigger2 Poison Accuracy: 488/1000 (49%)
+Test set:local_trigger3 Poison Accuracy: 988/1000 (99%)
+Test set:Main Accuracy: 8830/10000 (88%)
+Test set:Globol Trigger Poison Accuracy: 986/1000 (99%)
+Done in 5.737063407897949 sec.
+select client [550, 355, 725, 124, 115, 88, 921, 969, 66, 586]
+l2 norm of benign user before server clipping 0.08082031533122062
+l2 norm of benign user after server clipping 0.08082031533122062
+___Test : epoch: 1965: Average loss: 0.3454, Accuracy: 8845/10000.0 (88.4500%)
+benign test loss (after fedavg) 0.3454161767959595
+benign test acc (after fedavg) 88.44999999999999
+Test set:local_trigger0 Poison Accuracy: 987/1000 (99%)
+Test set:local_trigger1 Poison Accuracy: 993/1000 (99%)
+Test set:local_trigger2 Poison Accuracy: 974/1000 (97%)
+Test set:local_trigger3 Poison Accuracy: 1000/1000 (100%)
+Test set:Main Accuracy: 8845/10000 (88%)
+Test set:Globol Trigger Poison Accuracy: 1000/1000 (100%)
+Done in 5.904297351837158 sec.
+select client [594, 670, 227, 501, 110, 858, 52, 246, 394, 293]
+l2 norm of benign user before server clipping 0.09312532097101212
+l2 norm of benign user after server clipping 0.09312532097101212
+___Test : epoch: 1966: Average loss: 0.3492, Accuracy: 8828/10000.0 (88.2800%)
+benign test loss (after fedavg) 0.3492352033615112
+benign test acc (after fedavg) 88.28
+Test set:local_trigger0 Poison Accuracy: 986/1000 (99%)
+Test set:local_trigger1 Poison Accuracy: 978/1000 (98%)
+Test set:local_trigger2 Poison Accuracy: 546/1000 (55%)
+Test set:local_trigger3 Poison Accuracy: 993/1000 (99%)
+Test set:Main Accuracy: 8828/10000 (88%)
+Test set:Globol Trigger Poison Accuracy: 982/1000 (98%)
+Done in 5.6209635734558105 sec.
+select client [335, 580, 700, 828, 447, 27, 774, 414, 184, 362]
+l2 norm of benign user before server clipping 0.08392972126603127
+l2 norm of benign user after server clipping 0.08392972126603127
+___Test : epoch: 1967: Average loss: 0.3460, Accuracy: 8842/10000.0 (88.4200%)
+benign test loss (after fedavg) 0.34600617895126345
+benign test acc (after fedavg) 88.42
+Test set:local_trigger0 Poison Accuracy: 987/1000 (99%)
+Test set:local_trigger1 Poison Accuracy: 984/1000 (98%)
+Test set:local_trigger2 Poison Accuracy: 616/1000 (62%)
+Test set:local_trigger3 Poison Accuracy: 996/1000 (100%)
+Test set:Main Accuracy: 8842/10000 (88%)
+Test set:Globol Trigger Poison Accuracy: 992/1000 (99%)
+Done in 5.884727954864502 sec.
+select client [326, 144, 340, 611, 114, 639, 880, 957, 961, 158]
+l2 norm of benign user before server clipping 0.07979428879916668
+l2 norm of benign user after server clipping 0.07979428879916668
+___Test : epoch: 1968: Average loss: 0.3520, Accuracy: 8833/10000.0 (88.3300%)
+benign test loss (after fedavg) 0.3520381812095642
+benign test acc (after fedavg) 88.33
+Test set:local_trigger0 Poison Accuracy: 986/1000 (99%)
+Test set:local_trigger1 Poison Accuracy: 984/1000 (98%)
+Test set:local_trigger2 Poison Accuracy: 703/1000 (70%)
+Test set:local_trigger3 Poison Accuracy: 995/1000 (100%)
+Test set:Main Accuracy: 8833/10000 (88%)
+Test set:Globol Trigger Poison Accuracy: 990/1000 (99%)
+Done in 5.849551200866699 sec.
+select client [803, 460, 922, 653, 263, 219, 174, 387, 122, 762]
+l2 norm of benign user before server clipping 0.09329203180968762
+l2 norm of benign user after server clipping 0.09329203180968762
+___Test : epoch: 1969: Average loss: 0.3490, Accuracy: 8843/10000.0 (88.4300%)
+benign test loss (after fedavg) 0.34903391361236574
+benign test acc (after fedavg) 88.42999999999999
+Test set:local_trigger0 Poison Accuracy: 974/1000 (97%)
+Test set:local_trigger1 Poison Accuracy: 968/1000 (97%)
+Test set:local_trigger2 Poison Accuracy: 408/1000 (41%)
+Test set:local_trigger3 Poison Accuracy: 980/1000 (98%)
+Test set:Main Accuracy: 8843/10000 (88%)
+Test set:Globol Trigger Poison Accuracy: 973/1000 (97%)
+Done in 5.688832759857178 sec.
+select client [254, 786, 768, 220, 215, 491, 139, 471, 784, 690]
+l2 norm of benign user before server clipping 0.057363948598504064
+l2 norm of benign user after server clipping 0.057363948598504064
+___Test : epoch: 1970: Average loss: 0.3441, Accuracy: 8858/10000.0 (88.5800%)
+benign test loss (after fedavg) 0.3441174823760986
+benign test acc (after fedavg) 88.58
+Test set:local_trigger0 Poison Accuracy: 973/1000 (97%)
+Test set:local_trigger1 Poison Accuracy: 959/1000 (96%)
+Test set:local_trigger2 Poison Accuracy: 295/1000 (30%)
+Test set:local_trigger3 Poison Accuracy: 980/1000 (98%)
+Test set:Main Accuracy: 8858/10000 (89%)
+Test set:Globol Trigger Poison Accuracy: 952/1000 (95%)
+Done in 5.704394578933716 sec.
+select client [814, 847, 595, 838, 616, 408, 67, 31, 784, 253]
+l2 norm of benign user before server clipping 0.06364379040896892
+l2 norm of benign user after server clipping 0.06364379040896892
+___Test : epoch: 1971: Average loss: 0.3425, Accuracy: 8858/10000.0 (88.5800%)
+benign test loss (after fedavg) 0.3425333695411682
+benign test acc (after fedavg) 88.58
+Test set:local_trigger0 Poison Accuracy: 974/1000 (97%)
+Test set:local_trigger1 Poison Accuracy: 965/1000 (96%)
+Test set:local_trigger2 Poison Accuracy: 457/1000 (46%)
+Test set:local_trigger3 Poison Accuracy: 986/1000 (99%)
+Test set:Main Accuracy: 8858/10000 (89%)
+Test set:Globol Trigger Poison Accuracy: 971/1000 (97%)
+Done in 5.648257732391357 sec.
+select client [222, 103, 309, 412, 382, 271, 133, 87, 301, 707]
+l2 norm of benign user before server clipping 0.12103879936039448
+l2 norm of benign user after server clipping 0.12103879936039448
+___Test : epoch: 1972: Average loss: 0.3456, Accuracy: 8857/10000.0 (88.5700%)
+benign test loss (after fedavg) 0.34561224193573
+benign test acc (after fedavg) 88.57000000000001
+Test set:local_trigger0 Poison Accuracy: 975/1000 (98%)
+Test set:local_trigger1 Poison Accuracy: 965/1000 (96%)
+Test set:local_trigger2 Poison Accuracy: 273/1000 (27%)
+Test set:local_trigger3 Poison Accuracy: 989/1000 (99%)
+Test set:Main Accuracy: 8857/10000 (89%)
+Test set:Globol Trigger Poison Accuracy: 950/1000 (95%)
+Done in 5.810227394104004 sec.
+select client [477, 689, 748, 275, 72, 92, 393, 493, 252, 792]
+l2 norm of benign user before server clipping 0.05866600032895804
+l2 norm of benign user after server clipping 0.05866600032895804
+___Test : epoch: 1973: Average loss: 0.3439, Accuracy: 8861/10000.0 (88.6100%)
+benign test loss (after fedavg) 0.34391513051986694
+benign test acc (after fedavg) 88.61
+Test set:local_trigger0 Poison Accuracy: 977/1000 (98%)
+Test set:local_trigger1 Poison Accuracy: 968/1000 (97%)
+Test set:local_trigger2 Poison Accuracy: 198/1000 (20%)
+Test set:local_trigger3 Poison Accuracy: 987/1000 (99%)
+Test set:Main Accuracy: 8861/10000 (89%)
+Test set:Globol Trigger Poison Accuracy: 907/1000 (91%)
+Done in 5.661760568618774 sec.
+select client [856, 102, 798, 898, 779, 519, 91, 393, 363, 225]
+l2 norm of benign user before server clipping 0.06840962208807469
+l2 norm of benign user after server clipping 0.06840962208807469
+___Test : epoch: 1974: Average loss: 0.3481, Accuracy: 8851/10000.0 (88.5100%)
+benign test loss (after fedavg) 0.3481395986557007
+benign test acc (after fedavg) 88.51
+Test set:local_trigger0 Poison Accuracy: 974/1000 (97%)
+Test set:local_trigger1 Poison Accuracy: 917/1000 (92%)
+Test set:local_trigger2 Poison Accuracy: 1/1000 (0%)
+Test set:local_trigger3 Poison Accuracy: 972/1000 (97%)
+Test set:Main Accuracy: 8851/10000 (89%)
+Test set:Globol Trigger Poison Accuracy: 307/1000 (31%)
+Done in 5.719091892242432 sec.
+select client [697, 664, 633, 145, 428, 447, 976, 791, 725, 414]
+l2 norm of benign user before server clipping 0.05694379024207592
+l2 norm of benign user after server clipping 0.05694379024207592
+___Test : epoch: 1975: Average loss: 0.3449, Accuracy: 8855/10000.0 (88.5500%)
+benign test loss (after fedavg) 0.34492831687927245
+benign test acc (after fedavg) 88.55
+Test set:local_trigger0 Poison Accuracy: 978/1000 (98%)
+Test set:local_trigger1 Poison Accuracy: 933/1000 (93%)
+Test set:local_trigger2 Poison Accuracy: 16/1000 (2%)
+Test set:local_trigger3 Poison Accuracy: 976/1000 (98%)
+Test set:Main Accuracy: 8855/10000 (89%)
+Test set:Globol Trigger Poison Accuracy: 583/1000 (58%)
+Done in 5.727936506271362 sec.
+select client [660, 177, 460, 876, 412, 279, 930, 24, 288, 659]
+l2 norm of benign user before server clipping 0.04964095205068588
+l2 norm of benign user after server clipping 0.04964095205068588
+___Test : epoch: 1976: Average loss: 0.3449, Accuracy: 8840/10000.0 (88.4000%)
+benign test loss (after fedavg) 0.3449341731071472
+benign test acc (after fedavg) 88.4
+Test set:local_trigger0 Poison Accuracy: 976/1000 (98%)
+Test set:local_trigger1 Poison Accuracy: 953/1000 (95%)
+Test set:local_trigger2 Poison Accuracy: 57/1000 (6%)
+Test set:local_trigger3 Poison Accuracy: 980/1000 (98%)
+Test set:Main Accuracy: 8840/10000 (88%)
+Test set:Globol Trigger Poison Accuracy: 791/1000 (79%)
+Done in 5.7890846729278564 sec.
+select client [419, 452, 423, 11, 341, 535, 465, 914, 833, 804]
+l2 norm of benign user before server clipping 0.0676906667649746
+l2 norm of benign user after server clipping 0.0676906667649746
+___Test : epoch: 1977: Average loss: 0.3472, Accuracy: 8853/10000.0 (88.5300%)
+benign test loss (after fedavg) 0.3471567584991455
+benign test acc (after fedavg) 88.53
+Test set:local_trigger0 Poison Accuracy: 978/1000 (98%)
+Test set:local_trigger1 Poison Accuracy: 914/1000 (91%)
+Test set:local_trigger2 Poison Accuracy: 4/1000 (0%)
+Test set:local_trigger3 Poison Accuracy: 968/1000 (97%)
+Test set:Main Accuracy: 8853/10000 (89%)
+Test set:Globol Trigger Poison Accuracy: 461/1000 (46%)
+Done in 5.775899410247803 sec.
+select client [101, 90, 734, 857, 260, 699, 227, 348, 935, 987]
+l2 norm of benign user before server clipping 0.03884036876261234
+l2 norm of benign user after server clipping 0.03884036876261234
+___Test : epoch: 1978: Average loss: 0.3448, Accuracy: 8838/10000.0 (88.3800%)
+benign test loss (after fedavg) 0.34480674381256105
+benign test acc (after fedavg) 88.38000000000001
+Test set:local_trigger0 Poison Accuracy: 980/1000 (98%)
+Test set:local_trigger1 Poison Accuracy: 956/1000 (96%)
+Test set:local_trigger2 Poison Accuracy: 83/1000 (8%)
+Test set:local_trigger3 Poison Accuracy: 987/1000 (99%)
+Test set:Main Accuracy: 8838/10000 (88%)
+Test set:Globol Trigger Poison Accuracy: 882/1000 (88%)
+Done in 5.759226083755493 sec.
+select client [96, 779, 620, 95, 385, 346, 13, 393, 454, 437]
+l2 norm of benign user before server clipping 0.07485736757516862
+l2 norm of benign user after server clipping 0.07485736757516862
+___Test : epoch: 1979: Average loss: 0.3485, Accuracy: 8847/10000.0 (88.4700%)
+benign test loss (after fedavg) 0.348471809387207
+benign test acc (after fedavg) 88.47
+Test set:local_trigger0 Poison Accuracy: 986/1000 (99%)
+Test set:local_trigger1 Poison Accuracy: 978/1000 (98%)
+Test set:local_trigger2 Poison Accuracy: 465/1000 (46%)
+Test set:local_trigger3 Poison Accuracy: 998/1000 (100%)
+Test set:Main Accuracy: 8847/10000 (88%)
+Test set:Globol Trigger Poison Accuracy: 985/1000 (98%)
+Done in 5.8430445194244385 sec.
+select client [193, 857, 149, 515, 715, 825, 126, 315, 257, 145]
+l2 norm of benign user before server clipping 0.07819105945527553
+l2 norm of benign user after server clipping 0.07819105945527553
+___Test : epoch: 1980: Average loss: 0.3510, Accuracy: 8823/10000.0 (88.2300%)
+benign test loss (after fedavg) 0.35103833389282224
+benign test acc (after fedavg) 88.23
+Test set:local_trigger0 Poison Accuracy: 983/1000 (98%)
+Test set:local_trigger1 Poison Accuracy: 959/1000 (96%)
+Test set:local_trigger2 Poison Accuracy: 146/1000 (15%)
+Test set:local_trigger3 Poison Accuracy: 976/1000 (98%)
+Test set:Main Accuracy: 8823/10000 (88%)
+Test set:Globol Trigger Poison Accuracy: 677/1000 (68%)
+Done in 5.899364471435547 sec.
+select client [937, 874, 865, 702, 441, 534, 387, 490, 889, 962]
+l2 norm of benign user before server clipping 0.04280937556177378
+l2 norm of benign user after server clipping 0.04280937556177378
+___Test : epoch: 1981: Average loss: 0.3436, Accuracy: 8824/10000.0 (88.2400%)
+benign test loss (after fedavg) 0.3435784989356995
+benign test acc (after fedavg) 88.24
+Test set:local_trigger0 Poison Accuracy: 974/1000 (97%)
+Test set:local_trigger1 Poison Accuracy: 941/1000 (94%)
+Test set:local_trigger2 Poison Accuracy: 100/1000 (10%)
+Test set:local_trigger3 Poison Accuracy: 975/1000 (98%)
+Test set:Main Accuracy: 8824/10000 (88%)
+Test set:Globol Trigger Poison Accuracy: 736/1000 (74%)
+Done in 5.786195993423462 sec.
+select client [298, 111, 316, 709, 560, 445, 196, 637, 554, 613]
+l2 norm of benign user before server clipping 0.04192667752504349
+l2 norm of benign user after server clipping 0.04192667752504349
+___Test : epoch: 1982: Average loss: 0.3447, Accuracy: 8838/10000.0 (88.3800%)
+benign test loss (after fedavg) 0.3446713907241821
+benign test acc (after fedavg) 88.38000000000001
+Test set:local_trigger0 Poison Accuracy: 981/1000 (98%)
+Test set:local_trigger1 Poison Accuracy: 958/1000 (96%)
+Test set:local_trigger2 Poison Accuracy: 233/1000 (23%)
+Test set:local_trigger3 Poison Accuracy: 988/1000 (99%)
+Test set:Main Accuracy: 8838/10000 (88%)
+Test set:Globol Trigger Poison Accuracy: 853/1000 (85%)
+Done in 5.7357704639434814 sec.
+select client [798, 338, 634, 255, 253, 830, 344, 985, 223, 949]
+l2 norm of benign user before server clipping 0.032125845551490784
+l2 norm of benign user after server clipping 0.032125845551490784
+___Test : epoch: 1983: Average loss: 0.3448, Accuracy: 8833/10000.0 (88.3300%)
+benign test loss (after fedavg) 0.34484195652008054
+benign test acc (after fedavg) 88.33
+Test set:local_trigger0 Poison Accuracy: 983/1000 (98%)
+Test set:local_trigger1 Poison Accuracy: 953/1000 (95%)
+Test set:local_trigger2 Poison Accuracy: 113/1000 (11%)
+Test set:local_trigger3 Poison Accuracy: 984/1000 (98%)
+Test set:Main Accuracy: 8833/10000 (88%)
+Test set:Globol Trigger Poison Accuracy: 799/1000 (80%)
+Done in 5.662931442260742 sec.
+select client [306, 117, 317, 344, 828, 261, 428, 78, 322, 528]
+l2 norm of benign user before server clipping 0.03394430000334978
+l2 norm of benign user after server clipping 0.03394430000334978
+___Test : epoch: 1984: Average loss: 0.3432, Accuracy: 8852/10000.0 (88.5200%)
+benign test loss (after fedavg) 0.34316309394836425
+benign test acc (after fedavg) 88.52
+Test set:local_trigger0 Poison Accuracy: 972/1000 (97%)
+Test set:local_trigger1 Poison Accuracy: 937/1000 (94%)
+Test set:local_trigger2 Poison Accuracy: 153/1000 (15%)
+Test set:local_trigger3 Poison Accuracy: 973/1000 (97%)
+Test set:Main Accuracy: 8852/10000 (89%)
+Test set:Globol Trigger Poison Accuracy: 694/1000 (69%)
+Done in 5.840043067932129 sec.
+select client [344, 316, 438, 601, 361, 85, 107, 190, 778, 367]
+l2 norm of benign user before server clipping 0.043874132446944714
+l2 norm of benign user after server clipping 0.043874132446944714
+___Test : epoch: 1985: Average loss: 0.3438, Accuracy: 8847/10000.0 (88.4700%)
+benign test loss (after fedavg) 0.34381208057403567
+benign test acc (after fedavg) 88.47
+Test set:local_trigger0 Poison Accuracy: 979/1000 (98%)
+Test set:local_trigger1 Poison Accuracy: 957/1000 (96%)
+Test set:local_trigger2 Poison Accuracy: 260/1000 (26%)
+Test set:local_trigger3 Poison Accuracy: 982/1000 (98%)
+Test set:Main Accuracy: 8847/10000 (88%)
+Test set:Globol Trigger Poison Accuracy: 862/1000 (86%)
+Done in 5.882831335067749 sec.
+select client [420, 198, 543, 317, 307, 962, 294, 393, 763, 905]
+l2 norm of benign user before server clipping 0.039359891414642335
+l2 norm of benign user after server clipping 0.039359891414642335
+___Test : epoch: 1986: Average loss: 0.3396, Accuracy: 8851/10000.0 (88.5100%)
+benign test loss (after fedavg) 0.3396496643066406
+benign test acc (after fedavg) 88.51
+Test set:local_trigger0 Poison Accuracy: 980/1000 (98%)
+Test set:local_trigger1 Poison Accuracy: 964/1000 (96%)
+Test set:local_trigger2 Poison Accuracy: 390/1000 (39%)
+Test set:local_trigger3 Poison Accuracy: 987/1000 (99%)
+Test set:Main Accuracy: 8851/10000 (89%)
+Test set:Globol Trigger Poison Accuracy: 903/1000 (90%)
+Done in 5.7606589794158936 sec.
+select client [258, 539, 92, 303, 212, 22, 408, 95, 357, 213]
+l2 norm of benign user before server clipping 0.02513996874913573
+l2 norm of benign user after server clipping 0.02513996874913573
+___Test : epoch: 1987: Average loss: 0.3383, Accuracy: 8877/10000.0 (88.7700%)
+benign test loss (after fedavg) 0.33833571300506593
+benign test acc (after fedavg) 88.77000000000001
+Test set:local_trigger0 Poison Accuracy: 987/1000 (99%)
+Test set:local_trigger1 Poison Accuracy: 990/1000 (99%)
+Test set:local_trigger2 Poison Accuracy: 947/1000 (95%)
+Test set:local_trigger3 Poison Accuracy: 1000/1000 (100%)
+Test set:Main Accuracy: 8877/10000 (89%)
+Test set:Globol Trigger Poison Accuracy: 1000/1000 (100%)
+Done in 5.746290922164917 sec.
+select client [14, 299, 92, 947, 707, 189, 345, 549, 482, 871]
+l2 norm of benign user before server clipping 0.046713114529848096
+l2 norm of benign user after server clipping 0.046713114529848096
+___Test : epoch: 1988: Average loss: 0.3395, Accuracy: 8873/10000.0 (88.7300%)
+benign test loss (after fedavg) 0.33945137901306155
+benign test acc (after fedavg) 88.73
+Test set:local_trigger0 Poison Accuracy: 987/1000 (99%)
+Test set:local_trigger1 Poison Accuracy: 976/1000 (98%)
+Test set:local_trigger2 Poison Accuracy: 569/1000 (57%)
+Test set:local_trigger3 Poison Accuracy: 998/1000 (100%)
+Test set:Main Accuracy: 8873/10000 (89%)
+Test set:Globol Trigger Poison Accuracy: 978/1000 (98%)
+Done in 5.674655199050903 sec.
+select client [728, 349, 206, 493, 73, 216, 578, 759, 467, 567]
+l2 norm of benign user before server clipping 0.04850459806621075
+l2 norm of benign user after server clipping 0.04850459806621075
+___Test : epoch: 1989: Average loss: 0.3418, Accuracy: 8860/10000.0 (88.6000%)
+benign test loss (after fedavg) 0.3418451831817627
+benign test acc (after fedavg) 88.6
+Test set:local_trigger0 Poison Accuracy: 981/1000 (98%)
+Test set:local_trigger1 Poison Accuracy: 944/1000 (94%)
+Test set:local_trigger2 Poison Accuracy: 145/1000 (14%)
+Test set:local_trigger3 Poison Accuracy: 974/1000 (97%)
+Test set:Main Accuracy: 8860/10000 (89%)
+Test set:Globol Trigger Poison Accuracy: 778/1000 (78%)
+Done in 5.712461471557617 sec.
+select client [837, 418, 799, 869, 263, 559, 438, 535, 904, 177]
+l2 norm of benign user before server clipping 0.0402108714915812
+l2 norm of benign user after server clipping 0.0402108714915812
+___Test : epoch: 1990: Average loss: 0.3448, Accuracy: 8840/10000.0 (88.4000%)
+benign test loss (after fedavg) 0.34482010383605954
+benign test acc (after fedavg) 88.4
+Test set:local_trigger0 Poison Accuracy: 985/1000 (98%)
+Test set:local_trigger1 Poison Accuracy: 970/1000 (97%)
+Test set:local_trigger2 Poison Accuracy: 385/1000 (38%)
+Test set:local_trigger3 Poison Accuracy: 983/1000 (98%)
+Test set:Main Accuracy: 8840/10000 (88%)
+Test set:Globol Trigger Poison Accuracy: 914/1000 (91%)
+Done in 5.8721418380737305 sec.
+select client [851, 442, 395, 110, 814, 777, 825, 509, 687, 942]
+l2 norm of benign user before server clipping 0.017848146986216305
+l2 norm of benign user after server clipping 0.017848146986216305
+___Test : epoch: 1991: Average loss: 0.3410, Accuracy: 8872/10000.0 (88.7200%)
+benign test loss (after fedavg) 0.3409697825431824
+benign test acc (after fedavg) 88.72
+Test set:local_trigger0 Poison Accuracy: 975/1000 (98%)
+Test set:local_trigger1 Poison Accuracy: 937/1000 (94%)
+Test set:local_trigger2 Poison Accuracy: 110/1000 (11%)
+Test set:local_trigger3 Poison Accuracy: 978/1000 (98%)
+Test set:Main Accuracy: 8872/10000 (89%)
+Test set:Globol Trigger Poison Accuracy: 757/1000 (76%)
+Done in 5.8697144985198975 sec.
+select client [879, 567, 73, 935, 785, 322, 22, 428, 631, 250]
+l2 norm of benign user before server clipping 0.017938648257404564
+l2 norm of benign user after server clipping 0.017938648257404564
+___Test : epoch: 1992: Average loss: 0.3465, Accuracy: 8851/10000.0 (88.5100%)
+benign test loss (after fedavg) 0.3464922137260437
+benign test acc (after fedavg) 88.51
+Test set:local_trigger0 Poison Accuracy: 975/1000 (98%)
+Test set:local_trigger1 Poison Accuracy: 917/1000 (92%)
+Test set:local_trigger2 Poison Accuracy: 41/1000 (4%)
+Test set:local_trigger3 Poison Accuracy: 966/1000 (97%)
+Test set:Main Accuracy: 8851/10000 (89%)
+Test set:Globol Trigger Poison Accuracy: 573/1000 (57%)
+Done in 5.8232011795043945 sec.
+select client [469, 162, 970, 164, 595, 652, 789, 937, 100, 115]
+l2 norm of benign user before server clipping 0.019493000023066996
+l2 norm of benign user after server clipping 0.019493000023066996
+___Test : epoch: 1993: Average loss: 0.3439, Accuracy: 8850/10000.0 (88.5000%)
+benign test loss (after fedavg) 0.34385914764404296
+benign test acc (after fedavg) 88.5
+Test set:local_trigger0 Poison Accuracy: 974/1000 (97%)
+Test set:local_trigger1 Poison Accuracy: 961/1000 (96%)
+Test set:local_trigger2 Poison Accuracy: 403/1000 (40%)
+Test set:local_trigger3 Poison Accuracy: 979/1000 (98%)
+Test set:Main Accuracy: 8850/10000 (88%)
+Test set:Globol Trigger Poison Accuracy: 908/1000 (91%)
+Done in 5.7976062297821045 sec.
+select client [861, 942, 520, 262, 621, 162, 719, 439, 858, 629]
+l2 norm of benign user before server clipping 0.01316398400813341
+l2 norm of benign user after server clipping 0.01316398400813341
+___Test : epoch: 1994: Average loss: 0.3398, Accuracy: 8864/10000.0 (88.6400%)
+benign test loss (after fedavg) 0.33984520330429074
+benign test acc (after fedavg) 88.64
+Test set:local_trigger0 Poison Accuracy: 989/1000 (99%)
+Test set:local_trigger1 Poison Accuracy: 987/1000 (99%)
+Test set:local_trigger2 Poison Accuracy: 904/1000 (90%)
+Test set:local_trigger3 Poison Accuracy: 999/1000 (100%)
+Test set:Main Accuracy: 8864/10000 (89%)
+Test set:Globol Trigger Poison Accuracy: 997/1000 (100%)
+Done in 5.723366022109985 sec.
+select client [446, 580, 535, 299, 907, 180, 148, 768, 336, 277]
+l2 norm of benign user before server clipping 0.015645999694243073
+l2 norm of benign user after server clipping 0.015645999694243073
+___Test : epoch: 1995: Average loss: 0.3405, Accuracy: 8869/10000.0 (88.6900%)
+benign test loss (after fedavg) 0.340466361618042
+benign test acc (after fedavg) 88.69
+Test set:local_trigger0 Poison Accuracy: 977/1000 (98%)
+Test set:local_trigger1 Poison Accuracy: 956/1000 (96%)
+Test set:local_trigger2 Poison Accuracy: 288/1000 (29%)
+Test set:local_trigger3 Poison Accuracy: 982/1000 (98%)
+Test set:Main Accuracy: 8869/10000 (89%)
+Test set:Globol Trigger Poison Accuracy: 873/1000 (87%)
+Done in 5.716626882553101 sec.
+select client [758, 863, 461, 98, 834, 781, 570, 993, 336, 972]
+l2 norm of benign user before server clipping 0.007284750929102302
+l2 norm of benign user after server clipping 0.007284750929102302
+___Test : epoch: 1996: Average loss: 0.3421, Accuracy: 8867/10000.0 (88.6700%)
+benign test loss (after fedavg) 0.34205135383605956
+benign test acc (after fedavg) 88.67
+Test set:local_trigger0 Poison Accuracy: 981/1000 (98%)
+Test set:local_trigger1 Poison Accuracy: 948/1000 (95%)
+Test set:local_trigger2 Poison Accuracy: 235/1000 (24%)
+Test set:local_trigger3 Poison Accuracy: 982/1000 (98%)
+Test set:Main Accuracy: 8867/10000 (89%)
+Test set:Globol Trigger Poison Accuracy: 870/1000 (87%)
+Done in 5.623533725738525 sec.
+select client [471, 270, 11, 586, 580, 710, 138, 23, 683, 361]
+l2 norm of benign user before server clipping 0.004695108160376549
+l2 norm of benign user after server clipping 0.004695108160376549
+___Test : epoch: 1997: Average loss: 0.3384, Accuracy: 8878/10000.0 (88.7800%)
+benign test loss (after fedavg) 0.338429399394989
+benign test acc (after fedavg) 88.78
+Test set:local_trigger0 Poison Accuracy: 980/1000 (98%)
+Test set:local_trigger1 Poison Accuracy: 936/1000 (94%)
+Test set:local_trigger2 Poison Accuracy: 197/1000 (20%)
+Test set:local_trigger3 Poison Accuracy: 978/1000 (98%)
+Test set:Main Accuracy: 8878/10000 (89%)
+Test set:Globol Trigger Poison Accuracy: 785/1000 (78%)
+Done in 5.649075746536255 sec.
+select client [675, 245, 928, 819, 647, 870, 926, 366, 653, 554]
+l2 norm of benign user before server clipping 0.010216883476823568
+l2 norm of benign user after server clipping 0.010216883476823568
+___Test : epoch: 1998: Average loss: 0.3437, Accuracy: 8853/10000.0 (88.5300%)
+benign test loss (after fedavg) 0.3437316279411316
+benign test acc (after fedavg) 88.53
+Test set:local_trigger0 Poison Accuracy: 984/1000 (98%)
+Test set:local_trigger1 Poison Accuracy: 983/1000 (98%)
+Test set:local_trigger2 Poison Accuracy: 764/1000 (76%)
+Test set:local_trigger3 Poison Accuracy: 998/1000 (100%)
+Test set:Main Accuracy: 8853/10000 (89%)
+Test set:Globol Trigger Poison Accuracy: 994/1000 (99%)
+Done in 5.783766031265259 sec.
+select client [468, 189, 753, 32, 726, 418, 113, 194, 961, 580]
+l2 norm of benign user before server clipping 0.002117932285182178
+l2 norm of benign user after server clipping 0.002117932285182178
+___Test : epoch: 1999: Average loss: 0.3427, Accuracy: 8847/10000.0 (88.4700%)
+benign test loss (after fedavg) 0.34273597049713134
+benign test acc (after fedavg) 88.47
+Test set:local_trigger0 Poison Accuracy: 973/1000 (97%)
+Test set:local_trigger1 Poison Accuracy: 924/1000 (92%)
+Test set:local_trigger2 Poison Accuracy: 41/1000 (4%)
+Test set:local_trigger3 Poison Accuracy: 954/1000 (95%)
+Test set:Main Accuracy: 8847/10000 (88%)
+Test set:Globol Trigger Poison Accuracy: 475/1000 (48%)
+Done in 5.768326759338379 sec.
