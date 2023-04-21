@@ -18,10 +18,10 @@ np.random.seed(0)
 round=500
 participant_population=1000
 partipant_sample_size=10
-attack_round0=[i for i in range(300,400,40)]
-attack_round1=[i for i in range(305,400,40)]
-attack_round2=[i for i in range(310,400,40)]
-attack_round3=[i for i in range(315,400,40)]
+attack_round0=[i for i in range(300,400,20)]
+attack_round1=[i for i in range(305,400,20)]
+attack_round2=[i for i in range(310,400,20)]
+attack_round3=[i for i in range(315,400,20)]
 
 num_classes=10
 # 读取训练到1900轮的模型

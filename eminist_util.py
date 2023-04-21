@@ -2,20 +2,24 @@ from torch import nn
 from collections import defaultdict
 import copy
 import os
+import time
 import random
 import numpy as np
 import torch
 from torchvision import datasets, transforms
 from models.resnet import ResNet18
+from models.lenet import LeNet
 from torch.optim import Adam
 import torch.optim.lr_scheduler as lr_scheduler
 import matplotlib.pyplot as plt
+from torch.utils.tensorboard import SummaryWriter
 
 
 torch.manual_seed(1)
 torch.cuda.manual_seed(1)
-
+log_route = ''
 random.seed(0)
+writer = None
 np.random.seed(0)
 
 # 读取EMINIST DIGITS数据集
@@ -41,9 +45,17 @@ def load_Non_IID_clean_data(number_of_total_participants, dirichlet_alpha, num_w
 
     test_loader = get_test(test_set, test_batch_size=100,
                            num_workers=num_workers)
-    print('load data success')
+    print('load data succeeded')
+    print('init Tensor Board succeeded')
     return train_loaders, test_loader
 
+def initTensorBoard(route_):
+    start_time = time.time()
+    global log_route
+    global writer
+    log_route = './tblog/' + route_
+    writer = SummaryWriter(log_route)
+    return writer
 
 def sample_dirichlet_train_data(dataset, total_client, alpha=0.9):
     """
@@ -268,6 +280,7 @@ def test_cv(epoch, data_source,
     acc = 100.0 * (float(correct) / float(num_data))
     total_l = total_loss / float(num_data)
 
+    writer.add_scalar('Main Task Accuracy', acc, epoch)
     print('___Test : epoch: {}: Average loss: {:.4f}, '
           'Accuracy: {}/{} ({:.4f}%)'.format(epoch,
                                              total_l, correct, num_data,
@@ -302,6 +315,13 @@ def load_model(path='./cifar10_resnet_Snorm_1_checkpoint_model_epoch_1999.pth'):
     model.cuda()
     return model
 
+def load_lenet_model(path='./cifar10_resnet_Snorm_1_checkpoint_model_epoch_1999.pth'):
+    print(path)
+    # num_classes = 10
+    model = LeNet()
+    model.load_state_dict(torch.load(path))
+    model.cuda()
+    return model
 
 def grad_mask_cv(model, dataset_clean, criterion, ratio=0.5):
     """Generate a gradient mask based on the given dataset"""
@@ -372,6 +392,73 @@ def grad_mask_cv(model, dataset_clean, criterion, ratio=0.5):
     return mask_grad_list  # mask_grad_list:列表，每一个元素对应每一层中应该被替换的参数（良性设备不经常访问的）
 
 
+    """Generate a gradient mask based on the given dataset"""
+    model.train()
+    model.zero_grad()
+
+    # dataset_clean[]:dataloader对象
+    for participant_id in range(len(dataset_clean)):
+
+        train_data = dataset_clean[participant_id]
+
+        for inputs, labels in train_data:
+            inputs, labels = inputs.cuda(), labels.cuda()
+            output = model(inputs)
+            loss = criterion(output, labels)
+            loss.backward(retain_graph=True)
+
+    mask_grad_list = []
+
+    grad_list = []
+    grad_abs_sum_list = []
+    indices = []
+    k_layer = 0
+    for _, parms in model.named_parameters():
+        if parms.requires_grad:
+            #grad_list使用上面良性数据所累积的梯度,parms.grad也是一个多维tensor
+            parms_grad = parms.grad.abs().view(-1)
+            grad_list.append(parms_grad)
+            # 获取每一层中梯度topk%的参数坐标
+            _,layer_indices_top = torch.topk(-1*parms_grad, int(len(parms_grad)*ratio))
+            indices.append(layer_indices_top)
+            k_layer += 1
+
+    grad_list = torch.cat(grad_list).cuda()
+    # len(grad_list):2797610
+    #将累计的梯度中绝对值最小的参数坐标取出
+    # _, indices = torch.topk(-1*grad_list, int(len(grad_list)*ratio))
+    # len(indices):2517849 (mask=0.9)
+    mask_flat_all_layer = torch.zeros(len(grad_list)).cuda()
+    mask_flat_all_layer[indices] = 1.0
+
+    count = 0
+    percentage_mask_list = []
+    k_layer = 0
+    grad_abs_percentage_list = []
+    for name, parms in model.named_parameters():
+        if parms.requires_grad:
+            gradients_length = len(parms.grad.abs().view(-1))
+            #mask_flat:使用mask_flat_all_layer来记录每一层的参数（由0、1组成）
+            mask_flat = mask_flat_all_layer[count:count +
+                                            gradients_length].cuda()
+            mask_grad_list[name] = (
+                mask_flat.reshape(parms.grad.size()).cuda())
+            #mask_grad_list[0].shape:  torch.Size([32, 3, 3, 3])
+
+            count += gradients_length
+
+            percentage_mask1 = mask_flat.sum().item()/float(gradients_length)*100.0
+
+            percentage_mask_list.append(percentage_mask1)
+
+            # grad_abs_percentage_list求某一层梯度占比
+            grad_abs_percentage_list.append(
+                grad_abs_sum_list[k_layer]/np.sum(grad_abs_sum_list))
+
+            k_layer += 1
+    model.zero_grad()
+    return mask_grad_list  # mask_grad_list:列表，每一个元素对应每一层中应该被替换的参数（良性设备不经常访问的）
+
 def xzy_grad_mask_cv(model, ratio=0.5):
     """Generate a gradient mask based on the given dataset"""
 
@@ -390,6 +477,9 @@ def xzy_grad_mask_cv(model, ratio=0.5):
 
     grad_list = torch.cat(grad_list).cuda()
     # len(grad_list):2797610
+    
+    print('Total Count of Neuro',int(len(grad_list)))
+    print('Selected Count of Neuro',int(len(grad_list)*ratio))
     #将累计的梯度中绝对值最小的参数坐标取出
     _, indices = torch.topk(-1*grad_list, int(len(grad_list)*ratio))
     # len(indices):2517849 (mask=0.9)
@@ -406,6 +496,65 @@ def xzy_grad_mask_cv(model, ratio=0.5):
             #mask_flat:使用mask_flat_all_layer来记录每一层的参数（由0、1组成）
             mask_flat = mask_flat_all_layer[count:count +
                                             gradients_length].cuda()
+            mask_grad_list[name] = (
+                mask_flat.reshape(parms.grad.size()).cuda())
+            #mask_grad_list[0].shape:  torch.Size([32, 3, 3, 3])
+
+            count += gradients_length
+
+            percentage_mask1 = mask_flat.sum().item()/float(gradients_length)*100.0
+
+            percentage_mask_list.append(percentage_mask1)
+
+            # grad_abs_percentage_list求某一层梯度占比
+            grad_abs_percentage_list.append(
+                grad_abs_sum_list[k_layer]/np.sum(grad_abs_sum_list))
+
+            k_layer += 1
+
+    model.zero_grad()
+    return mask_grad_list  # mask_grad_list:列表，每一个元素对应每一层中应该被替换的参数（良性设备不经常访问的）
+
+def xzy_grad_mask_cv_by_layer(model, ratio=0.5):
+    """Generate a gradient mask based on the given dataset"""
+
+    mask_grad_list = {}
+    grad_list = []
+    grad_abs_sum_list = []
+    indices = []
+    k_layer = 0
+    for _, parms in model.named_parameters():
+        if parms.requires_grad:
+            #grad_list使用上面良性数据所累积的梯度,parms.grad也是一个多维tensor
+            parms_grad = parms.grad.abs().view(-1)
+            grad_list.append(parms_grad)
+            # 获取每一层中梯度topk%的参数坐标
+            _,layer_indices_top = torch.topk(-1*parms_grad, int(len(parms_grad)*ratio))
+            indices.append(layer_indices_top)
+            grad_abs_sum_list.append(parms.grad.abs().view(-1).sum().item())
+            k_layer += 1
+
+    grad_list = torch.cat(grad_list).cuda()
+    # len(grad_list):2797610
+    indices = torch.cat(indices).cuda()
+    print('Total Count of Neuro',int(len(grad_list)))
+    print('Selected Count of Neuro',int(len(indices)))
+    # #将累计的梯度中绝对值最小的参数坐标取出
+    # _, indices = torch.topk(-1*grad_list, int(len(grad_list)*ratio))
+    
+    # len(indices):2517849 (mask=0.9)
+    mask_flat_all_layer = torch.zeros(len(grad_list)).cuda()
+    mask_flat_all_layer[indices] = 1.0
+
+    count = 0
+    percentage_mask_list = []
+    k_layer = 0
+    grad_abs_percentage_list = []
+    for name, parms in model.named_parameters():
+        if parms.requires_grad:
+            gradients_length = len(parms.grad.abs().view(-1))
+            #mask_flat:使用mask_flat_all_layer来记录每一层的参数（由0、1组成）
+            mask_flat = mask_flat_all_layer[count:count + gradients_length].cuda()
             mask_grad_list[name] = (
                 mask_flat.reshape(parms.grad.size()).cuda())
             #mask_grad_list[0].shape:  torch.Size([32, 3, 3, 3])
@@ -508,6 +657,7 @@ def generate_trigger(nameOfTrigger, model, mask_grad_list, locationX, locationY)
     locationY         number  the y coordinate of the trigger's location
     Returns   trigger
     '''
+
     trigger_width = 3
     trigger_height = 3
     graph_width = 28
@@ -533,10 +683,73 @@ def generate_trigger(nameOfTrigger, model, mask_grad_list, locationX, locationY)
     num_input_params = int(optimization_mask.sum().item())
     trigger = torch.rand(num_input_params).cuda()
     trigger.requires_grad = True
-    optim = Adam([trigger], lr=1)
+    # 将学习率从1调整到0.1
+    optim = Adam([trigger], lr=0.2)
     scheduler = lr_scheduler.StepLR(optim, step_size=2000, gamma=0.1)
 
     for i in range(1000):
+        outputs.clear()
+        x = model_input.clone()
+        x[optimization_mask] = trigger
+        y = model(x)
+        loss = 0
+        target_outputs = []
+        for j in range(len(outputs)):
+            target_outputs.append(outputs[j][0][target_layer_neuron[list(
+                target_layer_neuron.keys())[j]][0].unique()])
+
+        for j in range(len(target_outputs)):
+            loss += (torch.mean(target_outputs[j])-3)**2
+
+
+        # loss=torch.mean((outputs[0][0][0][0]-3)**2)
+        # loss=(outputs[0][0][0][0][0]-3)**2
+
+        # loss=torch.mean((y-3)**2)
+        optim.zero_grad()
+        loss.backward()
+        optim.step()
+        scheduler.step()
+        writer.add_scalar('trigger_loss/'+nameOfTrigger, loss, i)
+        if i % 200 == 0:
+            print('Gen %s loss' % (nameOfTrigger), loss)
+    return trigger
+
+def generate_dependent_trigger_random_neurons(nameOfTrigger,model,locationX,locationY):
+    #根据model生成trigger
+    #return:trigger
+    trigger_width = 3
+    trigger_height = 3
+    graph_width = 28
+    #初始化trigger
+    random_neurons = {}
+    for name, params in model.named_parameters():
+        flat = torch.zeros_like(params)
+        flat = flat.reshape(-1)
+        num_select = int(len(flat) * 0.005)
+        indices = torch.randperm(len(flat))[:num_select]
+        flat[indices] = 1
+        random_neurons[name] = (flat.reshape(params.size()).cuda())
+
+    dic_modules = dict(model.named_modules())
+    target_layer_neuron = {}
+    for name, params in model.named_parameters():
+        indices = torch.where(random_neurons[name] == 1)
+        if indices[0].shape != torch.Size([0]):
+            target_layer_neuron[name] = (indices)
+            #为该层注册hook
+            dic_modules[name.rsplit('.', 1)[0]].register_forward_hook(hook_fn)
+
+    model_input = torch.rand(1, 1, graph_width, graph_width).cuda()
+    optimization_mask = torch.zeros(1, 1, graph_width, graph_width, dtype=torch.bool).cuda()
+    optimization_mask[:, :, locationX:locationX+trigger_width, locationY:locationY+trigger_height] = True
+    num_input_params = int(optimization_mask.sum().item())
+    trigger = torch.rand(num_input_params).cuda()
+    trigger.requires_grad = True
+    optim = Adam([trigger], lr=1)
+    scheduler = lr_scheduler.StepLR(optim, step_size=2000, gamma=0.1)
+
+    for i in range(2000):
         outputs.clear()
         x = model_input.clone()
         x[optimization_mask] = trigger
@@ -559,9 +772,9 @@ def generate_trigger(nameOfTrigger, model, mask_grad_list, locationX, locationY)
         optim.step()
         scheduler.step()
         if i % 200 == 0:
-            print('Gen %s loss' % (nameOfTrigger), loss)
+            print('Generate_dependent_'+ nameOfTrigger +'_random_neurons loss', loss)
+            # print('Gen trigger1 lr',scheduler.get_last_lr())
     return trigger
-
 
 def Generate_dependent_trigger0_random_neurons(model):
     #根据model生成trigger
@@ -993,6 +1206,7 @@ def test_poison_model(model, testloader, trigger, pos=-1):
             # get the index of the max log-probability
             pred = output.argmax(dim=1, keepdim=True)
             correct += pred.eq(target.view_as(pred)).sum().item()
+    # writer_dic['main_task'].add_scalar('Accuracy', 100. * correct / len(testloader.dataset), epoch)
     print('Test set:Main Accuracy: {}/{} ({:.0f}%)'.format(
         correct, len(testloader.dataset),
         100. * correct / len(testloader.dataset)))
@@ -1014,9 +1228,11 @@ def test_poison_model(model, testloader, trigger, pos=-1):
             pred = output.argmax(dim=1, keepdim=True)
             correct += pred.eq(target.view_as(pred)).sum().item()
             poison_sample += len(index[0])
+    acc = 100. * correct / poison_sample
     print('Test set:Poison Accuracy: {}/{} ({:.0f}%)'.format(
         correct, poison_sample,
-        100. * correct / poison_sample))
+        acc))
+    return acc
 
 
 def test_poison_model_with_globol_trigger(model, testloader, globol_trigger):
@@ -1060,6 +1276,7 @@ def test_poison_model_with_globol_trigger(model, testloader, globol_trigger):
         100. * correct / poison_sample))
 
 
+
 def test_poison_model_with_globol_trigger_four_locals(model, testloader, global_trigger):
     #测试模型
     model.eval()
@@ -1098,9 +1315,11 @@ def test_poison_model_with_globol_trigger_four_locals(model, testloader, global_
             # plt.imshow(poison_data[0].permute(1,2,0))
             # plt.show()
             # plt.imsave('poison_data.png',poison_data[0].permute(1,2,0))
+    # writer_dic['global_trigger'].add_scalar('Accuracy', 100. * correct / poison_sample, epoch)
     print('Test set:Global Trigger Poison Accuracy: {}/{} ({:.0f}%)'.format(
         correct, poison_sample,
         100. * correct / poison_sample))
+    return 100. * correct / poison_sample
 
 def test_poison_model_with_local_trigger(model, testloader, local_trigger,locationX,locationY,triggerName):
     #测试模型
@@ -1128,6 +1347,7 @@ def test_poison_model_with_local_trigger(model, testloader, local_trigger,locati
     print(('Test set:local_' + triggerName + 'Poison Accuracy: {}/{} ({:.0f}%)').format(
         correct, poison_sample,
         100. * correct / poison_sample))
+    return 100. * correct / poison_sample
 
 def test_poison_model_with_local_trigger0(model, testloader, local_trigger0):
     #测试模型
@@ -1155,82 +1375,82 @@ def test_poison_model_with_local_trigger0(model, testloader, local_trigger0):
         100. * correct / poison_sample))
 
 
-def test_poison_model_with_local_trigger1(model, testloader, local_trigger1):
-    #测试模型
-    model.eval()
-    # 测试中毒数据
-    correct = 0
-    # globol_trigger=torch.reshape(globol_trigger,(3,3,6))
-    poison_sample = 0
-    with torch.no_grad():
-        for data, target in testloader:
-            data, target = data.cuda(), target.cuda()
-            index = torch.where(target == 8)
+# def test_poison_model_with_local_trigger1(model, testloader, local_trigger1):
+#     #测试模型
+#     model.eval()
+#     # 测试中毒数据
+#     correct = 0
+#     # globol_trigger=torch.reshape(globol_trigger,(3,3,6))
+#     poison_sample = 0
+#     with torch.no_grad():
+#         for data, target in testloader:
+#             data, target = data.cuda(), target.cuda()
+#             index = torch.where(target == 8)
 
-            target = torch.zeros_like(index[0])
-            poison_data = data[index]
-            poison_data[:, :, 29:32, 26:29] = local_trigger1
-            data = poison_data
-            output = model(data)
-            # get the index of the max log-probability
-            pred = output.argmax(dim=1, keepdim=True)
-            correct += pred.eq(target.view_as(pred)).sum().item()
-            poison_sample += len(index[0])
-    print('Test set:local_trigger1 Poison Accuracy: {}/{} ({:.0f}%)'.format(
-        correct, poison_sample,
-        100. * correct / poison_sample))
-
-
-def test_poison_model_with_local_trigger2(model, testloader, local_trigger2):
-    #测试模型
-    model.eval()
-    # 测试中毒数据
-    correct = 0
-    # globol_trigger=torch.reshape(globol_trigger,(3,3,6))
-    poison_sample = 0
-    with torch.no_grad():
-        for data, target in testloader:
-            data, target = data.cuda(), target.cuda()
-            index = torch.where(target == 8)
-
-            target = torch.zeros_like(index[0])
-            poison_data = data[index]
-            poison_data[:, :, 26:29, 26:29] = local_trigger2
-            data = poison_data
-            output = model(data)
-            # get the index of the max log-probability
-            pred = output.argmax(dim=1, keepdim=True)
-            correct += pred.eq(target.view_as(pred)).sum().item()
-            poison_sample += len(index[0])
-    print('Test set:local_trigger2 Poison Accuracy: {}/{} ({:.0f}%)'.format(
-        correct, poison_sample,
-        100. * correct / poison_sample))
+#             target = torch.zeros_like(index[0])
+#             poison_data = data[index]
+#             poison_data[:, :, 29:32, 26:29] = local_trigger1
+#             data = poison_data
+#             output = model(data)
+#             # get the index of the max log-probability
+#             pred = output.argmax(dim=1, keepdim=True)
+#             correct += pred.eq(target.view_as(pred)).sum().item()
+#             poison_sample += len(index[0])
+#     print('Test set:local_trigger1 Poison Accuracy: {}/{} ({:.0f}%)'.format(
+#         correct, poison_sample,
+#         100. * correct / poison_sample))
 
 
-def test_poison_model_with_local_trigger3(model, testloader, local_trigger3):
-    #测试模型
-    model.eval()
-    # 测试中毒数据
-    correct = 0
-    # globol_trigger=torch.reshape(globol_trigger,(3,3,6))
-    poison_sample = 0
-    with torch.no_grad():
-        for data, target in testloader:
-            data, target = data.cuda(), target.cuda()
-            index = torch.where(target == 8)
+# def test_poison_model_with_local_trigger2(model, testloader, local_trigger2):
+#     #测试模型
+#     model.eval()
+#     # 测试中毒数据
+#     correct = 0
+#     # globol_trigger=torch.reshape(globol_trigger,(3,3,6))
+#     poison_sample = 0
+#     with torch.no_grad():
+#         for data, target in testloader:
+#             data, target = data.cuda(), target.cuda()
+#             index = torch.where(target == 8)
 
-            target = torch.zeros_like(index[0])
-            poison_data = data[index]
-            poison_data[:, :, 26:29, 29:32] = local_trigger3
-            data = poison_data
-            output = model(data)
-            # get the index of the max log-probability
-            pred = output.argmax(dim=1, keepdim=True)
-            correct += pred.eq(target.view_as(pred)).sum().item()
-            poison_sample += len(index[0])
-    print('Test set:local_trigger3 Poison Accuracy: {}/{} ({:.0f}%)'.format(
-        correct, poison_sample,
-        100. * correct / poison_sample))
+#             target = torch.zeros_like(index[0])
+#             poison_data = data[index]
+#             poison_data[:, :, 26:29, 26:29] = local_trigger2
+#             data = poison_data
+#             output = model(data)
+#             # get the index of the max log-probability
+#             pred = output.argmax(dim=1, keepdim=True)
+#             correct += pred.eq(target.view_as(pred)).sum().item()
+#             poison_sample += len(index[0])
+#     print('Test set:local_trigger2 Poison Accuracy: {}/{} ({:.0f}%)'.format(
+#         correct, poison_sample,
+#         100. * correct / poison_sample))
+
+
+# def test_poison_model_with_local_trigger3(model, testloader, local_trigger3):
+    # #测试模型
+    # model.eval()
+    # # 测试中毒数据
+    # correct = 0
+    # # globol_trigger=torch.reshape(globol_trigger,(3,3,6))
+    # poison_sample = 0
+    # with torch.no_grad():
+    #     for data, target in testloader:
+    #         data, target = data.cuda(), target.cuda()
+    #         index = torch.where(target == 8)
+
+    #         target = torch.zeros_like(index[0])
+    #         poison_data = data[index]
+    #         poison_data[:, :, 26:29, 29:32] = local_trigger3
+    #         data = poison_data
+    #         output = model(data)
+    #         # get the index of the max log-probability
+    #         pred = output.argmax(dim=1, keepdim=True)
+    #         correct += pred.eq(target.view_as(pred)).sum().item()
+    #         poison_sample += len(index[0])
+    # print('Test set:local_trigger3 Poison Accuracy: {}/{} ({:.0f}%)'.format(
+    #     correct, poison_sample,
+    #     100. * correct / poison_sample))
 
 
 def test_all_poisoned_data(poison_model, testloader, trigger):
