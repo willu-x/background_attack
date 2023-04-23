@@ -459,20 +459,70 @@ def grad_mask_cv(model, dataset_clean, criterion, ratio=0.5):
     model.zero_grad()
     return mask_grad_list  # mask_grad_list:列表，每一个元素对应每一层中应该被替换的参数（良性设备不经常访问的）
 
+# 生成overlap layer
+def gen_overlap_layer_list(model,layer_list,ratio=0.5):
+    cur_layer_list = []
+    mask_grad_list = {}
+    grad_list = []
+    # grad_abs_sum_list = []
+    # grad_abs_sum_dict = {}
+    k_layer = 0
+    for name, parms in model.named_parameters():
+        if parms.requires_grad:
+            #grad_list使用上面良性数据所累积的梯度,parms.grad也是一个多维tensor
+            grad_list.append(parms.grad.abs().view(-1))
+            # #某一层的梯度绝对值总和
+            # grad_abs_sum_list.append(parms.grad.abs().view(-1).sum().item())
+            # grad_abs_sum_dict[name] = parms.grad.abs().view(-1).sum().item()
+            k_layer += 1
+    grad_list = torch.cat(grad_list).cuda()
+    # len(grad_list):2797610
+    #将累计的梯度中绝对值最小的参数坐标取出
+    _, indices = torch.topk(-1*grad_list, int(len(grad_list)*ratio))
+    mask_flat_all_layer = torch.zeros(len(grad_list)).cuda()
+    mask_flat_all_layer[indices] = 1.0
+    count = 0
+    percentage_mask_list = []
+    k_layer = 0
+    for name, parms in model.named_parameters():
+        if parms.requires_grad:
+            gradients_length = len(parms.grad.abs().view(-1))
+            mask_flat = mask_flat_all_layer[count:count + gradients_length].cuda()
+            mask_grad_list[name] = (mask_flat.reshape(parms.grad.size()).cuda())
+            #mask_grad_list[0].shape:  torch.Size([32, 3, 3, 3])
+            count += gradients_length
+            percentage_mask1 = mask_flat.sum().item()/float(gradients_length)*100.0
+            percentage_mask_list.append(percentage_mask1)
+            k_layer += 1
+    for name, params in model.named_parameters():
+        indices = torch.where(mask_grad_list[name] == 1)
+        if indices[0].shape != torch.Size([0]):
+            cur_layer_list.append(name)
+    if len(layer_list) == 0:
+        overlap_layer_list = cur_layer_list
+    else:
+        overlap_layer_list = list(set(cur_layer_list) & set(layer_list))
+    print('Total Layer Count:',len(mask_grad_list.keys()))
+    print('Trigger Selected Layer Count:',int(len(cur_layer_list)))
+    print('Overlap Layer Count:',int(len(overlap_layer_list)))
+    model.zero_grad()
+    return overlap_layer_list
+
 def xzy_grad_mask_cv(model, ratio=0.5):
     """Generate a gradient mask based on the given dataset"""
 
     mask_grad_list = {}
     grad_list = []
     grad_abs_sum_list = []
+    grad_abs_sum_dict = {}
     k_layer = 0
-    for _, parms in model.named_parameters():
+    for name, parms in model.named_parameters():
         if parms.requires_grad:
             #grad_list使用上面良性数据所累积的梯度,parms.grad也是一个多维tensor
             grad_list.append(parms.grad.abs().view(-1))
             #某一层的梯度绝对值总和
             grad_abs_sum_list.append(parms.grad.abs().view(-1).sum().item())
-
+            grad_abs_sum_dict[name] = parms.grad.abs().view(-1).sum().item()
             k_layer += 1
 
     grad_list = torch.cat(grad_list).cuda()
@@ -482,6 +532,7 @@ def xzy_grad_mask_cv(model, ratio=0.5):
     print('Selected Count of Neuro',int(len(grad_list)*ratio))
     #将累计的梯度中绝对值最小的参数坐标取出
     _, indices = torch.topk(-1*grad_list, int(len(grad_list)*ratio))
+    # print(indices.tolist())
     # len(indices):2517849 (mask=0.9)
     mask_flat_all_layer = torch.zeros(len(grad_list)).cuda()
     mask_flat_all_layer[indices] = 1.0
@@ -523,13 +574,17 @@ def xzy_grad_mask_cv_by_layer(model, ratio=0.5):
     grad_abs_sum_list = []
     indices = []
     k_layer = 0
+    grad_count = 0
     for _, parms in model.named_parameters():
         if parms.requires_grad:
             #grad_list使用上面良性数据所累积的梯度,parms.grad也是一个多维tensor
             parms_grad = parms.grad.abs().view(-1)
             grad_list.append(parms_grad)
+            
             # 获取每一层中梯度topk%的参数坐标
             _,layer_indices_top = torch.topk(-1*parms_grad, int(len(parms_grad)*ratio))
+            layer_indices_top = layer_indices_top + grad_count
+            grad_count = grad_count + len(parms_grad)
             indices.append(layer_indices_top)
             grad_abs_sum_list.append(parms.grad.abs().view(-1).sum().item())
             k_layer += 1
@@ -574,6 +629,51 @@ def xzy_grad_mask_cv_by_layer(model, ratio=0.5):
     model.zero_grad()
     return mask_grad_list  # mask_grad_list:列表，每一个元素对应每一层中应该被替换的参数（良性设备不经常访问的）
 
+def xzy_grad_mask_cv_by_overlap_layer_name(model, layer_list, ratio=0.5):
+    """Generate a gradient mask based on the given dataset"""
+
+    mask_grad_list = {}
+    grad_list = []
+    k_layer = 0
+    for name, parms in model.named_parameters():
+        if parms.requires_grad:
+            #grad_list使用上面良性数据所累积的梯度,parms.grad也是一个多维tensor
+            if name in layer_list:
+                grad_list.append(parms.grad.abs().view(-1))
+                k_layer += 1
+            else:
+                grad_list.append(torch.full(parms.grad.abs().size(),999).view(-1).cuda())
+    grad_list = torch.cat(grad_list).cuda()
+    # len(grad_list):2797610
+    
+    print('Total Count of Neuro',int(len(grad_list)))
+    print('Selected Count of Neuro(before overlap layer clipping)',int(len(grad_list)*ratio))
+    #将累计的梯度中绝对值最小的参数坐标取出
+    _, indices = torch.topk(-1*grad_list, int(len(grad_list)*ratio))
+    # print(indices.tolist())
+    # len(indices):2517849 (mask=0.9)
+    mask_flat_all_layer = torch.zeros(len(grad_list)).cuda()
+    mask_flat_all_layer[indices] = 1.0
+
+    count = 0
+    percentage_mask_list = []
+
+    for name, parms in model.named_parameters():
+        if parms.requires_grad :
+            gradients_length = len(parms.grad.abs().view(-1))
+            #mask_flat:使用mask_flat_all_layer来记录每一层的参数（由0、1组成）
+            mask_flat = mask_flat_all_layer[count:count + gradients_length].cuda()
+            mask_grad_list[name] = (mask_flat.reshape(parms.grad.size()).cuda())
+            # if name in layer_list:
+            #     mask_flat = mask_flat_all_layer[count:count + gradients_length].cuda()
+            #     mask_grad_list[name] = (mask_flat.reshape(parms.grad.size()).cuda())
+            #     #mask_grad_list[0].shape:  torch.Size([32, 3, 3, 3])
+            # else:
+            #     mask_grad_list[name] = torch.zeros(parms.grad.size()).cuda()
+            count += gradients_length
+
+    model.zero_grad()
+    return mask_grad_list  # mask_grad_list:列表，每一个元素对应每一层中应该被替换的参数（良性设备不经常访问的）
 
 def save_model(file_name=None, model=None, epoch=None, new_folder_name='saved_models'):
     if new_folder_name is None:
@@ -647,7 +747,16 @@ def hook_fn(module, input, output):
 #             print('Gen trigger0 loss', loss)
 #             # print('Gen trigger0 lr',scheduler.get_last_lr())
 #     return trigger
-
+def generate_simple_trigger(fillColor):
+    '''
+    fillColor         number  colorOfTrigger
+    Returns   trigger
+    '''
+    trigger_width = 3
+    trigger_height = 3
+    trigger = torch.rand(trigger_width * trigger_height).cuda()
+    trigger = torch.fill(trigger,fillColor)
+    return trigger
 
 def generate_trigger(nameOfTrigger, model, mask_grad_list, locationX, locationY):
     '''
@@ -684,7 +793,7 @@ def generate_trigger(nameOfTrigger, model, mask_grad_list, locationX, locationY)
     trigger = torch.rand(num_input_params).cuda()
     trigger.requires_grad = True
     # 将学习率从1调整到0.1
-    optim = Adam([trigger], lr=0.2)
+    optim = Adam([trigger], lr=1)
     scheduler = lr_scheduler.StepLR(optim, step_size=2000, gamma=0.1)
 
     for i in range(1000):
